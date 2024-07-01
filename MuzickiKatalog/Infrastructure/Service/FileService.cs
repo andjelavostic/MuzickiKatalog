@@ -1,26 +1,25 @@
 ﻿using Newtonsoft.Json;
 using System.IO;
-using System.Xml;
 
 namespace MuzickiKatalog.Infrastructure.Service
 {
     public class FileService
     {
-            public virtual void Serialize<T>(string _filename, List<T> items)
+        public virtual void Serialize<T>(string _filename, List<T> items)
+        {
+            using (StreamWriter writer = new StreamWriter(_filename))
             {
-                using (StreamWriter writer = new StreamWriter(_filename))
-                {
-                    writer.Write(JsonConvert.SerializeObject(items, Newtonsoft.Json.Formatting.Indented));
-                }
+                writer.Write(JsonConvert.SerializeObject(items, Formatting.Indented));
             }
-            public virtual List<T> Deserialize<T>(string _filename)
+        }
+        public virtual List<T> Deserialize<T>(string _filename)
+        {
+            using (StreamReader reader = new StreamReader(_filename))
             {
-                using (StreamReader reader = new StreamReader(_filename))
-                {
-                    string json = reader.ReadToEnd();
-                    return JsonConvert.DeserializeObject<List<T>>(json);
-                }
+                string json = reader.ReadToEnd();
+                return JsonConvert.DeserializeObject<List<T>>(json);
             }
-        
+        }
+
     }
 }
