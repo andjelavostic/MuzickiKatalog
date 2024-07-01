@@ -8,12 +8,14 @@ namespace MuzickiKatalog.Models.Items
 {
     public class Recenzija
     {
-        public string komentar;
-        public int idSadrzaja;
-        public string idKorisnik;
-        public Date datum;
-        public Recenzija(string komentar, int idSadrzaja, string idKorisnik)
+        private int id;
+        private string komentar;
+        private int idSadrzaja;
+        private string idKorisnik;
+        private DateTime datum;
+        public Recenzija(int id,string komentar, int idSadrzaja, string idKorisnik)
         {
+            this.id = id;
             this.komentar = komentar;
             this.idSadrzaja = idSadrzaja;
             this.idKorisnik = idKorisnik;

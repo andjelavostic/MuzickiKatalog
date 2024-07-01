@@ -8,5 +8,9 @@ namespace MuzickiKatalog.Models.Users
 {
     public class RegistrovanKorisnik:Korisnik
     {
+        public RegistrovanKorisnik(string ime, string prezime, string email, string lozinka) : 
+            base(ime, prezime, email, lozinka)
+        {
+        }
     }
 }

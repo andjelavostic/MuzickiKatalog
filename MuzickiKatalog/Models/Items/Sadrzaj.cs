@@ -29,7 +29,7 @@ namespace MuzickiKatalog.Models.Items
             get { return slika; }
             set { slika = value; }
         }
-        public string Zanrovi
+        public List<string> Zanrovi
         {
             get { return zanrovi; }
             set { zanrovi = value; }
@@ -41,7 +41,7 @@ namespace MuzickiKatalog.Models.Items
         }
         public List<int> OceneKorisnika
         {
-            get { return ocenaKorisnika; }
+            get { return oceneKorisnika; }
             set { oceneKorisnika = value; }
         }
         public Sadrzaj(int id,string opis, string slika, int ocenaUrednika, List<int> oceneKorisnika)

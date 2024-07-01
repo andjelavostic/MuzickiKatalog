@@ -14,5 +14,10 @@ namespace MuzickiKatalog.Models.Users
             get { return specijalnost; }
             set { specijalnost = value; }   
         }
+        public Urednik(string ime, string prezime, string email, string lozinka,List<string> specijalnost) :
+            base(ime, prezime, email, lozinka)
+        {
+            this.specijalnost= specijalnost;
+        }
     }
 }

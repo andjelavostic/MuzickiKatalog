@@ -10,12 +10,12 @@ namespace MuzickiKatalog.Models.Items
     {
         private int id;
         private int idSadrzaja;
-        private Date datum;
+        private DateTime datum;
         private string mesto;
         private string rezolucija;
         private bool uzivo;
         private bool preuzimanje;
-        public Sadrzaj(int id,int idSadrzaja, DateTime datum, string mesto, string rezolucija, bool uzivo, bool preuzimanje)
+        public Izvodjenje(int id,int idSadrzaja, DateTime datum, string mesto, string rezolucija, bool uzivo, bool preuzimanje)
         {
             this.id = id;
             this.idSadrzaja = idSadrzaja;

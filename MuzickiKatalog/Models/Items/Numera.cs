@@ -9,13 +9,13 @@ namespace MuzickiKatalog.Models.Items
     public class Numera:Sadrzaj
     {
         private double trajanje;
-        private Date datumObjave;
+        private DateTime datumObjave;
         public double Trajanje
         {
             get { return trajanje; }
             set { trajanje = value; }
         }
-        public Date DatumObjave
+        public DateTime DatumObjave
         {
             get { return datumObjave; }
             set { datumObjave = value; }
