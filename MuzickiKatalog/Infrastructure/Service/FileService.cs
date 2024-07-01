@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
+using System.IO;
+using System.Xml;
 
 namespace MuzickiKatalog.Infrastructure.Service
 {
@@ -12,7 +10,7 @@ namespace MuzickiKatalog.Infrastructure.Service
             {
                 using (StreamWriter writer = new StreamWriter(_filename))
                 {
-                    writer.Write(JsonConvert.SerializeObject(items, Formatting.Indented));
+                    writer.Write(JsonConvert.SerializeObject(items, Newtonsoft.Json.Formatting.Indented));
                 }
             }
             public virtual List<T> Deserialize<T>(string _filename)
