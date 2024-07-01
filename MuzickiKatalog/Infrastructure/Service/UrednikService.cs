@@ -23,6 +23,29 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             base.Serialize<T>(_filename, items);
         }
+        public void dodavanjeAlbuma()
+        { 
+        
+        }
+        public void ocenjivanje()
+        {
 
+        }
+        public void pisanjeRecenzije()
+        {
+
+        }
+        public void dodavanjeNumere()
+        {
+
+        }
+        public void dodavanjeIzvodjaca()
+        {
+
+        }
+        public void ucestvovanjeUAnketi()
+        {
+
+        }
     }
 }
