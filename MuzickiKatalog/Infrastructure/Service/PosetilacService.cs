@@ -23,11 +23,14 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             base.Serialize<T>(_filename, items);
         }
-        public Boolean Registracija(String ime, String prezime, String email, String lozinka)
+        public Boolean Registracija(String ime, String prezime, String email, String lozinka, RegistrovanKorisnikService registrovaniKorisnici)
         {
-            //provjera postoji li vec mejl medju registrovanim korisnicima
+            if (registrovaniKorisnici.PostojiEmail(email))
+            {
+                return false;
+            }
             RegistrovanKorisnik noviKorisnik = new RegistrovanKorisnik(ime, prezime, email, lozinka);
-            //dodavanje novog u Registrovane korisnike preko RegistrovaniKorisniciService
+            registrovaniKorisnici.DodajKorisnika(noviKorisnik);
             return true;
         }
         public void PregledSadrzaja()

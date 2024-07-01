@@ -24,6 +24,19 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             base.Serialize<T>(_filename, items);
         }
+        public List<RegistrovanKorisnik> GetAll()
+        {
+            return korisnici;
+        }
+        public bool PostojiEmail(string zadaniEmail)
+        {
+            return GetAll().Any(k => k.Email == zadaniEmail);
+        }
+        public void DodajKorisnika(RegistrovanKorisnik noviKorisnik)
+        {
+            korisnici.Add(noviKorisnik);
+            Serialize(filePath, korisnici);
+        }
         public void Stream(Numera numera)
         {
 
