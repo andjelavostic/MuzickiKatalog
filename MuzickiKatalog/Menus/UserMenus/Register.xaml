@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="Register" Background="LightGreen" Height="420" Width="274">
     <Grid Margin="0,0,0,0">
-        <TextBox HorizontalAlignment="Left" Margin="121,65,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="121,122,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="121,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="121,246,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="FirstNameTextBox" HorizontalAlignment="Left" Margin="121,65,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="LastNameTextBox" HorizontalAlignment="Left" Margin="121,122,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="EmailTextBox" HorizontalAlignment="Left" Margin="121,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="PasswordTextBox" HorizontalAlignment="Left" Margin="121,246,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <Label Content="First name:" HorizontalAlignment="Left" Margin="26,61,0,0" VerticalAlignment="Top"/>
         <Label Content="Last name:" HorizontalAlignment="Left" Margin="26,118,0,0" VerticalAlignment="Top"/>
         <Label Content="Email:" HorizontalAlignment="Left" Margin="26,176,0,0" VerticalAlignment="Top"/>
         <Label Content="Password:" HorizontalAlignment="Left" Margin="26,242,0,0" VerticalAlignment="Top"/>
-        <Button Content="Register" HorizontalAlignment="Left" Margin="26,310,0,0" VerticalAlignment="Top" Height="44" Width="84"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="157,310,0,0" VerticalAlignment="Top" Height="43" Width="84"/>
+        <Button Content="Register" HorizontalAlignment="Left" Margin="26,310,0,0" VerticalAlignment="Top" Height="44" Width="84" Click="Register_Click"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="157,310,0,0" VerticalAlignment="Top" Height="43" Width="84" Click="Back_Click"/>
 
     </Grid>
 </Window>

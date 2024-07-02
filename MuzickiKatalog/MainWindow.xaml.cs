@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using MuzickiKatalog.Infrastructure.Service;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,18 @@ namespace MuzickiKatalog
     /// </summary>
     public partial class MainWindow : Window
     {
+        private RegistrovanKorisnikService rkS;
         public MainWindow()
         {
             InitializeComponent();
+            this.rkS = new RegistrovanKorisnikService();
+        }
+
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+            Register register = new Register(rkS);
+            register.Show();
+            this.Close();
         }
     }
 }

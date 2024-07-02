@@ -6,10 +6,10 @@
     "Lozinka": "ivana123"
   },
   {
-     "Ime": "Nikola",
-     "Prezime": "Nikolic",
-     "Email": "nikolanikolic@gmail.com",
-     "Lozinka": "nikola456"
+    "Ime": "Nikola",
+    "Prezime": "Nikolic",
+    "Email": "nikolanikolic@gmail.com",
+    "Lozinka": "nikola456"
   },
   {
     "Ime": "Marija",
@@ -22,5 +22,11 @@
     "Prezime": "Stefanovic",
     "Email": "stefanstefanovic@gmail.com",
     "Lozinka": "stefan321"
+  },
+  {
+    "Ime": "Branka",
+    "Prezime": "Kovacevic",
+    "Email": "brankak@gmail.com",
+    "Lozinka": "loz123"
   }
 ]
