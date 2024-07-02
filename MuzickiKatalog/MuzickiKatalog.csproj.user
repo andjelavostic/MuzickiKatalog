@@ -13,6 +13,9 @@
     <Compile Update="Menus\ContentViews\TrackEntry.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Menus\ContentViews\TrackView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menus\ContentViews\TrackEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\TrackView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
