@@ -24,6 +24,10 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             base.Serialize<T>(_filename, items);
         }
+        public List<Admin> GetAll()
+        {
+            return admini;
+        }
         public void BlokiranjeKorisnika(int idKorisnik) {
             
         }
