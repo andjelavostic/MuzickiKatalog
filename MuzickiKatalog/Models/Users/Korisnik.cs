@@ -12,6 +12,7 @@ namespace MuzickiKatalog.Models.Users
         private string prezime;
         private string email;
         private string lozinka;
+        private string uloga;
         public string Ime
         {
             get { return ime; }
@@ -31,6 +32,11 @@ namespace MuzickiKatalog.Models.Users
         {
             get { return lozinka; }
             set { lozinka = value; }
+        }
+        public string Uloga
+        {
+            get { return uloga; }
+            set { uloga = value; }
         }
         public Korisnik(string ime, string prezime, string email, string lozinka)
         {

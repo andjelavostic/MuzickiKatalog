@@ -9,9 +9,39 @@ namespace MuzickiKatalog.Infrastructure.Service
 {
     public class KorisnikService
     {
-        public void Prijava(Korisnik korisnik)
+        private RegistrovanKorisnikService registrovanKorisnik=new RegistrovanKorisnikService();
+        private AdminService admin = new AdminService();
+        private UrednikService urednik = new UrednikService();
+        public Korisnik Prijava(string email, string lozinka)
         {
-
+            List<RegistrovanKorisnik> korisnici = registrovanKorisnik.GetAll();
+            List<Admin> admini = admin.GetAll();
+            List<Urednik> urednici = urednik.GetAll();
+            foreach (RegistrovanKorisnik reg in korisnici)
+            {
+                if (email == reg.Email && lozinka == reg.Lozinka)
+                {
+                    reg.Uloga = "korisnik";
+                    return reg;
+                }
+            }
+            foreach (Admin reg in admini)
+            {
+                if (email == reg.Email && lozinka == reg.Lozinka)
+                {
+                    reg.Uloga = "admin";
+                    return reg;
+                }
+            }
+            foreach (Urednik reg in urednici)
+            {
+                if (email == reg.Email && lozinka == reg.Lozinka)
+                {
+                    reg.Uloga = "urednik";
+                    return reg;
+                }
+            }
+            return null;
         }
         public void PregledSadrzaja()
         {

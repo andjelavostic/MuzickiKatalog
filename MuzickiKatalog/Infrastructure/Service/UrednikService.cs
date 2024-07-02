@@ -23,6 +23,10 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             base.Serialize<T>(_filename, items);
         }
+        public List<Urednik> GetAll()
+        {
+            return urednici;
+        }
         public void dodavanjeAlbuma()
         { 
         
