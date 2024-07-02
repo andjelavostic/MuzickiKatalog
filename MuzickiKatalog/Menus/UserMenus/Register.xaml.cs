@@ -46,7 +46,9 @@ namespace MuzickiKatalog
 
             if(rMV.Register(firstName, lastName, email, password, this.rkS)){
                 MessageBox.Show("Profile succesfully created", "Success", MessageBoxButton.OK);
-
+                MainWindow main = new MainWindow();
+                main.Show();
+                this.Close();
             }
             else
             {
