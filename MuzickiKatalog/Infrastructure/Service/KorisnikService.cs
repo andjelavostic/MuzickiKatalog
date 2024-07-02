@@ -9,9 +9,9 @@ namespace MuzickiKatalog.Infrastructure.Service
 {
     public class KorisnikService
     {
-        private RegistrovanKorisnikService registrovanKorisnik;
-        private AdminService admin;
-        private UrednikService urednik;
+        private RegistrovanKorisnikService registrovanKorisnik=new RegistrovanKorisnikService();
+        private AdminService admin = new AdminService();
+        private UrednikService urednik = new UrednikService();
         public Korisnik Prijava(string email, string lozinka)
         {
             List<RegistrovanKorisnik> korisnici = registrovanKorisnik.GetAll();

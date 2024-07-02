@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="LogIn" Height="300" Width="283" Background="LightGreen">
     <Grid>
-        <Button Content="Log in" HorizontalAlignment="Left" Margin="29,201,0,0" VerticalAlignment="Top" Height="41" Width="87"/>
+        <Button Name="loginButton" Click="loginButton_Click" Content="Log in" HorizontalAlignment="Left" Margin="29,201,0,0" VerticalAlignment="Top" Height="41" Width="87"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="165,201,0,0" VerticalAlignment="Top" Height="41" Width="87"/>
-        <TextBox HorizontalAlignment="Left" Margin="122,77,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="122,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130"/>
+        <TextBox Name="emailText" HorizontalAlignment="Left" Margin="122,77,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" Height="20"/>
+        <TextBox Name="lozinkaText" HorizontalAlignment="Left" Margin="122,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130"/>
         <Label Content="Username:" HorizontalAlignment="Left" Margin="29,74,0,0" VerticalAlignment="Top" Width="76"/>
         <Label Content="Password:" HorizontalAlignment="Left" Margin="29,120,0,0" VerticalAlignment="Top" Width="76"/>
 

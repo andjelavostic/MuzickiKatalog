@@ -30,5 +30,12 @@ namespace MuzickiKatalog
             register.Show();
             this.Close();
         }
+
+        private void loginButton_Click(object sender, RoutedEventArgs e)
+        {
+            LogIn login = new LogIn();
+            login.Show();
+            this.Close();
+        }
     }
 }
