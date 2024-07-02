@@ -11,7 +11,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class AdminService:FileService
     {
         private List<Admin> admini;
-        private string filePath;
+        private string filePath=".//..\\..\\..\\Infrastructure\\Data\\admin.json";
         public AdminService()
         {
             this.admini = Deserialize<Admin>(this.filePath);

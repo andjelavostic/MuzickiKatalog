@@ -10,7 +10,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class AnketaService:FileService
     {
         private List<Anketa> ankete;
-        private string filePath;
+        private string filePath=".//..\\..\\..\\Infrastructure\\Data\\ankete.json";
         public AnketaService()
         {
             this.ankete = Deserialize<Anketa>(this.filePath);

@@ -11,7 +11,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class RegistrovanKorisnikService : FileService
     {
         private List<RegistrovanKorisnik> korisnici;
-        private string filePath;
+        private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\korisnici.json";
         public RegistrovanKorisnikService()
         {
             this.korisnici = Deserialize<RegistrovanKorisnik>(this.filePath);

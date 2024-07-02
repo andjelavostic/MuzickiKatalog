@@ -10,7 +10,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class IzvodjenjeService:FileService
     {
         private List<Izvodjenje> izvodjenja;
-        private string filePath;
+        private string filePath= ".//..\\..\\..\\Infrastructure\\Data\\izvodjenja.json";
         public IzvodjenjeService()
         {
             this.izvodjenja = Deserialize<Izvodjenje>(this.filePath);

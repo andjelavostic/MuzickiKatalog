@@ -10,7 +10,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class RecenzijaService:FileService
     {
         private List<Recenzija> recenzije;
-        private string filePath;
+        private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\recenzije.json";
         public RecenzijaService()
         {
             this.recenzije = Deserialize<Recenzija>(this.filePath);

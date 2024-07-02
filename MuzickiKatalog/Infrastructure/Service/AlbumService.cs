@@ -10,7 +10,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class AlbumService:FileService
     {
         private List<Album> albumi;
-        private string filePath;
+        private string filePath= ".//..\\..\\..\\Infrastructure\\Data\\albumi.json";
         public AlbumService()
         {
             this.albumi= Deserialize<Album>(this.filePath);

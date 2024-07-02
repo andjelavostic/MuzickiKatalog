@@ -10,7 +10,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class IzvodjacService:FileService
     {
         private List<Izvodjac> izvodjaci;
-        private string filePath;
+        private string filePath= ".//..\\..\\..\\Infrastructure\\Data\\izvodjaci.json";
         public IzvodjacService()
         {
             this.izvodjaci = Deserialize<Izvodjac>(this.filePath);

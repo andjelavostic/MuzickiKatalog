@@ -10,7 +10,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class PosetilacService : FileService
     {
         private List<Posetilac> posetioci;
-        private string filePath;
+        private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\posetioci.json";
         public PosetilacService()
         {
             this.posetioci = Deserialize<Posetilac>(this.filePath);

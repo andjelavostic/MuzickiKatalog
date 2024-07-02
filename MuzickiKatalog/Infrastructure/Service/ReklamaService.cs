@@ -10,7 +10,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class ReklamaService:FileService
     {
         private List<Reklama> reklame;
-        private string filePath;
+        private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\reklame.json";
         public ReklamaService()
         {
             this.reklame = Deserialize<Reklama>(this.filePath);

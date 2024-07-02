@@ -9,7 +9,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class ZanroviService:FileService
     {
         private List<string> zanrovi;
-        private string filePath;
+        private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\zanrovi.json";
         public ZanroviService()
         {
             this.zanrovi = Deserialize<string>(this.filePath);

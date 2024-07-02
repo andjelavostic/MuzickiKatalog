@@ -10,7 +10,7 @@ namespace MuzickiKatalog.Infrastructure.Service
     public class NumeraService:FileService
     {
         private List<Numera> numere;
-        private string filePath;
+        private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\numere.json";
         public NumeraService()
         {
             this.numere = Deserialize<Numera>(this.filePath);

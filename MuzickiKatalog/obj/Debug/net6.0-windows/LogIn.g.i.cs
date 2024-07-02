@@ -53,7 +53,7 @@ namespace MuzickiKatalog {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;V1.0.0.0;component/login.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;component/login.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\LogIn.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
