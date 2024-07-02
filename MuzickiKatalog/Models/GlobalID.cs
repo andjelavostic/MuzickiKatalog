@@ -7,10 +7,14 @@ using System.Threading.Tasks;
 
 namespace MuzickiKatalog.Models
 {
-    internal class GlobalID
+    public class GlobalID
     {
         private static int idValue = 0;
-        public static int NextId()
+        public GlobalID()
+        {
+            LoadId(".//..\\..\\..\\Infrastructure\\Data\\id.txt");
+        }
+        public int NextId()
         {
             LoadId(".//..\\..\\..\\Infrastructure\\Data\\id.txt");
             ++idValue;
@@ -19,7 +23,7 @@ namespace MuzickiKatalog.Models
 
 
         }
-        public static void PreviousId()
+        public void PreviousId()
         {
             LoadId(".//..\\..\\..\\Infrastructure\\Data\\id.txt");
             --idValue;

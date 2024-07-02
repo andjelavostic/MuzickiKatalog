@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MuzickiKatalog.Models.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,10 @@ namespace MuzickiKatalog.Menus.ContentViews
         public AlbumEntry()
         {
             InitializeComponent();
+        }
+
+        private void addButton_Click(object sender, RoutedEventArgs e)
+        {
         }
     }
 }
