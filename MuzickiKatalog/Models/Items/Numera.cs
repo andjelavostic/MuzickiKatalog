@@ -11,7 +11,7 @@ namespace MuzickiKatalog.Models.Items
         private string naziv;
         private double trajanje;
         private DateTime datumObjave;
-        
+        private int izvodjacId;
         public string Naziv
         {
             get { return naziv; }
@@ -27,12 +27,18 @@ namespace MuzickiKatalog.Models.Items
             get { return datumObjave; }
             set { datumObjave = value; }
         }
-        public Numera(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, double trajanje, DateTime datumObjave, List<Zanr> zanrovi, string naziv)
+        public int IzvodjacId
+        {
+            get { return izvodjacId; }
+            set { izvodjacId = value; }
+        }
+        public Numera(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, double trajanje, DateTime datumObjave, List<Zanr> zanrovi, string naziv,int izvodjacId)
         : base(id, opis, slika, ocenaUrednika, oceneKorisnika, zanrovi)
         {
             this.trajanje = trajanje;
             this.datumObjave = datumObjave;
             this.naziv = naziv;
+            this.izvodjacId = izvodjacId;
         }
     }
 }
