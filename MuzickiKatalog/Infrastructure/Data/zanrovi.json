@@ -1,22 +1,22 @@
-{
-  "Zanrovi": [
-    "Pop",
-    "Jazz",
-    "Blues",
-    "Rock",
-    "Elektronska",
-    "Hip-Hop",
-    "Klasika",
-    "Reggae",
-    "Country",
-    "Heavy Metal",
-    "Soul",
-    "R&B",
-    "Folk",
-    "Latino",
-    "Punk",
-    "Funk",
-    "Disco",
-    "Gospel"
-  ]
-}
+[
+  {
+    "Id": 1,
+    "Naziv": "Pop"
+  },
+  {
+    "Id": 2,
+    "Naziv": "Folk"
+  },
+  {
+    "Id": 3,
+    "Naziv": "R&B"
+  },
+  {
+    "Id": 4,
+    "Naziv": "Country"
+  },
+  {
+    "Id": 5,
+    "Naziv": "Latino"
+  }
+]
