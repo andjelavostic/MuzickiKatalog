@@ -9,21 +9,14 @@ namespace MuzickiKatalog.Models.Items
     public class Anketa
     {
         private Period period;
-        private List<int> glasovi; //id numere/albuma/izvodjaca
         private DateTime datumPocetka;
         private DateTime datumKraja;
+        private int idOdabira;
         public Period Period
         {
             get { return period; }
             set { period = value; }
         }
-
-        public List<int> Glasovi
-        {
-            get { return glasovi; }
-            set { glasovi = value; }
-        }
-
         public DateTime DatumPocetka
         {
             get { return datumPocetka; }
@@ -35,10 +28,15 @@ namespace MuzickiKatalog.Models.Items
             get { return datumKraja; }
             set { datumKraja = value; }
         }
-        public Anketa(Period period, List<int> glasovi, DateTime datumPocetka, DateTime datumKraja)
+        public int IdOdabira
+        {
+            get { return idOdabira;}
+            set { idOdabira = value; }
+        }
+        public Anketa(Period period,int  idOdabira, DateTime datumPocetka, DateTime datumKraja)
         {
             this.period = period;
-            this.glasovi = glasovi;
+            this.idOdabira = idOdabira;
             this.datumPocetka = datumPocetka;
             this.datumKraja = datumKraja;
         }
