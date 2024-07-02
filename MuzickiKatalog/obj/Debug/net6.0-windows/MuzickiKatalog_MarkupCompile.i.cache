@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\App.xaml
-61685540238
+8-341391162
 
-29-870625548
+31-2121395769
 1951807654157
-AdminAssignTasks.xaml;AdminMenu.xaml;ContentView.xaml;LogIn.xaml;MainWindow.xaml;Register.xaml;
+AdminAssignTasks.xaml;AdminMenu.xaml;ContentView.xaml;EditorAssignedTasks.xaml;EditorMenu.xaml;LogIn.xaml;MainWindow.xaml;Register.xaml;
 
 True
 
