@@ -1,11 +1,11 @@
-﻿<Window x:Class="MuzickiKatalog.Menus.ContentViews.TrackView"
+﻿<Window x:Class="MuzickiKatalog.Menus.ContentViews.ArtistView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MuzickiKatalog.Menus.ContentViews"
         mc:Ignorable="d"
-        Title="TrackView" Background="LightGreen" Height="782" Width="747">
+        Title="ArtistView" Background="LightGreen" Height="1100" Width="747">
     <Grid>
         <Image Source="/Images/sadrzaj.png"  HorizontalAlignment="Left" Height="200" Margin="483,46,0,0" VerticalAlignment="Top" Width="200"/>
         <TextBlock HorizontalAlignment="Left" Margin="61,108,0,0" TextWrapping="Wrap" Text="TextBlock (opis i karakteristike tj izvodjac numere zanr i slicno za dat sadrzaj)" VerticalAlignment="Top" Height="145" Width="324"/>
@@ -26,9 +26,9 @@
         <Button Content="Review" HorizontalAlignment="Left" Height="34" Margin="61,555,0,0" VerticalAlignment="Top" Width="81"/>
         <Label Content="Editor's review:" HorizontalAlignment="Left" Margin="394,389,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
-        <Button Content="Add to favorites" HorizontalAlignment="Left" Margin="394,659,0,0" VerticalAlignment="Top" Height="57" Width="124"/>
-        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="570,659,0,0" VerticalAlignment="Top" Height="57" Width="124"/>
-        <Button Content="View album" HorizontalAlignment="Left" Margin="61,659,0,0" VerticalAlignment="Top" Height="57" Width="124"/>
-        <Button Content="View artist" HorizontalAlignment="Left" Margin="223,659,0,0" VerticalAlignment="Top" Height="57" Width="124"/>
+        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="535,946,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
+        <Button Content="View track" HorizontalAlignment="Left" Margin="61,946,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="61,717,70,192"/>
+        <Label Content="Discography:" HorizontalAlignment="Left" Margin="61,657,0,0" VerticalAlignment="Top" Width="204"/>
     </Grid>
 </Window>

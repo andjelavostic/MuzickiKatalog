@@ -15,7 +15,7 @@
         <ComboBox HorizontalAlignment="Left" Margin="127,76,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Genre:" HorizontalAlignment="Left" Margin="44,72,0,0" VerticalAlignment="Top" Width="68"/>
         <Button Content="Search" HorizontalAlignment="Left" Height="26" Margin="44,119,0,0" VerticalAlignment="Top" Width="86"/>
-        <Image Source="Images/reklama.png" HorizontalAlignment="Left" Height="54" Margin="103,467,0,0" VerticalAlignment="Top" Width="608"/>
+        <Image Source="/Images/reklama.png" HorizontalAlignment="Left" Height="54" Margin="103,467,0,0" VerticalAlignment="Top" Width="608"/>
         <Button Content="Show" HorizontalAlignment="Left" Height="26" Margin="626,411,0,0" VerticalAlignment="Top" Width="86"/>
 
 
