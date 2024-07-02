@@ -6,51 +6,57 @@ using System.Threading.Tasks;
 
 namespace MuzickiKatalog.Models.Items
 {
-    public class Sadrzaj
+    public class MuzickiUmetnik
     {
         private int id;
-        private string opis;
         private string slika;
-        private List<string> zanrovi;
-        private int ocenaUrednika;
-        private List<int> oceneKorisnika;
+        private string opis;
+        private Ocena ocenaUrednika;
+        private List<Ocena> oceneKorisnika;
+
         public int Id
         {
             get { return id; }
             set { id = value; }
         }
-        public string Opis
-        {
-            get { return opis; }
-            set { opis = value; }
-        }
+
         public string Slika
         {
             get { return slika; }
             set { slika = value; }
         }
-        public List<string> Zanrovi
+
+        public string Opis
         {
-            get { return zanrovi; }
-            set { zanrovi = value; }
+            get { return opis; }
+            set { opis = value; }
         }
-        public int OcenaUrednika
+
+        public Ocena OcenaUrednika
         {
             get { return ocenaUrednika; }
             set { ocenaUrednika = value; }
         }
-        public List<int> OceneKorisnika
+
+        public List<Ocena> OceneKorisnika
         {
             get { return oceneKorisnika; }
             set { oceneKorisnika = value; }
         }
-        public Sadrzaj(int id,string opis, string slika, int ocenaUrednika, List<int> oceneKorisnika)
+
+        public MuzickiUmetnik()
+        {
+        }
+
+        public MuzickiUmetnik(int id, string slika, string opis, Ocena ocenaUrednika, List<Ocena> oceneKorisnika)
         {
             this.id = id;
-            this.opis = opis;
             this.slika = slika;
-            this.ocenaUrednika=ocenaUrednika;
-            this.oceneKorisnika=oceneKorisnika;
+            this.opis = opis;
+            this.ocenaUrednika = ocenaUrednika;
+            this.oceneKorisnika = oceneKorisnika;
         }
+
     }
+
 }

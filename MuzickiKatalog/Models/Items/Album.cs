@@ -6,17 +6,24 @@ using System.Threading.Tasks;
 
 namespace MuzickiKatalog.Models.Items
 {
-    public class Album:Sadrzaj
+    public class Album:MuzickiSadrzaj
     {
         private List<Numera> numere;
         private TipAlbuma tip;
         private string izdavackaKuca;
-        public Album(int id, string opis, string slika, int ocenaUrednika, List<int> oceneKorisnika, List<Numera> numere, TipAlbuma tip, string izdavackaKuca)
+        private DateTime datumIzdavanja;
+        public Album(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Numera> numere, TipAlbuma tip, string izdavackaKuca, DateTime datumIzdavanja)
         : base(id, opis, slika, ocenaUrednika, oceneKorisnika)
         {
             this.numere = numere;
             this.tip = tip;
             this.izdavackaKuca = izdavackaKuca;
+            this.datumIzdavanja = datumIzdavanja;
+        }
+        public DateTime DatumIzdavanja
+        {
+            get { return datumIzdavanja; }
+            set { datumIzdavanja = value; }
         }
         public List<Numera> Numere
         {

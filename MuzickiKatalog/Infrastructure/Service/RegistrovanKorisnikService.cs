@@ -41,11 +41,11 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
 
         }
-        public void DodavanjeFavorita(Sadrzaj sadrzaj)
+        public void DodavanjeFavorita(MuzickiSadrzaj sadrzaj)
         {
 
         }
-        public void Download(Sadrzaj sadrzaj)
+        public void Download(MuzickiSadrzaj sadrzaj)
         {
 
         }
@@ -53,11 +53,11 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
 
         }
-        public void DavanjeOcena(Sadrzaj sadrzaj)
+        public void DavanjeOcena(MuzickiSadrzaj sadrzaj)
         {
 
         }
-        public void PisanjeRecenzija(Sadrzaj sadrzaj)
+        public void PisanjeRecenzija(MuzickiSadrzaj sadrzaj)
         {
 
         }

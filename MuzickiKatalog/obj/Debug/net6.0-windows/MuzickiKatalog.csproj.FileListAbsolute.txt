@@ -32,15 +32,11 @@ C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\Muz
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.pdb
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.AssemblyReference.cache
-C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\LogIn.g.cs
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Register.g.cs
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.cache
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.lref
-C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\LogIn.baml
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Register.baml
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.g.resources
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfoInputs.cache
@@ -140,3 +136,29 @@ D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windo
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistEntry.baml
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.g.cs
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumEntry.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistEntry.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminAssignTasks.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminMenu.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorAssignedTasks.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorMenu.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\LogIn.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\Register.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumEntry.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistEntry.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminAssignTasks.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminMenu.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorAssignedTasks.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorMenu.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\LogIn.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\Register.baml

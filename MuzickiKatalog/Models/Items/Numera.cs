@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MuzickiKatalog.Models.Items
 {
-    public class Numera:Sadrzaj
+    public class Numera:MuzickiSadrzaj
     {
         private double trajanje;
         private DateTime datumObjave;
@@ -20,7 +20,7 @@ namespace MuzickiKatalog.Models.Items
             get { return datumObjave; }
             set { datumObjave = value; }
         }
-        public Numera(int id, string opis, string slika, int ocenaUrednika, List<int> oceneKorisnika, double trajanje, DateTime datumObjave)
+        public Numera(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, double trajanje, DateTime datumObjave)
         : base(id,opis, slika, ocenaUrednika, oceneKorisnika)
         {
             this.trajanje = trajanje;

@@ -63,7 +63,7 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
 
         }
-        public void ZadavanjeZadatka(Sadrzaj zadatak,int idUrednika)
+        public void ZadavanjeZadatka(MuzickiSadrzaj zadatak,int idUrednika)
         {
 
         }
