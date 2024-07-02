@@ -23,5 +23,9 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             base.Serialize<T>(_filename, items);
         }
+        public List<Grupa> GetAll()
+        {
+            return grupe;
+        }
     }
 }
