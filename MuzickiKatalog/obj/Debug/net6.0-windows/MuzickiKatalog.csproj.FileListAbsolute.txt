@@ -128,3 +128,5 @@ D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windo
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorMenu.baml
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.g.cs
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.baml

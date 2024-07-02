@@ -53,7 +53,8 @@ namespace MuzickiKatalog {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;component/menus/usermenus/editorviews/editorassignedtasks.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;V1.0.0.0;component/menus/usermenus/editorviews/editorassignedtask" +
+                    "s.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Menus\UserMenus\EditorViews\EditorAssignedTasks.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
