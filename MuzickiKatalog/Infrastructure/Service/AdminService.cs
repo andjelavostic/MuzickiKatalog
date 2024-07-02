@@ -47,7 +47,7 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
 
         }
-        public void DodavanjeNumere(Numera numera)
+        public void DodavanjeNumere(NumeraService numera)
         {
 
         }

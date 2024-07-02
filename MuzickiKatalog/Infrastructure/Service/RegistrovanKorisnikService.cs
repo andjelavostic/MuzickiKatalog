@@ -37,7 +37,7 @@ namespace MuzickiKatalog.Infrastructure.Service
             korisnici.Add(noviKorisnik);
             Serialize(filePath, korisnici);
         }
-        public void Stream(Numera numera)
+        public void Stream(NumeraService numera)
         {
 
         }
