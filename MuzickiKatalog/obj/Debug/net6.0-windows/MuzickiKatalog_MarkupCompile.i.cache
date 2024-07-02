@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\App.xaml
-11685482186
+121836662843
 
-431943300699
+44-1296622518
 1951807654157
-MainWindow.xaml;Menus\ContentViews\AlbumEntry.xaml;Menus\ContentViews\ContentView.xaml;Menus\ContentViews\TrackEntry.xaml;Menus\ContentViews\TrackView.xaml;Menus\UserMenus\AdminViews\AdminAssignTasks.xaml;Menus\UserMenus\AdminViews\AdminMenu.xaml;Menus\UserMenus\EditorViews\EditorAssignedTasks.xaml;Menus\UserMenus\EditorViews\EditorMenu.xaml;Menus\UserMenus\LogIn.xaml;Menus\UserMenus\Register.xaml;
+MainWindow.xaml;Menus\ContentViews\AlbumEntry.xaml;Menus\ContentViews\AlbumView.xaml;Menus\ContentViews\ContentView.xaml;Menus\ContentViews\TrackEntry.xaml;Menus\ContentViews\TrackView.xaml;Menus\UserMenus\AdminViews\AdminAssignTasks.xaml;Menus\UserMenus\AdminViews\AdminMenu.xaml;Menus\UserMenus\EditorViews\EditorAssignedTasks.xaml;Menus\UserMenus\EditorViews\EditorMenu.xaml;Menus\UserMenus\LogIn.xaml;Menus\UserMenus\Register.xaml;
 
 True
 

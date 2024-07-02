@@ -10,6 +10,9 @@
     <Compile Update="Menus\ContentViews\AlbumEntry.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Menus\ContentViews\AlbumView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Menus\ContentViews\TrackEntry.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menus\ContentViews\AlbumEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\AlbumView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menus\ContentViews\TrackEntry.xaml">
