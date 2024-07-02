@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="EditorMenu" Background="LightGreen" Height="450" Width="800">
     <Grid>
-        <Button Content="View assigned tasks" HorizontalAlignment="Left" Margin="69,105,0,0" VerticalAlignment="Top" Height="52" Width="118"/>
-        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="223,105,0,0" VerticalAlignment="Top" Height="52" Width="118"/>
-
+        <Button Content="View assigned tasks" HorizontalAlignment="Left" Margin="231,95,0,0" VerticalAlignment="Top" Height="50" Width="131" RenderTransformOrigin="0.359,0.406"/>
+        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="63,95,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
+        <Button Content="Track entry" HorizontalAlignment="Left" Margin="63,187,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
+        <Button Content="Album entry" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Height="50" Width="131"/>
     </Grid>
 </Window>
