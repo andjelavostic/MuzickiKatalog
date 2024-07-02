@@ -8,17 +8,24 @@ namespace MuzickiKatalog.Models.Items
 {
     public class Album:MuzickiSadrzaj
     {
+        private string naziv;
         private List<Numera> numere;
         private TipAlbuma tip;
         private string izdavackaKuca;
         private DateTime datumIzdavanja;
-        public Album(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Numera> numere, TipAlbuma tip, string izdavackaKuca, DateTime datumIzdavanja)
-        : base(id, opis, slika, ocenaUrednika, oceneKorisnika)
+        public Album(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Numera> numere, TipAlbuma tip, string izdavackaKuca, DateTime datumIzdavanja, List<Zanr> zanrovi, string naziv)
+        : base(id, opis, slika, ocenaUrednika, oceneKorisnika, zanrovi)
         {
             this.numere = numere;
             this.tip = tip;
             this.izdavackaKuca = izdavackaKuca;
             this.datumIzdavanja = datumIzdavanja;
+            this.naziv = naziv;
+        }
+        public string Naziv
+        {
+            get { return naziv; }
+            set { naziv = value; }
         }
         public DateTime DatumIzdavanja
         {

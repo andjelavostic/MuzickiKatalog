@@ -8,9 +8,16 @@ namespace MuzickiKatalog.Models.Items
 {
     public class Grupa : MuzickiUmetnik
     {
+        private string naziv;
         private DateTime datumOsnivanja;
         private bool aktivna;
         private List<Izvodjac> clanovi;
+        
+        public string Naziv
+        {
+            get { return naziv; }
+            set { naziv = value; }
+        }
         public DateTime DatumOsnivanja
         {
             get { return datumOsnivanja; }
@@ -32,12 +39,13 @@ namespace MuzickiKatalog.Models.Items
         public Grupa() : base()
         {
         }
-        public Grupa(int id, string slika, string opis, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, DateTime datumOsnivanja, bool aktivna, List<Izvodjac> clanovi)
-            : base(id, slika, opis, ocenaUrednika, oceneKorisnika)
+        public Grupa(int id, string slika, string opis, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, DateTime datumOsnivanja, bool aktivna, List<Izvodjac> clanovi, string naziv, List<Zanr> zanrovi)
+            : base(id, slika, opis, ocenaUrednika, oceneKorisnika, zanrovi)
         {
             this.datumOsnivanja = datumOsnivanja;
             this.aktivna = aktivna;
             this.clanovi = clanovi;
+            this.naziv = naziv;
         }
 
     }

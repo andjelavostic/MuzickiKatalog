@@ -13,7 +13,13 @@ namespace MuzickiKatalog.Models.Items
         private string opis;
         private Ocena ocenaUrednika;
         private List<Ocena> oceneKorisnika;
+        private List<Zanr> zanrovi;
 
+        public List<Zanr> Zanrovi
+        {
+            get {return zanrovi; }
+            set { zanrovi = value; }
+        }
         public int Id
         {
             get { return id; }
@@ -48,13 +54,14 @@ namespace MuzickiKatalog.Models.Items
         {
         }
 
-        public MuzickiUmetnik(int id, string slika, string opis, Ocena ocenaUrednika, List<Ocena> oceneKorisnika)
+        public MuzickiUmetnik(int id, string slika, string opis, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Zanr> zanrovi)
         {
             this.id = id;
             this.slika = slika;
             this.opis = opis;
             this.ocenaUrednika = ocenaUrednika;
             this.oceneKorisnika = oceneKorisnika;
+            this.zanrovi = zanrovi;
         }
 
     }

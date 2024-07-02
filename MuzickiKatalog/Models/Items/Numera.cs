@@ -8,8 +8,15 @@ namespace MuzickiKatalog.Models.Items
 {
     public class Numera:MuzickiSadrzaj
     {
+        private string naziv;
         private double trajanje;
         private DateTime datumObjave;
+        
+        public string Naziv
+        {
+            get { return naziv; }
+            set { naziv = value; }
+        }
         public double Trajanje
         {
             get { return trajanje; }
@@ -20,11 +27,12 @@ namespace MuzickiKatalog.Models.Items
             get { return datumObjave; }
             set { datumObjave = value; }
         }
-        public Numera(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, double trajanje, DateTime datumObjave)
-        : base(id,opis, slika, ocenaUrednika, oceneKorisnika)
+        public Numera(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, double trajanje, DateTime datumObjave, List<Zanr> zanrovi, string naziv)
+        : base(id, opis, slika, ocenaUrednika, oceneKorisnika, zanrovi)
         {
             this.trajanje = trajanje;
             this.datumObjave = datumObjave;
+            this.naziv = naziv;
         }
     }
 }
