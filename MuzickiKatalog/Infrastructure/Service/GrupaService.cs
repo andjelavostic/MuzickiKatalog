@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace MuzickiKatalog.Infrastructure.Service
 {
-    public class ZanroviService:FileService
+    internal class GrupaService : FileService
     {
-        private List<Zanr> zanrovi;
-        private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\zanrovi.json";
-        public ZanroviService()
+        private List<Grupa> grupe;
+        private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\grupe.json";
+        public GrupaService()
         {
-            this.zanrovi = Deserialize<Zanr>(this.filePath);
+            this.grupe = Deserialize<Grupa>(this.filePath);
         }
         public override List<T> Deserialize<T>(string _filename)
         {
