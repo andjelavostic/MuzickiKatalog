@@ -7,16 +7,20 @@
         mc:Ignorable="d"
         Title="HomePage" Background="LightGreen" Height="567" Width="800">
     <Grid>
-        <Button Name="loginButton" Click="loginButton_Click" Content="Log in" HorizontalAlignment="Left" Height="43" Margin="575,34,0,0" VerticalAlignment="Top" Width="86"/>
-        <Button Content="Register" HorizontalAlignment="Left" Height="43" Margin="685,34,0,0" VerticalAlignment="Top" Width="86" Click="Register_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="127,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="379*"/>
+            <ColumnDefinition Width="421*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="loginButton" Click="loginButton_Click" Content="Log in" HorizontalAlignment="Left" Height="43" Margin="196,34,0,0" VerticalAlignment="Top" Width="86" Grid.Column="1"/>
+        <Button Content="Register" HorizontalAlignment="Left" Height="43" Margin="306,34,0,0" VerticalAlignment="Top" Width="86" Click="Register_Click" Grid.Column="1"/>
+        <TextBox Name ="SearchBox" HorizontalAlignment="Left" Height="22" Margin="127,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
         <Label Content="Search:" HorizontalAlignment="Left" Height="32" Margin="44,28,0,0" VerticalAlignment="Top" Width="68"/>
-        <DataGrid HorizontalAlignment="Center" Height="216" Margin="0,165,0,0" VerticalAlignment="Top" Width="678" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <ComboBox HorizontalAlignment="Left" Margin="127,76,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Genre:" HorizontalAlignment="Left" Margin="44,72,0,0" VerticalAlignment="Top" Width="68"/>
-        <Button Content="Search" HorizontalAlignment="Left" Height="26" Margin="44,119,0,0" VerticalAlignment="Top" Width="86"/>
-        <Image Source="/Images/reklama.png" HorizontalAlignment="Left" Height="54" Margin="103,467,0,0" VerticalAlignment="Top" Width="608"/>
-        <Button Content="Show" HorizontalAlignment="Left" Height="26" Margin="626,411,0,0" VerticalAlignment="Top" Width="86"/>
+        <DataGrid x:Name ="tableDataGrid" HorizontalAlignment="Left" Height="216" Margin="61,165,0,0" VerticalAlignment="Top" Width="678" Grid.ColumnSpan="2" Visibility="Collapsed" SelectionMode="Single" SelectionChanged="tableDataGrid_SelectionChanged"/>
+        <!--<ComboBox HorizontalAlignment="Left" Margin="127,76,0,0" VerticalAlignment="Top" Width="120"/>-->
+        <!--<Label Content="Genre:" HorizontalAlignment="Left" Margin="44,72,0,0" VerticalAlignment="Top" Width="68"/>-->
+        <Button Content="Search" HorizontalAlignment="Left" Height="26" Margin="44,119,0,0" VerticalAlignment="Top" Width="86" Click="Search_Click"/>
+        <Image Source="/Images/reklama.png" HorizontalAlignment="Left" Height="54" Margin="103,467,0,0" VerticalAlignment="Top" Width="608" Grid.ColumnSpan="2"/>
+        <Button Content="Show" HorizontalAlignment="Left" Height="26" Margin="247,411,0,0" VerticalAlignment="Top" Width="86" Grid.Column="1"/>
 
 
     </Grid>

@@ -1,4 +1,6 @@
 ﻿using MuzickiKatalog.Infrastructure.Service;
+using MuzickiKatalog.Models.Items;
+using MuzickiKatalog.ModelViews;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,10 +20,21 @@ namespace MuzickiKatalog
     public partial class MainWindow : Window
     {
         private RegistrovanKorisnikService rkS;
+        private AlbumService aS;
+        private NumeraService nS;
+        private GrupaService gS;
+        private IzvodjacService iS;
+        private SearchModelView sMV;
+        private List<TableData> data = new List<TableData>();
         public MainWindow()
         {
             InitializeComponent();
             this.rkS = new RegistrovanKorisnikService();
+            this.aS = new AlbumService();
+            this.nS = new NumeraService();
+            this.gS = new GrupaService();
+            this.iS = new IzvodjacService();
+            this.sMV = new SearchModelView();
         }
 
         private void Register_Click(object sender, RoutedEventArgs e)
@@ -36,6 +49,71 @@ namespace MuzickiKatalog
             LogIn login = new LogIn();
             login.Show();
             this.Close();
+        }
+
+        private void Search_Click(object sender, RoutedEventArgs e)
+        {
+            string input = SearchBox.Text;
+            List<Izvodjac> izvodjaci = sMV.SearchIzvodjaci(input, iS);
+            List<Numera> numere = sMV.SearchNumere(input, nS);
+            List<Album> albumi = sMV.SearchAlbumi(input, aS);
+            List<Grupa> grupe = sMV.SearchGrupe(input, gS);
+            foreach(Izvodjac i in izvodjaci)
+            {
+                data.Add(new TableData(i));
+            }
+            foreach (Numera n in numere)
+            {
+                data.Add(new TableData(n));
+            }
+            foreach (Album a in albumi)
+            {
+                data.Add(new TableData(a));
+            }
+            foreach (Grupa g in grupe)
+            {
+                data.Add(new TableData(g));
+            }
+            tableDataGrid.ItemsSource = data;
+            tableDataGrid.Visibility = Visibility.Visible;
+
+
+        }
+        public class TableData
+        {
+            public int Id { get; set; }
+            public string naziv {  get; set; }  
+            public List<Zanr> zanrovi {  get; set; }
+
+            public TableData(Izvodjac i)
+            {
+                Id = i.Id;
+                naziv = i.Ime + " " + i.Prezime;
+                zanrovi = i.Zanrovi;
+            }
+            public TableData(Album a)
+            {
+                Id = a.Id;
+                naziv = a.Naziv;
+                zanrovi = a.Zanrovi;
+            }
+            public TableData(Numera n)
+            {
+                Id = n.Id;
+                naziv = n.Naziv;
+                zanrovi = n.Zanrovi;
+            }
+            public TableData(Grupa g)
+            {
+                Id = g.Id;
+                naziv = g.Naziv;
+                zanrovi = g.Zanrovi;
+            }
+        }
+
+        private void tableDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
