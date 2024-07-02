@@ -24,11 +24,8 @@
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Label Content="Album:" HorizontalAlignment="Left" Margin="34,149,0,0" VerticalAlignment="Top"/>
+
         <ComboBox Name="izvodjacText" HorizontalAlignment="Left" Margin="246,107,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox Name="albumText" HorizontalAlignment="Left" Margin="246,146,0,0" VerticalAlignment="Top" Width="120">
-            <Button Content="Button"/>
-        </ComboBox>
         <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="34,544,0,0" VerticalAlignment="Top" Height="39" Width="112"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="257,544,0,0" VerticalAlignment="Top" Height="39" Width="112"/>
 

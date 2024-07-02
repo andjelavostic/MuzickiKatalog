@@ -39,7 +39,9 @@ namespace MuzickiKatalog.Menus.ContentViews
                 zanrovi.Add(zanroviService.FindZanr(item.ToString()));
             }
             if(opisText.Text!="" && nazivText.Text!="" && trajanjeText.Text!="" && zanrText.SelectedItems.Count!=0){
-                Numera numera = new Numera(idCounter.NextId(), opisText.Text, slikaText.Text, new Ocena(), new List<Ocena>(), Double.Parse(trajanjeText.Text), DateTime.Now, zanrovi, nazivText.Text);
+                string izvodjac= izvodjacText.Text.ToString();
+                int idIzvodjaca = int.Parse(izvodjac.Split(" ")[0]);
+                Numera numera = new Numera(idCounter.NextId(), opisText.Text, slikaText.Text, new Ocena(), new List<Ocena>(), Double.Parse(trajanjeText.Text), DateTime.Now, zanrovi, nazivText.Text, idIzvodjaca);
                 MessageBox.Show("Uspesno dodata numera!");
             }
             else
