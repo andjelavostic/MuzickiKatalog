@@ -1,0 +1,26 @@
+[
+  {
+    "Ime": "Ivana",
+    "Prezime": "Ivanovic",
+    "Email": "ivanaivanovic@gmail.com",
+    "Lozinka": "ivana123"
+  },
+  {
+     "Ime": "Nikola",
+     "Prezime": "Nikolic",
+     "Email": "nikolanikolic@gmail.com",
+     "Lozinka": "nikola456"
+  },
+  {
+    "Ime": "Marija",
+    "Prezime": "Marinkovic",
+    "Email": "marijamarinkovic@gmail.com",
+    "Lozinka": "marija000"
+  },
+  {
+    "Ime": "Stefan",
+    "Prezime": "Stefanovic",
+    "Email": "stefanstefanovic@gmail.com",
+    "Lozinka": "stefan321"
+  }
+]
