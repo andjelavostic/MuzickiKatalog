@@ -12,24 +12,24 @@
         <Label Content="Artist:" HorizontalAlignment="Left" Margin="34,105,0,0" VerticalAlignment="Top" Width="113"/>
         <Label Content="Select image:" HorizontalAlignment="Left" Margin="34,195,0,0" VerticalAlignment="Top" Width="113"/>
         <Label Content="Select genres:" HorizontalAlignment="Left" Margin="34,243,0,0" VerticalAlignment="Top" Width="102"/>
-        <TextBox HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="246,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="246,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="234,244,65,261"/>
+        <TextBox Name="nazivText" HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="trajanjeText" HorizontalAlignment="Left" Margin="246,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="slikaText" HorizontalAlignment="Left" Margin="246,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ListBox Name="zanrText" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="234,244,65,261"/>
         <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="34,387,0,0" VerticalAlignment="Top" Width="123"/>
         <RichTextBox Margin="234,387,65,143">
             <FlowDocument>
                 <Paragraph>
-                    <Run Text=""/>
+                    <Run Name="opisText" Text=""/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
         <Label Content="Album:" HorizontalAlignment="Left" Margin="34,149,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="246,107,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox HorizontalAlignment="Left" Margin="246,146,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox Name="izvodjacText" HorizontalAlignment="Left" Margin="246,107,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="albumText" HorizontalAlignment="Left" Margin="246,146,0,0" VerticalAlignment="Top" Width="120">
             <Button Content="Button"/>
         </ComboBox>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="34,544,0,0" VerticalAlignment="Top" Height="39" Width="112"/>
+        <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="34,544,0,0" VerticalAlignment="Top" Height="39" Width="112"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="257,544,0,0" VerticalAlignment="Top" Height="39" Width="112"/>
 
     </Grid>
