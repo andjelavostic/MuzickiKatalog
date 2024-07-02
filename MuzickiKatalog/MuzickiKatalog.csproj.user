@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AdminAssignTasks.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ContentView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -18,6 +24,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AdminAssignTasks.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ContentView.xaml">
       <SubType>Designer</SubType>
     </Page>
