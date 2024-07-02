@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\
 MuzickiKatalog
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\App.xaml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\App.xaml
 14-531703036
 
 55419585323
-1951691140420
+195-307126298
 MainWindow.xaml;Menus\ContentViews\AlbumEntry.xaml;Menus\ContentViews\AlbumView.xaml;Menus\ContentViews\ArtistEntry.xaml;Menus\ContentViews\ArtistView.xaml;Menus\ContentViews\ContentView.xaml;Menus\ContentViews\TrackEntry.xaml;Menus\ContentViews\TrackView.xaml;Menus\UserMenus\AdminViews\AdminAssignTasks.xaml;Menus\UserMenus\AdminViews\AdminMenu.xaml;Menus\UserMenus\EditorViews\EditorAssignedTasks.xaml;Menus\UserMenus\EditorViews\EditorMenu.xaml;Menus\UserMenus\LogIn.xaml;Menus\UserMenus\Register.xaml;
 
-False
+True
 
