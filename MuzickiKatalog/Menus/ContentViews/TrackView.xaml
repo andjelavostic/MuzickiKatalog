@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="TrackView" Background="LightGreen" Height="782" Width="747">
     <Grid>
-        <Image Source="\Images\sadrzaj.png"  HorizontalAlignment="Left" Height="200" Margin="483,46,0,0" VerticalAlignment="Top" Width="200"/>
+        <Image Source="Images/sadrzaj.png"  HorizontalAlignment="Left" Height="200" Margin="483,46,0,0" VerticalAlignment="Top" Width="200"/>
         <TextBlock HorizontalAlignment="Left" Margin="61,108,0,0" TextWrapping="Wrap" Text="TextBlock (opis i karakteristike tj izvodjac numere zanr i slicno za dat sadrzaj)" VerticalAlignment="Top" Height="145" Width="324"/>
         <Label Content="Description:" HorizontalAlignment="Left" Margin="61,58,0,0" VerticalAlignment="Top" Width="124"/>
         <Label Content="User rating: " HorizontalAlignment="Left" Margin="394,327,0,0" VerticalAlignment="Top" Width="122"/>
