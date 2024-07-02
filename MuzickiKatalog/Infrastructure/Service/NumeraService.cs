@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,6 +23,10 @@ namespace MuzickiKatalog.Infrastructure.Service
         public override void Serialize<T>(string _filename, List<T> items)
         {
             base.Serialize<T>(_filename, items);
+        }
+        public List<Numera> GetAll()
+        {
+            return numere;
         }
     }
 }
