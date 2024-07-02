@@ -1,11 +1,11 @@
 ﻿
 
-FC:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\AdminAssignTasks.xaml;;
-FC:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\AdminMenu.xaml;;
-FC:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\ContentView.xaml;;
-FC:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\EditorAssignedTasks.xaml;;
-FC:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\EditorMenu.xaml;;
-FC:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\LogIn.xaml;;
-FC:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\MainWindow.xaml;;
-FC:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\Register.xaml;;
+FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\MainWindow.xaml;;
+FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\LogIn.xaml;;
+FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\Register.xaml;;
+FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\AdminViews\AdminAssignTasks.xaml;;
+FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\AdminViews\AdminMenu.xaml;;
+FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\EditorViews\EditorAssignedTasks.xaml;;
+FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\EditorViews\EditorMenu.xaml;;
+FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\ContentView.xaml;;
 

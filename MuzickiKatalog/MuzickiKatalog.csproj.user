@@ -6,52 +6,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Compile Update="AdminAssignTasks.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="AdminMenu.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="ContentView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="EditorAssignedTasks.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="EditorMenu.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="LogIn.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Register.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="AdminAssignTasks.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="AdminMenu.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ContentView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="EditorAssignedTasks.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="EditorMenu.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="LogIn.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Register.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
