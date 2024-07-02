@@ -1,0 +1,32 @@
+[
+  {
+    "Ime": "Ana",
+    "Prezime": "Anic",
+    "Email": "ana.anic@gmail.com",
+    "Lozinka": "ana123",
+    "Specijalnost": [
+      "Pop",
+      "Folk"
+    ]
+  },
+  {
+    "Ime": "Marko",
+    "Prezime": "Markovic",
+    "Email": "marko.markovic@gmail.com",
+    "Lozinka": "marko456",
+    "Specijalnost": [
+      "Country",
+      "Pop"
+    ]
+  },
+  {
+    "Ime": "Jelena",
+    "Prezime": "Jankovic",
+    "Email": "jelena.jankovic@gmail.com",
+    "Lozinka": "jelena789",
+    "Specijalnost": [
+      "R&B",
+      "Latino"
+    ]
+  }
+]

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MuzickiKatalog.Infrastructure.Service
 {
-    internal class UrednikService : FileService
+    public class UrednikService : FileService
     {
         private List<Urednik> urednici;
         private string filePath;

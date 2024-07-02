@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\
 MuzickiKatalog
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\App.xaml
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\App.xaml
 8-341391162
 
-31-2121395769
-1951807654157
+321516011820
+195-307126298
 AdminAssignTasks.xaml;AdminMenu.xaml;ContentView.xaml;EditorAssignedTasks.xaml;EditorMenu.xaml;LogIn.xaml;MainWindow.xaml;Register.xaml;
 
-True
+False
 

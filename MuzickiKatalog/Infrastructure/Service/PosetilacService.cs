@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MuzickiKatalog.Infrastructure.Service
 {
-    internal class PosetilacService : FileService
+    public class PosetilacService : FileService
     {
         private List<Posetilac> posetioci;
         private string filePath;

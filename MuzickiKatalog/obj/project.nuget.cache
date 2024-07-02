@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WL4mqWPZ06rxHL3RR9WMxuaCysyLSShMHnzHEFPxa08kKy4VJ7VgoA6snwlgcbTNJ2aVUAodXKtTS10kTt9qTg==",
+  "dgSpecHash": "IrgXIwxWwKWVhosafjGzq59voFXo1qHGgpKEs35DcKGKVICWXTb81TH1GHKDAPCXAUewZUXXtcQN6eyWgcvARw==",
   "success": true,
-  "projectFilePath": "D:\\skola\\sims\\projekat sims\\MuzickiKatalog\\MuzickiKatalog\\MuzickiKatalog.csproj",
+  "projectFilePath": "C:\\Users\\Andjela\\Desktop\\simsprojekat\\MuzickiKatalog\\MuzickiKatalog\\MuzickiKatalog.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dvnilo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Andjela\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
