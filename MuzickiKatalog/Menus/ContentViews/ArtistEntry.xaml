@@ -1,0 +1,27 @@
+﻿<Window x:Class="MuzickiKatalog.Menus.ContentViews.ArtistEntry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MuzickiKatalog.Menus.ContentViews"
+        mc:Ignorable="d"
+        Title="ArtistEntry" Background="LightGreen" Height="550" Width="420">
+    <Grid>
+        <Label Content="Name of the artist: " HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top" Width="123"/>
+        <Label Content="Select image:" HorizontalAlignment="Left" Margin="34,71,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label Content="Select genres:" HorizontalAlignment="Left" Margin="34,128,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="246,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,124,54,276"/>
+        <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="34,288,0,0" VerticalAlignment="Top" Width="123"/>
+        <RichTextBox Margin="246,288,53,124">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="45,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="254,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+    </Grid>
+</Window>
