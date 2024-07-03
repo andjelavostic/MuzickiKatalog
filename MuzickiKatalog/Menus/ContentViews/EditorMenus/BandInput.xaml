@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MuzickiKatalog.Menus.ContentViews.EditorMenus"
         mc:Ignorable="d"
-        Title="BandInput" Height="450" Width="800">
-    <Grid>
-        
+        Title="BandInput" Background="LightGreen" Height="703" Width="420">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Name of the band: " HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top" Width="123"/>
+        <Label Content="Select image:" HorizontalAlignment="Left" Margin="34,71,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label Content="Select genres:" HorizontalAlignment="Left" Margin="34,128,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="nameText" HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142" Height="22"/>
+        <TextBox Name="imageText" HorizontalAlignment="Left" Margin="246,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142" Height="22"/>
+        <ListBox Name="genreChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,119,10,492"/>
+        <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="40,205,0,0" VerticalAlignment="Top" Width="122"/>
+        <RichTextBox Margin="246,212,36,418">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Name="description" Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Name="addButton" Click="addButton_Click"  Content="Add" HorizontalAlignment="Left" Margin="85,607,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="245,602,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+        <Label Content="Date of foundation" HorizontalAlignment="Left" Margin="40,290,0,0" VerticalAlignment="Top" Width="122"/>
+        <DatePicker Name="dateOfFound" HorizontalAlignment="Left" Height="26" Margin="245,290,0,0" VerticalAlignment="Top" Width="139"/>
+        <Label Content="Artists" HorizontalAlignment="Left" Margin="40,348,0,0" VerticalAlignment="Top" Width="122"/>
+        <ListBox Name="artistsChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="246,344,10,264"/>
+        <Label Content="Review" HorizontalAlignment="Left" Height="28" Margin="40,455,0,0" VerticalAlignment="Top" Width="83"/>
+        <Label Content="Grade" HorizontalAlignment="Left" Height="39" Margin="40,515,0,0" VerticalAlignment="Top" Width="83"/>
+        <TextBox Name="reviewText" HorizontalAlignment="Left" Height="48" Margin="250,455,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="138"/>
+        <ComboBox Name="gradeCombo" HorizontalAlignment="Left" Height="27" Margin="250,534,0,0" VerticalAlignment="Top" Width="138"/>
     </Grid>
 </Window>

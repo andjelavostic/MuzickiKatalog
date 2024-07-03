@@ -69,5 +69,72 @@
     },
     "OceneKorisnika": [],
     "IdKreatora": "petar.petrovic@gmail.com"
+  },
+  {
+    "Naziv": "Lexington",
+    "DatumOsnivanja": "2002-12-15T00:00:00",
+    "Aktivna": true,
+    "Clanovi": [
+      {
+        "Ime": "Milan",
+        "Prezime": "Petrovic",
+        "Zanrovi": [
+          {
+            "Id": 1,
+            "Naziv": "Pop"
+          },
+          {
+            "Id": 2,
+            "Naziv": "Folk"
+          }
+        ],
+        "Id": 7,
+        "Slika": "slika",
+        "Opis": "Milan je rođen u Beogradu 1975",
+        "OcenaUrednika": {
+          "Id": 55,
+          "Vrednost": 0,
+          "Korisnik": "jelena.jankovic@gmail.com"
+        },
+        "OceneKorisnika": [],
+        "IdKreatora": "jelena.jankovic@gmail.com"
+      },
+      {
+        "Ime": "Zeljko",
+        "Prezime": "Joksimovic",
+        "Zanrovi": [
+          {
+            "Id": 1,
+            "Naziv": "Pop"
+          }
+        ],
+        "Id": 18,
+        "Slika": "slika",
+        "Opis": "Poreklom iz Beograda.",
+        "OcenaUrednika": {
+          "Id": 0,
+          "Vrednost": 0,
+          "Korisnik": null
+        },
+        "OceneKorisnika": [],
+        "IdKreatora": "petar.petrovic@gmail.com"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      }
+    ],
+    "Id": 34,
+    "Slika": "Aktivan od 2004.",
+    "Opis": "slika",
+    "OcenaUrednika": {
+      "Id": 33,
+      "Vrednost": 5,
+      "Korisnik": "jelena.jankovic@gmail.com"
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "jelena.jankovic@gmail.com"
   }
 ]
