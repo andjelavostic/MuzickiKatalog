@@ -33,5 +33,19 @@
     "IdSadrzaja": 16,
     "IdKorisnik": "ana.anic@gmail.com",
     "Datum": "2024-07-03T17:47:48.9796839+02:00"
+  },
+  {
+    "Id": 1,
+    "Komentar": "dobar izvodjac nije los mislim da bi se dobro pronasao u drugim zanrovima\r\n",
+    "IdSadrzaja": 7,
+    "IdKorisnik": "brankak@gmail.com",
+    "Datum": "2024-07-03T21:25:08.9483482+02:00"
+  },
+  {
+    "Id": 2,
+    "Komentar": "trece razredni, neozbiljni, osrednji folk izvodjac, los preformans, netaletovan\r\n",
+    "IdSadrzaja": 7,
+    "IdKorisnik": "ana.anic@gmail.com",
+    "Datum": "2024-07-03T21:26:31.1188199+02:00"
   }
 ]
