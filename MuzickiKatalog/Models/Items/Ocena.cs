@@ -11,6 +11,7 @@ namespace MuzickiKatalog.Models.Items
         private int id;
         private int vrednost;
         private string korisnik;
+
         public int Id { get { return id; } set { id = value; } }
         public int Vrednost { get { return vrednost; } set { vrednost = value; } }
         public string Korisnik { get { return korisnik; } set { korisnik = value; } }

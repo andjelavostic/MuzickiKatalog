@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace MuzickiKatalog.Infrastructure.Service
 {
@@ -35,6 +36,31 @@ namespace MuzickiKatalog.Infrastructure.Service
         public Album GetByID(int id)
         {
             return albumi.FirstOrDefault(album => album.Id == id);
+        }
+        public void AddEditorsRating(int albumId, Ocena rating)
+        {
+            foreach (Album album in albumi)
+            {
+                if (album.Id == albumId)
+                {
+                    album.OcenaUrednika = rating;
+                    break;
+                }
+            }
+            Serialize<Album>(filePath, albumi);
+        }
+
+        public void AddUsersRating(int albumId, Ocena rating)
+        {
+            foreach (Album album in albumi)
+            {
+                if (album.Id == albumId)
+                {
+                    album.OceneKorisnika.Add(rating);
+                    break;
+                }
+            }
+            Serialize<Album>(filePath, albumi);
         }
     }
 }

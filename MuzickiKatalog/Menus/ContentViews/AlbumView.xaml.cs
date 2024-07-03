@@ -1,4 +1,5 @@
 ﻿using MuzickiKatalog.Infrastructure.Service;
+using MuzickiKatalog.Models;
 using MuzickiKatalog.Models.Items;
 using MuzickiKatalog.Models.Users;
 using System;
@@ -25,25 +26,19 @@ namespace MuzickiKatalog.Menus.ContentViews
         private Album album;
         private Korisnik korisnik;
         private RecenzijaService recenzijaService;
-        // za testiranje
-        private UrednikService urednikService;
-        public AlbumView(Album a, Korisnik k)
+        private AlbumService albumService;
+        private string userRole;
+        private GlobalID globalId;
+        public AlbumView(Album a, Korisnik k, string userRole)
         {
             InitializeComponent();
             this.album = a;
             this.korisnik = k;
+            this.userRole = userRole;
+            this.globalId = new GlobalID();
+            this.albumService = new AlbumService();
             this.recenzijaService = new RecenzijaService();
-            // za testiranje
-            /*this.urednikService = new UrednikService();
-            foreach(Urednik urednik in urednikService.GetAll())
-            {
-                if (urednik.Email.Equals("ana.anic@gmail.com"))
-                {
-                    korisnik = urednik;
-                    //MessageBox.Show("nasli smo " + k.Ime, "evo");
-                    break;
-                }
-            }*/
+            
             if (album != null)
             {
 
@@ -105,6 +100,25 @@ namespace MuzickiKatalog.Menus.ContentViews
             {
                 editorsReviewTextBlock.Text = editorsReview.Komentar;
             }
+
+            // ucitavanje urednikove ocene
+            if (album.OcenaUrednika.Korisnik == null)
+                editorsRatingLabel.Content += " N/A";
+            else
+                editorsRatingLabel.Content += album.OcenaUrednika.Vrednost.ToString() + "/5";
+
+            // ucitavanje ocena korisnika
+            if (album.OceneKorisnika.Count == 0)
+                userRatingLabel.Content += " N/A";
+            else
+            {
+                double sumOfRatings = 0;
+                foreach(Ocena ocena in album.OceneKorisnika)
+                {
+                    sumOfRatings += ocena.Vrednost;
+                }
+                userRatingLabel.Content += (sumOfRatings / album.OceneKorisnika.Count).ToString() + "/5";
+            }
         }
 
         public class TableData
@@ -147,9 +161,14 @@ namespace MuzickiKatalog.Menus.ContentViews
 
         private void reviewButton_Click(object sender, RoutedEventArgs e)
         {
+            Recenzija editorsReview = recenzijaService.GetEditorsReviewForContent(album.Id);
             if (korisnik == null)
             {
                 MessageBox.Show("Registrujte se ukoliko zelite da ostavite recenziju.");
+            }
+            else if (userRole.Equals("UREDNIK") && editorsReview != null)
+            {
+                MessageBox.Show("Vec postoji ocena urednika");
             }
             else
             {
@@ -163,6 +182,56 @@ namespace MuzickiKatalog.Menus.ContentViews
                     string review = GetTextFromRichTextBox(reviewTextBox);
                     recenzijaService.AddRecenzija(review, album.Id, korisnik.Email);
                     MessageBox.Show("Uspesno ste ostavili recenziju");
+                }
+            }
+        }
+
+        private void ratingButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (korisnik == null)
+            {
+                MessageBox.Show("Registrujte se ukoliko zelite da ostavite ocenu.");
+            }
+            else if (userRole.Equals("UREDNIK") && album.OcenaUrednika.Korisnik!=null)
+            {
+                MessageBox.Show("Vec postoji ocena urednika");
+            }
+            else
+            {
+                int rating = (int)ratingComboBox.SelectedItem;
+                if (userRole.Equals("UREDNIK"))
+                {
+                    Ocena newRating = new Ocena();
+                    newRating.Id = globalId.NextId();
+                    newRating.Vrednost = rating;
+                    newRating.Korisnik = korisnik.Email;
+                    albumService.AddEditorsRating(album.Id,newRating);
+                    MessageBox.Show("Uspesno ste ocenili album!");
+                }
+                else
+                {
+                    bool hasUserRated=false;
+                    foreach (Ocena ocena in album.OceneKorisnika)
+                    {
+                        if (ocena.Korisnik.Equals(korisnik.Email))
+                        {
+                            hasUserRated = true;
+                            break;
+                        }
+                    }
+                    if (hasUserRated)
+                    {
+                        MessageBox.Show("Vec ste ocenili ovaj album!");
+                    }
+                    else 
+                    {
+                        Ocena newRating = new Ocena();
+                        newRating.Id = globalId.NextId();
+                        newRating.Vrednost = rating;
+                        newRating.Korisnik = korisnik.Email;
+                        albumService.AddUsersRating(album.Id, newRating);
+                        MessageBox.Show("Uspesno ste ocenili album!");
+                    }
                 }
             }
         }

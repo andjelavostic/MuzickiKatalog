@@ -28,11 +28,17 @@
       }
     ],
     "OcenaUrednika": {
-      "Id": 0,
-      "Vrednost": 0,
-      "Korisnik": null
+      "Id": 22,
+      "Vrednost": 4,
+      "Korisnik": "ana.ancic@gmail.com"
     },
-    "OceneKorisnika": [],
+    "OceneKorisnika": [
+      {
+        "Id": 25,
+        "Vrednost": 4,
+        "Korisnik": "brankak@gmail.com"
+      }
+    ],
     "IdKreatora": "petar.petrovic@gmail.com"
   }
 ]
