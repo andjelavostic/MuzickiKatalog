@@ -1,1 +1,38 @@
-﻿
+[
+  {
+    "Naziv": "albumNovi",
+    "DatumIzdavanja": "2024-07-03T10:02:15.5916098+02:00",
+    "Numere": [],
+    "Tip": 0,
+    "IzdavackaKuca": "Infinity",
+    "IzvodjacId": 7,
+    "Id": 17,
+    "Opis": "opis neki kratak",
+    "Slika": "slicica",
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      },
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      },
+      {
+        "Id": 3,
+        "Naziv": "R&B"
+      },
+      {
+        "Id": 4,
+        "Naziv": "Country"
+      }
+    ],
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
+  }
+]

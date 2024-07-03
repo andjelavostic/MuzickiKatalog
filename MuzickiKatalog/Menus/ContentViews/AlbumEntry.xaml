@@ -5,29 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MuzickiKatalog.Menus.ContentViews"
         mc:Ignorable="d"
-        Title="AlbumEntry" Background="LightGreen" Height="653" Width="420">
-    <Grid>
+        Title="AlbumEntry" Background="LightGreen" Height="687" Width="426">
+    <Grid Margin="0,0,0,-6">
         <Label Content="Name of the album: " HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top" Width="123"/>
         <Label Content="Artist:" HorizontalAlignment="Left" Margin="34,68,0,0" VerticalAlignment="Top" Width="113"/>
         <Label Content="Select image:" HorizontalAlignment="Left" Margin="34,148,0,0" VerticalAlignment="Top" Width="113"/>
         <Label Content="Select genres:" HorizontalAlignment="Left" Margin="34,240,0,0" VerticalAlignment="Top" Width="102"/>
         <TextBox Name="nazivAlbumaText" HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="imageLinkText" HorizontalAlignment="Left" Margin="246,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,236,54,268"/>
-        <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="34,396,0,0" VerticalAlignment="Top" Width="123"/>
-        <RichTextBox Name="opisText" Margin="245,396,54,133">
+        <ListBox Name="chooseGenreList" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,236,54,356"/>
+        <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="40,355,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.488,0.156"/>
+        <RichTextBox Margin="254,355,45,250">
             <FlowDocument>
                 <Paragraph>
-                    <Run Name="opis" Text=""/>
+                    <Run Name="opisText" Text=""/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
         <ComboBox Name="artistCombo" HorizontalAlignment="Left" Margin="246,70,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="45,552,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="253,552,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+        <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="46,606,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="254,606,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
         <Label Content="Record label:" HorizontalAlignment="Left" Margin="34,192,0,0" VerticalAlignment="Top" Width="102"/>
         <TextBox Name="izdavackaText" HorizontalAlignment="Left" Margin="246,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Album type:" HorizontalAlignment="Left" Margin="34,107,0,0" VerticalAlignment="Top" Width="113"/>
         <ComboBox Name="tipCombo" HorizontalAlignment="Left" Margin="245,109,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Choose tracks" HorizontalAlignment="Left" Margin="46,461,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.488,0.156"/>
+        <ListBox Name="trackChoiceList" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="254,462,45,130"/>
     </Grid>
 </Window>

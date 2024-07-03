@@ -21,6 +21,10 @@ namespace MuzickiKatalog.Infrastructure.Service
             numere.Add(numera);
             Serialize<Numera>(filePath, numere);
         }
+        public Numera FindNumera(int id)
+        {
+            return numere.Find(z => z.Id== id);
+        }
         public override List<T> Deserialize<T>(string _filename)
         {
             return base.Deserialize<T>(_filename);

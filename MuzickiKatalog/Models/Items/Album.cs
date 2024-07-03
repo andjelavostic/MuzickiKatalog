@@ -13,7 +13,8 @@ namespace MuzickiKatalog.Models.Items
         private TipAlbuma tip;
         private string izdavackaKuca;
         private DateTime datumIzdavanja;
-        public Album(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Numera> numere, TipAlbuma tip, string izdavackaKuca, DateTime datumIzdavanja, List<Zanr> zanrovi, string naziv,string idKreatora)
+        private int izvodjacId;
+        public Album(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Numera> numere, TipAlbuma tip, string izdavackaKuca, DateTime datumIzdavanja, List<Zanr> zanrovi, string naziv,int idIzvodjac,string idKreatora)
         : base(id, opis, slika, ocenaUrednika, oceneKorisnika, zanrovi,idKreatora)
         {
             this.numere = numere;
@@ -21,6 +22,7 @@ namespace MuzickiKatalog.Models.Items
             this.izdavackaKuca = izdavackaKuca;
             this.datumIzdavanja = datumIzdavanja;
             this.naziv = naziv;
+            this.izvodjacId = idIzvodjac;
         }
         public string Naziv
         {
@@ -47,6 +49,11 @@ namespace MuzickiKatalog.Models.Items
         {
             get { return izdavackaKuca; }
             set { izdavackaKuca = value; }
+        }
+        public int IzvodjacId
+        {
+            get { return izvodjacId; }
+            set { izvodjacId = value; }
         }
     }
     public enum TipAlbuma

@@ -15,6 +15,11 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             this.albumi= Deserialize<Album>(this.filePath);
         }
+        public void AddAlbum(Album album)
+        {
+            albumi.Add(album);
+            Serialize<Album>(filePath, albumi);
+        }
         public override List<T> Deserialize<T>(string _filename)
         {
             return base.Deserialize<T>(_filename);

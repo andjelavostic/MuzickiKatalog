@@ -49,15 +49,21 @@ namespace MuzickiKatalog.Menus.ContentViews
 
         private void addButton_Click(object sender, RoutedEventArgs e)
         {
-            List<Zanr> zanrovi = new List<Zanr>();
-            foreach (var item in zanrText.SelectedItems)
-            {
-                zanrovi.Add(zanroviService.FindZanr(item.ToString()));
-            }
             if(opisText.Text!="" && nazivText.Text!="" && trajanjeText.Text!="" && zanrText.SelectedItems.Count!=0 && izvodjacText.SelectedItem!=null){
-                string izvodjac= izvodjacText.Text.ToString();
+                string izvodjac= izvodjacText.SelectedItem.ToString();
                 int idIzvodjaca = int.Parse(izvodjac.Split(" ")[0]);
-                Numera numera = new Numera(idCounter.NextId(), opisText.Text, slikaText.Text, new Ocena(), new List<Ocena>(), Double.Parse(trajanjeText.Text), DateTime.Now, zanrovi, nazivText.Text, idIzvodjaca,id);
+                List<Zanr> zanrovi = new List<Zanr>();
+                foreach (var item in zanrText.SelectedItems)
+                {
+                    zanrovi.Add(zanroviService.FindZanr(item.ToString()));
+                }
+                double parsedValue;
+                if (!Double.TryParse(trajanjeText.Text,out parsedValue))
+                {
+                    MessageBox.Show("Unesi trajanje kao decimalni broj!");
+                    return;
+                }
+                Numera numera = new Numera(idCounter.NextId(), opisText.Text, slikaText.Text, new Ocena(), new List<Ocena>(), parsedValue, DateTime.Now, zanrovi, nazivText.Text, idIzvodjaca,id);
                 numeraService.AddNumera(numera);
                 MessageBox.Show("Uspesno dodata numera!");
             }
