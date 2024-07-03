@@ -28,5 +28,9 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return numere;
         }
+        public Numera GetByID(int id)
+        {
+            return numere.FirstOrDefault(numera => numera.Id == id);
+        }
     }
 }

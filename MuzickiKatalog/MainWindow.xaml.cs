@@ -111,9 +111,13 @@ namespace MuzickiKatalog
             }
         }
 
-        private void tableDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void tableDataGrid_MouseDoubleClick(object sender, SelectionChangedEventArgs e)
         {
+            if (tableDataGrid.SelectedItem != null)
+            {
+                TableData selectedRow = (TableData)tableDataGrid.SelectedItem;
 
+            }
         }
     }
 }

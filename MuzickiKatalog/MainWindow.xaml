@@ -15,7 +15,7 @@
         <Button Content="Register" HorizontalAlignment="Left" Height="43" Margin="306,34,0,0" VerticalAlignment="Top" Width="86" Click="Register_Click" Grid.Column="1"/>
         <TextBox Name ="SearchBox" HorizontalAlignment="Left" Height="22" Margin="127,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
         <Label Content="Search:" HorizontalAlignment="Left" Height="32" Margin="44,28,0,0" VerticalAlignment="Top" Width="68"/>
-        <DataGrid x:Name ="tableDataGrid" HorizontalAlignment="Left" Height="216" Margin="61,165,0,0" VerticalAlignment="Top" Width="678" Grid.ColumnSpan="2" Visibility="Collapsed" SelectionMode="Single" SelectionChanged="tableDataGrid_SelectionChanged"/>
+        <DataGrid x:Name ="tableDataGrid" HorizontalAlignment="Left" Height="216" Margin="61,165,0,0" VerticalAlignment="Top" Width="678" Grid.ColumnSpan="2" Visibility="Collapsed" MouseDoubleClick="tableDataGrid_MouseDoubleClick"/>
         <!--<ComboBox HorizontalAlignment="Left" Margin="127,76,0,0" VerticalAlignment="Top" Width="120"/>-->
         <!--<Label Content="Genre:" HorizontalAlignment="Left" Margin="44,72,0,0" VerticalAlignment="Top" Width="68"/>-->
         <Button Content="Search" HorizontalAlignment="Left" Height="26" Margin="44,119,0,0" VerticalAlignment="Top" Width="86" Click="Search_Click"/>
