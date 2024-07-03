@@ -12,13 +12,8 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\App.xaml
 20-176524884
 
-<<<<<<< HEAD
 641382983968
-195-307126298
-=======
-631862004888
 1951807654157
->>>>>>> 38bece9c30b2758c14bf1251ac67ce640cf21b69
 MainWindow.xaml;Menus\ContentViews\AlbumEntry.xaml;Menus\ContentViews\AlbumView.xaml;Menus\ContentViews\ArtistEntry.xaml;Menus\ContentViews\ArtistView.xaml;Menus\ContentViews\BandEntry.xaml;Menus\ContentViews\ContentView.xaml;Menus\ContentViews\EditorMenus\AlbumInput.xaml;Menus\ContentViews\EditorMenus\ArtistInput.xaml;Menus\ContentViews\EditorMenus\BandInput.xaml;Menus\ContentViews\EditorMenus\TrackInput.xaml;Menus\ContentViews\GenreEntry.xaml;Menus\ContentViews\TrackEntry.xaml;Menus\ContentViews\TrackView.xaml;Menus\UserMenus\AdminViews\AdminAssignTasks.xaml;Menus\UserMenus\AdminViews\AdminMenu.xaml;Menus\UserMenus\EditorViews\EditorAssignedTasks.xaml;Menus\UserMenus\EditorViews\EditorMenu.xaml;Menus\UserMenus\LogIn.xaml;Menus\UserMenus\Register.xaml;
 
 False

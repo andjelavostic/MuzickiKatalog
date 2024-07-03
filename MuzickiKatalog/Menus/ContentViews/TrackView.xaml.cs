@@ -39,16 +39,7 @@ namespace MuzickiKatalog.Menus.ContentViews
             this.numeraService = new NumeraService();
             this.recenzijaService = new RecenzijaService();
             // testiranje
-            this.userRole = "UREDNIK";
-            UrednikService urednikService = new UrednikService();
-            foreach (Urednik urednik in urednikService.GetAll())
-            {
-                if (urednik.Email.Equals("ana.anic@gmail.com"))
-                {
-                    korisnik = urednik;
-                    break;
-                }
-            }
+
             if (numera != null)
             {
 
@@ -137,7 +128,7 @@ namespace MuzickiKatalog.Menus.ContentViews
                 Recenzija existingReview = recenzijaService.GetRecenzijaById(korisnik.Email, numera.Id);
                 if (existingReview != null)
                 {
-                    MessageBox.Show("Vec ste ostavili recenziju za ovaj album, kontaktirajte administratora.");
+                    MessageBox.Show("Vec ste ostavili recenziju za ovu numeru, kontaktirajte administratora.");
                 }
                 else
                 {
@@ -169,7 +160,7 @@ namespace MuzickiKatalog.Menus.ContentViews
                     newRating.Vrednost = rating;
                     newRating.Korisnik = korisnik.Email;
                     numeraService.AddEditorsRating(numera.Id, newRating);
-                    MessageBox.Show("Uspesno ste ocenili album!");
+                    MessageBox.Show("Uspesno ste ocenili numeru!");
                 }
                 else
                 {
@@ -184,7 +175,7 @@ namespace MuzickiKatalog.Menus.ContentViews
                     }
                     if (hasUserRated)
                     {
-                        MessageBox.Show("Vec ste ocenili ovaj album!");
+                        MessageBox.Show("Vec ste ocenili numeru!");
                     }
                     else
                     {
@@ -193,7 +184,7 @@ namespace MuzickiKatalog.Menus.ContentViews
                         newRating.Vrednost = rating;
                         newRating.Korisnik = korisnik.Email;
                         numeraService.AddUsersRating(numera.Id, newRating);
-                        MessageBox.Show("Uspesno ste ocenili album!");
+                        MessageBox.Show("Uspesno ste ocenili numeru!");
                     }
                 }
             }

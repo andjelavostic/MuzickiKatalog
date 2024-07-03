@@ -21,18 +21,17 @@
     "Datum": "2024-07-03T16:45:42.2866111+02:00"
   },
   {
-<<<<<<< HEAD
     "Id": 38,
     "Komentar": "Srednje dobar album.",
     "IdSadrzaja": 37,
     "IdKorisnik": "jelena.jankovic@gmail.com",
     "Datum": "2024-07-03T17:52:47.9457711+02:00"
-=======
+  },
+  {
     "Id": 36,
     "Komentar": "neki tekst\r\n",
     "IdSadrzaja": 16,
     "IdKorisnik": "ana.anic@gmail.com",
     "Datum": "2024-07-03T17:47:48.9796839+02:00"
->>>>>>> 38bece9c30b2758c14bf1251ac67ce640cf21b69
   }
 ]
