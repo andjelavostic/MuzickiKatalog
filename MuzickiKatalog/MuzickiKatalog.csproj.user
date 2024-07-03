@@ -22,6 +22,9 @@
     <Compile Update="Menus\ContentViews\BandEntry.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Menus\ContentViews\BandView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Menus\ContentViews\EditorMenus\AlbumInput.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -64,6 +67,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menus\ContentViews\BandEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\BandView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menus\ContentViews\EditorMenus\AlbumInput.xaml">

@@ -122,19 +122,26 @@ namespace MuzickiKatalog
                 var objekat = sMV.SearchObject(id, aS, gS, iS, nS);
                 if (sMV.SearchIzvodjac(id, iS))
                 {
-                    ArtistView artistView = new ArtistView(iS.GetByID(id),null,"");
+                    ArtistView artistView = new ArtistView(iS.GetByID(id), null, "");
                     artistView.Show();
                     this.Close();
                 }
-                else if(sMV.SearchNumera(id, nS)){
-                    TrackView trackView = new TrackView(nS.GetByID(id),null,"");
+                else if (sMV.SearchNumera(id, nS))
+                {
+                    TrackView trackView = new TrackView(nS.GetByID(id), null, "");
                     trackView.Show();
                     this.Close();
                 }
                 else if (sMV.SearchAlbum(id, aS))
                 {
-                    AlbumView albumView = new AlbumView(aS.GetByID(id),null,"");
+                    AlbumView albumView = new AlbumView(aS.GetByID(id), null, "");
                     albumView.Show();
+                    this.Close();
+                }
+                else if (sMV.SearchGrupa(id, gS))
+                {
+                    BandView bandView = new BandView(gS.GetByID(id), null, "");
+                    bandView.Show();
                     this.Close();
                 }
 
