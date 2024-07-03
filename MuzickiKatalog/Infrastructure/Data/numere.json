@@ -1,1 +1,54 @@
-﻿
+[
+  {
+    "Naziv": "pesma",
+    "Trajanje": 3.0,
+    "DatumObjave": "2024-07-03T02:50:39.3737915+02:00",
+    "IzvodjacId": 7,
+    "Id": 16,
+    "Opis": "opis",
+    "Slika": "slika",
+    "Zanrovi": [
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      },
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      }
+    ],
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
+  },
+  {
+    "Naziv": "pesma",
+    "Trajanje": 3.0,
+    "DatumObjave": "2024-07-03T02:52:23.8065369+02:00",
+    "IzvodjacId": 7,
+    "Id": 16,
+    "Opis": "opis",
+    "Slika": "slika",
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      },
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      }
+    ],
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
+  }
+]

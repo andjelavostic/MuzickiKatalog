@@ -19,9 +19,11 @@ namespace MuzickiKatalog
     /// </summary>
     public partial class EditorMenu : Window
     {
-        public EditorMenu()
+        private string idEditor;
+        public EditorMenu(string idEditor)
         {
             InitializeComponent();
+            this.idEditor = idEditor;
         }
     }
 }

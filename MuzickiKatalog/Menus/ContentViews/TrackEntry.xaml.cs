@@ -24,11 +24,27 @@ namespace MuzickiKatalog.Menus.ContentViews
     {
         private GlobalID idCounter;
         private ZanrService zanroviService;
-        public TrackEntry()
+        private IzvodjacService izvodjacService;
+        private NumeraService numeraService;
+        private string id;
+        public TrackEntry(string id)
         {
             InitializeComponent();
             idCounter = new GlobalID();
             zanroviService = new ZanrService();
+            izvodjacService = new IzvodjacService();
+            numeraService = new NumeraService();
+            this.id = id;
+            List<Zanr> z=zanroviService.GetAll();
+            foreach(Zanr zz in z)
+            {
+                zanrText.Items.Add(zz.Naziv);
+            }
+            List<Izvodjac> izv = izvodjacService.GetAll();
+            foreach(Izvodjac iz in izv)
+            {
+                izvodjacText.Items.Add(iz.Id + " " + iz.Ime + " " + iz.Prezime);
+            }
         }
 
         private void addButton_Click(object sender, RoutedEventArgs e)
@@ -38,10 +54,11 @@ namespace MuzickiKatalog.Menus.ContentViews
             {
                 zanrovi.Add(zanroviService.FindZanr(item.ToString()));
             }
-            if(opisText.Text!="" && nazivText.Text!="" && trajanjeText.Text!="" && zanrText.SelectedItems.Count!=0){
+            if(opisText.Text!="" && nazivText.Text!="" && trajanjeText.Text!="" && zanrText.SelectedItems.Count!=0 && izvodjacText.SelectedItem!=null){
                 string izvodjac= izvodjacText.Text.ToString();
                 int idIzvodjaca = int.Parse(izvodjac.Split(" ")[0]);
-                Numera numera = new Numera(idCounter.NextId(), opisText.Text, slikaText.Text, new Ocena(), new List<Ocena>(), Double.Parse(trajanjeText.Text), DateTime.Now, zanrovi, nazivText.Text, idIzvodjaca);
+                Numera numera = new Numera(idCounter.NextId(), opisText.Text, slikaText.Text, new Ocena(), new List<Ocena>(), Double.Parse(trajanjeText.Text), DateTime.Now, zanrovi, nazivText.Text, idIzvodjaca,id);
+                numeraService.AddNumera(numera);
                 MessageBox.Show("Uspesno dodata numera!");
             }
             else

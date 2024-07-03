@@ -38,13 +38,13 @@ namespace MuzickiKatalog
             {
                 if (korisnik.Uloga == "admin")
                 {
-                    AdminMenu adminMenu = new AdminMenu();
+                    AdminMenu adminMenu = new AdminMenu(korisnik.Email);
                     adminMenu.Show();
                     this.Close();
                 }
                 else if (korisnik.Uloga == "urednik")
                 {
-                    EditorMenu editorMenu=new EditorMenu();
+                    EditorMenu editorMenu=new EditorMenu(korisnik.Email);
                     editorMenu.Show();
                     this.Close();
                 }

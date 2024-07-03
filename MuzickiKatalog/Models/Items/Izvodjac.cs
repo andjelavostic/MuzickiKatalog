@@ -10,8 +10,8 @@ namespace MuzickiKatalog.Models.Items
     {
         private string ime;
         private string prezime;
-        public Izvodjac(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, string ime, string prezime, List<Zanr> zanrovi)
-            :base(id,opis,slika,ocenaUrednika,oceneKorisnika, zanrovi)
+        public Izvodjac(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, string ime, string prezime, List<Zanr> zanrovi,string idKreatora)
+            :base(id,opis,slika,ocenaUrednika,oceneKorisnika, zanrovi,idKreatora)
         { 
             this.ime = ime;
             this.prezime = prezime;

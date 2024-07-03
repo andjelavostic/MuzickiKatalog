@@ -9,7 +9,7 @@
     <Grid>
         <Button Content="Assign tasks" HorizontalAlignment="Left" Margin="231,112,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
         <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="63,112,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
-        <Button Content="Track entry" HorizontalAlignment="Left" Margin="63,203,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
+        <Button Name="addTrackButton" Click="addTrackButton_Click" Content="Track entry" HorizontalAlignment="Left" Margin="63,203,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
         <Button Content="Album entry" HorizontalAlignment="Left" Margin="231,203,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
         <Button Content="Artist entry" HorizontalAlignment="Left" Margin="400,203,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
 

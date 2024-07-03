@@ -10,11 +10,16 @@ namespace MuzickiKatalog.Infrastructure.Service
 {
     public class NumeraService:FileService
     {
-        private List<Numera> numere;
+        private List<Numera> numere=new List<Numera>();
         private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\numere.json";
         public NumeraService()
         {
             this.numere = Deserialize<Numera>(this.filePath);
+        }
+        public void AddNumera(Numera numera)
+        {
+            numere.Add(numera);
+            Serialize<Numera>(filePath, numere);
         }
         public override List<T> Deserialize<T>(string _filename)
         {

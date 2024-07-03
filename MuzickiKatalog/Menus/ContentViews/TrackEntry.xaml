@@ -15,7 +15,7 @@
         <TextBox Name="nazivText" HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="trajanjeText" HorizontalAlignment="Left" Margin="246,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="slikaText" HorizontalAlignment="Left" Margin="246,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ListBox Name="zanrText" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="234,244,65,261"/>
+        <ListBox SelectionMode="Multiple" Name="zanrText" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="234,244,65,261"/>
         <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="34,387,0,0" VerticalAlignment="Top" Width="123"/>
         <RichTextBox Margin="234,387,65,143">
             <FlowDocument>

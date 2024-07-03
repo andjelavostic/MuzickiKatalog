@@ -14,6 +14,7 @@ namespace MuzickiKatalog.Models.Items
         private List<Zanr> zanrovi;
         private Ocena ocenaUrednika;
         private List<Ocena> oceneKorisnika;
+        private string idKreatora;
         public int Id
         {
             get { return id; }
@@ -44,7 +45,12 @@ namespace MuzickiKatalog.Models.Items
             get { return oceneKorisnika; }
             set { oceneKorisnika = value; }
         }
-        public MuzickiSadrzaj(int id,string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Zanr> zanrovi)
+        public string IdKreatora
+        {
+            get { return idKreatora; }
+            set { idKreatora = value; }
+        }
+        public MuzickiSadrzaj(int id,string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Zanr> zanrovi,string idKreatora)
         {
             this.id = id;
             this.opis = opis;
@@ -52,6 +58,7 @@ namespace MuzickiKatalog.Models.Items
             this.ocenaUrednika=ocenaUrednika;
             this.oceneKorisnika=oceneKorisnika;
             this.zanrovi = zanrovi;
+            this.idKreatora = idKreatora;
         }
     }
 }

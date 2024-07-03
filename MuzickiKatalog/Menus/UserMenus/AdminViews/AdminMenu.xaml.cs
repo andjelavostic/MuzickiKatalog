@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MuzickiKatalog.Menus.ContentViews;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,17 @@ namespace MuzickiKatalog
     /// </summary>
     public partial class AdminMenu : Window
     {
-        public AdminMenu()
+        private string adminId;
+        public AdminMenu(string adminId)
         {
             InitializeComponent();
+            this.adminId = adminId;
+        }
+
+        private void addTrackButton_Click(object sender, RoutedEventArgs e)
+        {
+            TrackEntry track = new TrackEntry(adminId);
+            track.Show();
         }
     }
 }

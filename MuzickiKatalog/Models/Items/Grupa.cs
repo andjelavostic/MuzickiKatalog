@@ -39,8 +39,8 @@ namespace MuzickiKatalog.Models.Items
         public Grupa() : base()
         {
         }
-        public Grupa(int id, string slika, string opis, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, DateTime datumOsnivanja, bool aktivna, List<Izvodjac> clanovi, string naziv, List<Zanr> zanrovi)
-            : base(id, slika, opis, ocenaUrednika, oceneKorisnika, zanrovi)
+        public Grupa(int id, string slika, string opis, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, DateTime datumOsnivanja, bool aktivna, List<Izvodjac> clanovi, string naziv, List<Zanr> zanrovi,string idKreatora)
+            : base(id, slika, opis, ocenaUrednika, oceneKorisnika, zanrovi,idKreatora)
         {
             this.datumOsnivanja = datumOsnivanja;
             this.aktivna = aktivna;

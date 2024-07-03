@@ -1,1 +1,25 @@
-﻿
+﻿[
+  {
+    "Id": 7,
+    "Slika": "slika",
+    "OcenaUrednika": {
+      "Id": 55,
+      "Ocena": 4,
+      "Korisnik": "jelena.jankovic@gmail.com"
+    },
+    "OceneKorisnika": [],
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      },
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      }
+    ],
+    "IdKreatora": "jelena.jankovic@gmail.com",
+    "Ime": "Milan",
+    "Prezime": "Petrovic"
+  }
+]

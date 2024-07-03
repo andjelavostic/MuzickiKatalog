@@ -32,8 +32,8 @@ namespace MuzickiKatalog.Models.Items
             get { return izvodjacId; }
             set { izvodjacId = value; }
         }
-        public Numera(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, double trajanje, DateTime datumObjave, List<Zanr> zanrovi, string naziv,int izvodjacId)
-        : base(id, opis, slika, ocenaUrednika, oceneKorisnika, zanrovi)
+        public Numera(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, double trajanje, DateTime datumObjave, List<Zanr> zanrovi, string naziv,int izvodjacId,string idKreatora)
+        : base(id, opis, slika, ocenaUrednika, oceneKorisnika, zanrovi,idKreatora)
         {
             this.trajanje = trajanje;
             this.datumObjave = datumObjave;
