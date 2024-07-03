@@ -61,7 +61,7 @@ namespace MuzickiKatalog.Menus.ContentViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;V1.0.0.0;component/menus/contentviews/artistview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;component/menus/contentviews/artistview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Menus\ContentViews\ArtistView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

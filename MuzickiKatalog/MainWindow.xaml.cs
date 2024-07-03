@@ -133,7 +133,7 @@ namespace MuzickiKatalog
                 }
                 else if (sMV.SearchAlbum(id, aS))
                 {
-                    AlbumView albumView = new AlbumView(aS.GetByID(id));
+                    AlbumView albumView = new AlbumView(aS.GetByID(id),null,"");
                     albumView.Show();
                     this.Close();
                 }
