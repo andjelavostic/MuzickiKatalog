@@ -127,7 +127,7 @@ namespace MuzickiKatalog
                     this.Close();
                 }
                 else if(sMV.SearchNumera(id, nS)){
-                    TrackView trackView = new TrackView(nS.GetByID(id));
+                    TrackView trackView = new TrackView(nS.GetByID(id),null,"");
                     trackView.Show();
                     this.Close();
                 }
