@@ -48,7 +48,8 @@ namespace MuzickiKatalog
 
         private void addBandButton_Click(object sender, RoutedEventArgs e)
         {
-
+            BandEntry band = new BandEntry(adminId);
+            band.Show();
         }
     }
 }

@@ -58,6 +58,7 @@ namespace MuzickiKatalog.Menus.ContentViews
 
         private void addButton_Click(object sender, RoutedEventArgs e)
         {
+            //Numere se opciono dodaju na pocetku, mogu kasnije
             if (nazivAlbumaText.Text != "" && opisText.Text != "" && artistCombo.SelectedItem != null && tipCombo.SelectedItem != null
                 && imageLinkText.Text != "" && izdavackaText.Text != "" && chooseGenreList.SelectedItems.Count != 0)
             {

@@ -1,1 +1,73 @@
-﻿
+[
+  {
+    "Naziv": "Ok Bend",
+    "DatumOsnivanja": "2024-04-22T00:00:00",
+    "Aktivna": true,
+    "Clanovi": [
+      {
+        "Ime": "Jelena",
+        "Prezime": "Tomasevic",
+        "Zanrovi": [
+          {
+            "Id": 2,
+            "Naziv": "Folk"
+          }
+        ],
+        "Id": 19,
+        "Slika": "slika",
+        "Opis": "Poreklom iz Negotina, rodjena 1983. godine.",
+        "OcenaUrednika": {
+          "Id": 0,
+          "Vrednost": 0,
+          "Korisnik": null
+        },
+        "OceneKorisnika": [],
+        "IdKreatora": "petar.petrovic@gmail.com"
+      },
+      {
+        "Ime": "Milan",
+        "Prezime": "Petrovic",
+        "Zanrovi": [
+          {
+            "Id": 1,
+            "Naziv": "Pop"
+          },
+          {
+            "Id": 2,
+            "Naziv": "Folk"
+          }
+        ],
+        "Id": 7,
+        "Slika": "slika",
+        "Opis": "Milan je rođen u Beogradu 1975",
+        "OcenaUrednika": {
+          "Id": 55,
+          "Vrednost": 0,
+          "Korisnik": "jelena.jankovic@gmail.com"
+        },
+        "OceneKorisnika": [],
+        "IdKreatora": "jelena.jankovic@gmail.com"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      },
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      }
+    ],
+    "Id": 20,
+    "Slika": "opis",
+    "Opis": "slika",
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
+  }
+]
