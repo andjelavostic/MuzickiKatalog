@@ -16,11 +16,17 @@
     "Slika": "slika",
     "Opis": "Milan je rođen u Beogradu 1975",
     "OcenaUrednika": {
-      "Id": 55,
-      "Vrednost": 0,
-      "Korisnik": "jelena.jankovic@gmail.com"
+      "Id": 3,
+      "Vrednost": 2,
+      "Korisnik": "ana.anic@gmail.com"
     },
-    "OceneKorisnika": [],
+    "OceneKorisnika": [
+      {
+        "Id": 4,
+        "Vrednost": 5,
+        "Korisnik": "brankak@gmail.com"
+      }
+    ],
     "IdKreatora": "jelena.jankovic@gmail.com"
   },
   {

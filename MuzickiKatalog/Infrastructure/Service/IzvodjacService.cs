@@ -36,5 +36,31 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return izvodjaci.FirstOrDefault(izvodjac => izvodjac.Id == id);
         }
+
+        public void AddEditorsRating(int izvodjacId, Ocena rating)
+        {
+            foreach (Izvodjac izvodjac in izvodjaci)
+            {
+                if (izvodjac.Id == izvodjacId)
+                {
+                    izvodjac.OcenaUrednika = rating;
+                    break;
+                }
+            }
+            Serialize<Izvodjac>(filePath, izvodjaci);
+        }
+
+        public void AddUsersRating(int izvodjacId, Ocena rating)
+        {
+            foreach (Izvodjac izvodjac in izvodjaci)
+            {
+                if (izvodjac.Id == izvodjacId)
+                {
+                    izvodjac.OceneKorisnika.Add(rating);
+                    break;
+                }
+            }
+            Serialize<Izvodjac>(filePath, izvodjaci);
+        }
     }
 }

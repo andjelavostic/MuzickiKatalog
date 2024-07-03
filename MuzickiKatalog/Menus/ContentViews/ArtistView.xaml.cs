@@ -42,7 +42,7 @@ namespace MuzickiKatalog.Menus.ContentViews
             this.izvodjacService = new IzvodjacService();
             this.recenzijaService = new RecenzijaService();
             // testiranje
-            this.userRole = "UREDNIK";
+            /*this.userRole = "korisnik";
             UrednikService urednikService = new UrednikService();
             RegistrovanKorisnikService registr = new RegistrovanKorisnikService();
             foreach (Urednik urednik in urednikService.GetAll())
@@ -53,7 +53,7 @@ namespace MuzickiKatalog.Menus.ContentViews
                     break;
                 }
             }
-            /*foreach (RegistrovanKorisnik urednik in registr.GetAll())
+            foreach (RegistrovanKorisnik urednik in registr.GetAll())
             {
                 if (urednik.Email.Equals("brankak@gmail.com"))
                 {
@@ -164,7 +164,54 @@ namespace MuzickiKatalog.Menus.ContentViews
         }
 
         private void ratingButton_Click(object sender, RoutedEventArgs e)
-        { }
+        {
+            if (korisnik == null)
+            {
+                MessageBox.Show("Registrujte se ukoliko zelite da ostavite ocenu.");
+            }
+            else if (userRole.Equals("UREDNIK") && izvodjac.OcenaUrednika.Korisnik != null)
+            {
+                MessageBox.Show("Vec postoji ocena urednika");
+            }
+            else
+            {
+                int rating = (int)ratingComboBox.SelectedItem;
+                if (userRole.Equals("UREDNIK"))
+                {
+                    Ocena newRating = new Ocena();
+                    newRating.Id = globalId.NextId();
+                    newRating.Vrednost = rating;
+                    newRating.Korisnik = korisnik.Email;
+                    izvodjacService.AddEditorsRating(izvodjac.Id, newRating);
+                    MessageBox.Show("Uspesno ste ocenili izvodjaca!");
+                }
+                else
+                {
+                    bool hasUserRated = false;
+                    foreach (Ocena ocena in izvodjac.OceneKorisnika)
+                    {
+                        if (ocena.Korisnik.Equals(korisnik.Email))
+                        {
+                            hasUserRated = true;
+                            break;
+                        }
+                    }
+                    if (hasUserRated)
+                    {
+                        MessageBox.Show("Vec ste ocenili izvodjaca!");
+                    }
+                    else
+                    {
+                        Ocena newRating = new Ocena();
+                        newRating.Id = globalId.NextId();
+                        newRating.Vrednost = rating;
+                        newRating.Korisnik = korisnik.Email;
+                        izvodjacService.AddUsersRating(izvodjac.Id, newRating);
+                        MessageBox.Show("Uspesno ste ocenili numeru!");
+                    }
+                }
+            }
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
