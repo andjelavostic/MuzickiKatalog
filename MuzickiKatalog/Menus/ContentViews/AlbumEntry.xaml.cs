@@ -25,6 +25,7 @@ namespace MuzickiKatalog.Menus.ContentViews
         private GlobalID idCounter;
         private ZanrService zanroviService;
         private IzvodjacService izvodjacService;
+        private GrupaService grupaService;
         private NumeraService numeraService;
         private AlbumService albumService;
         private string id;
@@ -34,6 +35,7 @@ namespace MuzickiKatalog.Menus.ContentViews
             idCounter = new GlobalID();
             zanroviService = new ZanrService();
             izvodjacService = new IzvodjacService();
+            grupaService = new GrupaService();
             numeraService = new NumeraService();
             albumService = new AlbumService();
             this.id = id;
@@ -47,10 +49,10 @@ namespace MuzickiKatalog.Menus.ContentViews
             {
                 artistCombo.Items.Add(iz.Id + " " + iz.Ime + " " + iz.Prezime);
             }
-            List<Numera> nums = numeraService.GetAll();
-            foreach (Numera num in nums)
+            List<Grupa> grupa=grupaService.GetAll();
+            foreach(Grupa g in grupa)
             {
-                trackChoiceList.Items.Add(num.Id+" "+num.Naziv);
+                artistCombo.Items.Add(g.Id + " " + g.Naziv);
             }
             tipCombo.ItemsSource = Enum.GetValues(typeof(TipAlbuma));
 
@@ -83,6 +85,19 @@ namespace MuzickiKatalog.Menus.ContentViews
             else
             {
                 MessageBox.Show("Unesi sve potrebne podatke i izaberi izvodjaca,tip albuma,zanr!");
+            }
+        }
+
+        private void artistCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            trackChoiceList.Items.Clear();
+            List<Numera> nums = numeraService.GetAll();
+            foreach (Numera num in nums)
+            {
+                string izvodjac = artistCombo.SelectedItem.ToString();
+                int idIzvodjaca = int.Parse(izvodjac.Split(" ")[0]);
+                if (num.IzvodjacId==idIzvodjaca)
+                    trackChoiceList.Items.Add(num.Id + " " + num.Naziv);
             }
         }
     }

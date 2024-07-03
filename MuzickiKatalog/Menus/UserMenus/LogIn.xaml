@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MuzickiKatalog"
         mc:Ignorable="d"
-        Title="LogIn" Height="300" Width="283" Background="LightGreen">
-    <Grid>
+        Title="LogIn" Height="300" Width="342" Background="LightGreen">
+    <Grid Margin="0,0,10,0">
         <Button Name="loginButton" Click="loginButton_Click" Content="Log in" HorizontalAlignment="Left" Margin="29,201,0,0" VerticalAlignment="Top" Height="41" Width="87"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="165,201,0,0" VerticalAlignment="Top" Height="41" Width="87"/>
         <TextBox Name="emailText" HorizontalAlignment="Left" Margin="110,77,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="163" Height="23"/>

@@ -25,6 +25,7 @@ namespace MuzickiKatalog.Menus.ContentViews
         private GlobalID idCounter;
         private ZanrService zanroviService;
         private IzvodjacService izvodjacService;
+        private GrupaService grupaService;
         private NumeraService numeraService;
         private string id;
         public TrackEntry(string id)
@@ -33,6 +34,7 @@ namespace MuzickiKatalog.Menus.ContentViews
             idCounter = new GlobalID();
             zanroviService = new ZanrService();
             izvodjacService = new IzvodjacService();
+            grupaService = new GrupaService();
             numeraService = new NumeraService();
             this.id = id;
             List<Zanr> z=zanroviService.GetAll();
@@ -44,6 +46,11 @@ namespace MuzickiKatalog.Menus.ContentViews
             foreach(Izvodjac iz in izv)
             {
                 izvodjacText.Items.Add(iz.Id + " " + iz.Ime + " " + iz.Prezime);
+            }
+            List<Grupa> grupa = grupaService.GetAll();
+            foreach (Grupa g in grupa)
+            {
+                izvodjacText.Items.Add(g.Id + " " + g.Naziv);
             }
         }
 
