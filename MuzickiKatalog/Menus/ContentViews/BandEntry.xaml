@@ -10,11 +10,11 @@
         <Label Content="Name of the band: " HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top" Width="123"/>
         <Label Content="Select image:" HorizontalAlignment="Left" Margin="34,71,0,0" VerticalAlignment="Top" Width="113"/>
         <Label Content="Select genres:" HorizontalAlignment="Left" Margin="34,128,0,0" VerticalAlignment="Top" Width="102"/>
-        <TextBox Name="nameText" HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="imageText" HorizontalAlignment="Left" Margin="246,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ListBox Name="genreChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,124,53,343"/>
+        <TextBox Name="nameText" HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142" Height="22"/>
+        <TextBox Name="imageText" HorizontalAlignment="Left" Margin="246,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142" Height="22"/>
+        <ListBox Name="genreChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,124,32,343"/>
         <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="40,205,0,0" VerticalAlignment="Top" Width="122"/>
-        <RichTextBox Margin="250,206,53,267">
+        <RichTextBox Margin="250,206,32,267">
             <FlowDocument>
                 <Paragraph>
                     <Run Name="description" Text=""/>
@@ -24,8 +24,8 @@
         <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="45,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="254,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
         <Label Content="Date of foundation" HorizontalAlignment="Left" Margin="40,290,0,0" VerticalAlignment="Top" Width="122"/>
-        <DatePicker Name="dateOfFound" HorizontalAlignment="Left" Height="26" Margin="254,290,0,0" VerticalAlignment="Top" Width="113"/>
+        <DatePicker Name="dateOfFound" HorizontalAlignment="Left" Height="26" Margin="254,290,0,0" VerticalAlignment="Top" Width="134"/>
         <Label Content="Artists" HorizontalAlignment="Left" Margin="40,348,0,0" VerticalAlignment="Top" Width="122"/>
-        <ListBox Name="artistsChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="254,344,54,102"/>
+        <ListBox Name="artistsChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="246,344,32,102"/>
     </Grid>
 </Window>

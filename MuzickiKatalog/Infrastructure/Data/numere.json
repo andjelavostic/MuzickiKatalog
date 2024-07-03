@@ -24,5 +24,27 @@
     },
     "OceneKorisnika": [],
     "IdKreatora": "petar.petrovic@gmail.com"
+  },
+  {
+    "Naziv": "nova pesma",
+    "Trajanje": 3.0,
+    "DatumObjave": "2024-07-03T13:16:56.63303+02:00",
+    "IzvodjacId": 19,
+    "Id": 21,
+    "Opis": "Super.",
+    "Slika": "slika",
+    "Zanrovi": [
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      }
+    ],
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
   }
 ]

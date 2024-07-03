@@ -13,9 +13,9 @@
         <Label Content="Select genres:" HorizontalAlignment="Left" Margin="34,240,0,0" VerticalAlignment="Top" Width="102"/>
         <TextBox Name="nazivAlbumaText" HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="imageLinkText" HorizontalAlignment="Left" Margin="246,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ListBox Name="chooseGenreList" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,236,54,356"/>
+        <ListBox Name="chooseGenreList" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,236,60,356"/>
         <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="40,355,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.488,0.156"/>
-        <RichTextBox Margin="254,355,45,250">
+        <RichTextBox Margin="245,355,54,250">
             <FlowDocument>
                 <Paragraph>
                     <Run Name="opisText" Text=""/>
@@ -30,6 +30,6 @@
         <Label Content="Album type:" HorizontalAlignment="Left" Margin="34,107,0,0" VerticalAlignment="Top" Width="113"/>
         <ComboBox Name="tipCombo" HorizontalAlignment="Left" Margin="245,109,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Choose tracks" HorizontalAlignment="Left" Margin="46,461,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.488,0.156"/>
-        <ListBox Name="trackChoiceList" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="254,462,45,130"/>
+        <ListBox Name="trackChoiceList" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,457,54,115"/>
     </Grid>
 </Window>
