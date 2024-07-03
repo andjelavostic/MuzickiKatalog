@@ -27,7 +27,7 @@ namespace MuzickiKatalog.Menus.ContentViews
         private Grupa grupa;
         private Korisnik korisnik;
         private GlobalID globalId;
-        private IzvodjacService izvodjacService;
+        private GrupaService grupaService;
         private RecenzijaService recenzijaService;
         private string userRole;
         public BandView(Grupa g, Korisnik k, string role)
@@ -38,29 +38,9 @@ namespace MuzickiKatalog.Menus.ContentViews
             this.userRole = role;
             this.korisnik = k;
             this.globalId = new GlobalID();
-            this.izvodjacService = new IzvodjacService();
+            this.grupaService = new GrupaService();
             this.recenzijaService = new RecenzijaService();
 
-            // testiranje
-            this.userRole = "UREDNIK";
-            UrednikService urednikService = new UrednikService();
-            RegistrovanKorisnikService registr = new RegistrovanKorisnikService();
-            foreach (Urednik urednik in urednikService.GetAll())
-            {
-                if (urednik.Email.Equals("ana.anic@gmail.com"))
-                {
-                    korisnik = urednik;
-                    break;
-                }
-            }
-            /*foreach (RegistrovanKorisnik urednik in registr.GetAll())
-            {
-                if (urednik.Email.Equals("brankak@gmail.com"))
-                {
-                    korisnik = urednik;
-                    break;
-                }
-            }*/
 
             if (grupa != null)
             {
@@ -196,7 +176,55 @@ namespace MuzickiKatalog.Menus.ContentViews
             }
         }
 
-        private void ratingButton_Click(object sender, RoutedEventArgs e) { }
+        private void ratingButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (korisnik == null)
+            {
+                MessageBox.Show("Registrujte se ukoliko zelite da ostavite ocenu.");
+            }
+            else if (userRole.Equals("UREDNIK") && grupa.OcenaUrednika.Korisnik != null)
+            {
+                MessageBox.Show("Vec postoji ocena urednika");
+            }
+            else
+            {
+                int rating = (int)ratingComboBox.SelectedItem;
+                if (userRole.Equals("UREDNIK"))
+                {
+                    Ocena newRating = new Ocena();
+                    newRating.Id = globalId.NextId();
+                    newRating.Vrednost = rating;
+                    newRating.Korisnik = korisnik.Email;
+                    grupaService.AddEditorsRating(grupa.Id, newRating);
+                    MessageBox.Show("Uspesno ste ocenili bend!");
+                }
+                else
+                {
+                    bool hasUserRated = false;
+                    foreach (Ocena ocena in grupa.OceneKorisnika)
+                    {
+                        if (ocena.Korisnik.Equals(korisnik.Email))
+                        {
+                            hasUserRated = true;
+                            break;
+                        }
+                    }
+                    if (hasUserRated)
+                    {
+                        MessageBox.Show("Vec ste ocenili bend!");
+                    }
+                    else
+                    {
+                        Ocena newRating = new Ocena();
+                        newRating.Id = globalId.NextId();
+                        newRating.Vrednost = rating;
+                        newRating.Korisnik = korisnik.Email;
+                        grupaService.AddUsersRating(grupa.Id, newRating);
+                        MessageBox.Show("Uspesno ste ocenili bend!");
+                    }
+                }
+            }
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

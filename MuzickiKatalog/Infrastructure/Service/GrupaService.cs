@@ -36,5 +36,31 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return grupe.FirstOrDefault(grupa => grupa.Id == id);
         }
+
+        public void AddEditorsRating(int grupaId, Ocena rating)
+        {
+            foreach (Grupa grupa in grupe)
+            {
+                if (grupa.Id == grupaId)
+                {
+                    grupa.OcenaUrednika = rating;
+                    break;
+                }
+            }
+            Serialize<Grupa>(filePath, grupe);
+        }
+
+        public void AddUsersRating(int grupaId, Ocena rating)
+        {
+            foreach (Grupa grupa in grupe)
+            {
+                if (grupa.Id == grupaId)
+                {
+                    grupa.OceneKorisnika.Add(rating);
+                    break;
+                }
+            }
+            Serialize<Grupa>(filePath, grupe);
+        }
     }
 }
