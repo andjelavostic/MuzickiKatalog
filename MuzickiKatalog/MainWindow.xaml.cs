@@ -112,14 +112,14 @@ namespace MuzickiKatalog
             }
         }
 
-        private void tableDataGrid_MouseDoubleClick(object sender, SelectionChangedEventArgs e)
+        private void tableDataGrid_MouseDoubleClick_1(object sender, MouseButtonEventArgs e)
         {
             if (tableDataGrid.SelectedItem != null)
             {
                 TableData selectedRow = (TableData)tableDataGrid.SelectedItem;
                 int id = selectedRow.Id;
                 var objekat = sMV.SearchObject(id, aS, gS, iS, nS);
-                if(sMV.SearchIzvodjac(id, iS))
+                if (sMV.SearchIzvodjac(id, iS))
                 {
                     ArtistView artistView = new ArtistView();
                     artistView.Show();
