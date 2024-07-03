@@ -26,7 +26,7 @@
         <Button Content="Review" HorizontalAlignment="Left" Height="34" Margin="61,555,0,0" VerticalAlignment="Top" Width="81"/>
         <Label Content="Editor's review:" HorizontalAlignment="Left" Margin="394,389,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
-        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="535,946,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
+        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="535,946,0,0" VerticalAlignment="Top" Height="57" Width="142" Click="Button_Click"/>
         <Button Content="View track" HorizontalAlignment="Left" Margin="61,946,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
         <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="61,717,70,192"/>
         <Label Content="Discography:" HorizontalAlignment="Left" Margin="61,657,0,0" VerticalAlignment="Top" Width="204"/>

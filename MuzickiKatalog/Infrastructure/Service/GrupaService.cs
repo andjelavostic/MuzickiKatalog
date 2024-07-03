@@ -27,5 +27,9 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return grupe;
         }
+        public Grupa GetByID(int id)
+        {
+            return grupe.FirstOrDefault(grupa => grupa.Id == id);
+        }
     }
 }

@@ -63,5 +63,56 @@ namespace MuzickiKatalog.ModelViews
             return izvodjaci;
 
         }
+        public bool SearchIzvodjac(int id, IzvodjacService iS)
+        {
+            if(iS.GetByID(id) != null)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool SearchNumera(int id, NumeraService nS)
+        {
+            if (nS.GetByID(id) != null)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool SearchAlbum(int id, AlbumService aS)
+        {
+            if (aS.GetByID(id) != null)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool SearchGrupa(int id, GrupaService gS)
+        {
+            if (gS.GetByID(id) != null)
+            {
+                return true;
+            }
+            return false;
+        }
+        public dynamic SearchObject(int id, AlbumService aS, GrupaService gS, IzvodjacService iS, NumeraService nS)
+        {
+            if (SearchAlbum(id, aS))
+            {
+                return aS.GetByID(id);
+            }
+            else if(SearchGrupa(id, gS))
+            {
+                return gS.GetByID(id);
+
+            }else if(SearchIzvodjac(id, iS))
+            {
+                return iS.GetByID(id);
+            }
+            else
+            {
+                return nS.GetByID(id);
+            }
+        }
     }
 }

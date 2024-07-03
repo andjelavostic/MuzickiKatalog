@@ -27,6 +27,9 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return albumi;
         }
-
+        public Album GetByID(int id)
+        {
+            return albumi.FirstOrDefault(album => album.Id == id);
+        }
     }
 }

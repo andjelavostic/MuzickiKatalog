@@ -27,5 +27,9 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return izvodjaci;
         }
+        public Izvodjac GetByID(int id)
+        {
+            return izvodjaci.FirstOrDefault(izvodjac => izvodjac.Id == id);
+        }
     }
 }

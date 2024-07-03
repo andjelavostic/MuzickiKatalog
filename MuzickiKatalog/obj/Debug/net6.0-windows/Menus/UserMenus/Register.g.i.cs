@@ -85,7 +85,7 @@ namespace MuzickiKatalog {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;component/menus/usermenus/register.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;V1.0.0.0;component/menus/usermenus/register.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Menus\UserMenus\Register.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
