@@ -1,4 +1,6 @@
-﻿using MuzickiKatalog.Models.Items;
+﻿using MuzickiKatalog.Menus.UserMenus.UserViews;
+using MuzickiKatalog.Models.Items;
+using MuzickiKatalog.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +23,14 @@ namespace MuzickiKatalog.Menus.ContentViews
     public partial class ArtistView : Window
     {
         private Izvodjac izvodjac;
-        public ArtistView(Izvodjac i)
+        private Korisnik k;
+        private string role;
+        public ArtistView(Izvodjac i,Korisnik k,string role)
         {
             InitializeComponent();
             this.izvodjac = i;
+            this.k = k;
+            this.role = role;
             if (izvodjac != null)
             {
              
@@ -46,9 +52,18 @@ namespace MuzickiKatalog.Menus.ContentViews
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
-            this.Close();
+            if (role == "korisnik")
+            {
+                UserMenu user = new UserMenu(k.Email);
+                user.Show();
+                this.Close();
+            }
+            else
+            {
+                MainWindow main = new MainWindow();
+                main.Show();
+                this.Close();
+            }
         }
 
     }

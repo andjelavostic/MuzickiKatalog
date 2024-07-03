@@ -1,6 +1,7 @@
 ﻿using MuzickiKatalog.Infrastructure.Service;
 using MuzickiKatalog.Menus.ContentViews;
 using MuzickiKatalog.Models.Items;
+using MuzickiKatalog.Models.Users;
 using MuzickiKatalog.ModelViews;
 using System;
 using System.Collections.Generic;
@@ -114,6 +115,7 @@ namespace MuzickiKatalog.Menus.UserMenus.UserViews
         private void tableDataGrid_MouseDoubleClick_1(object sender, MouseButtonEventArgs e)
         {
             int i = 0;
+            Korisnik k = rkS.GetById(userId);
             if (tableDataGrid.SelectedItem != null)
             {
                 TableData selectedRow = (TableData)tableDataGrid.SelectedItem;
@@ -121,19 +123,19 @@ namespace MuzickiKatalog.Menus.UserMenus.UserViews
                 var objekat = sMV.SearchObject(id, aS, gS, iS, nS);
                 if (sMV.SearchIzvodjac(id, iS))
                 {
-                    ArtistView artistView = new ArtistView(iS.GetByID(id));
+                    ArtistView artistView = new ArtistView(iS.GetByID(id),k,"korisnik");
                     artistView.Show();
                     this.Close();
                 }
                 else if (sMV.SearchNumera(id, nS))
                 {
-                    TrackView trackView = new TrackView(nS.GetByID(id), null, "");
+                    TrackView trackView = new TrackView(nS.GetByID(id), k, "korisnik");
                     trackView.Show();
                     this.Close();
                 }
                 else if (sMV.SearchAlbum(id, aS))
                 {
-                    AlbumView albumView = new AlbumView(aS.GetByID(id), null, "");
+                    AlbumView albumView = new AlbumView(aS.GetByID(id), k, "korisnik");
                     albumView.Show();
                     this.Close();
                 }

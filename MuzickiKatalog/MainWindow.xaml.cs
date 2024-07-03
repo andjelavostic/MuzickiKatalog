@@ -122,7 +122,7 @@ namespace MuzickiKatalog
                 var objekat = sMV.SearchObject(id, aS, gS, iS, nS);
                 if (sMV.SearchIzvodjac(id, iS))
                 {
-                    ArtistView artistView = new ArtistView(iS.GetByID(id));
+                    ArtistView artistView = new ArtistView(iS.GetByID(id),null,"");
                     artistView.Show();
                     this.Close();
                 }

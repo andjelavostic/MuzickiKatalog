@@ -32,6 +32,10 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return GetAll().Any(k => k.Email == zadaniEmail);
         }
+        public Korisnik GetById(string email)
+        {
+            return GetAll().Find(k => k.Email == email);
+        }
         public void DodajKorisnika(RegistrovanKorisnik noviKorisnik)
         {
             korisnici.Add(noviKorisnik);

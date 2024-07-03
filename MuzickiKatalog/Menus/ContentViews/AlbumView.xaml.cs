@@ -1,4 +1,5 @@
 ﻿using MuzickiKatalog.Infrastructure.Service;
+using MuzickiKatalog.Menus.UserMenus.UserViews;
 using MuzickiKatalog.Models;
 using MuzickiKatalog.Models.Items;
 using MuzickiKatalog.Models.Users;
@@ -239,9 +240,18 @@ namespace MuzickiKatalog.Menus.ContentViews
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
-            this.Close();
+            if (userRole == "korisnik")
+            {
+                UserMenu user = new UserMenu(korisnik.Email);
+                user.Show();
+                this.Close();
+            }
+            else
+            {
+                MainWindow main = new MainWindow();
+                main.Show();
+                this.Close();
+            }
         }
     }
 }
