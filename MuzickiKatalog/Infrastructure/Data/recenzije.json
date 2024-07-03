@@ -47,5 +47,19 @@
     "IdSadrzaja": 7,
     "IdKorisnik": "ana.anic@gmail.com",
     "Datum": "2024-07-03T21:26:31.1188199+02:00"
+  },
+  {
+    "Id": 6,
+    "Komentar": "pesme su uredu nisu toliko losi sve u svemu ok bend\r\n",
+    "IdSadrzaja": 20,
+    "IdKorisnik": "brankak@gmail.com",
+    "Datum": "2024-07-04T00:15:08.6547878+02:00"
+  },
+  {
+    "Id": 7,
+    "Komentar": "izuzetno dobar bend nemam reci i vise nego ok\r\n",
+    "IdSadrzaja": 20,
+    "IdKorisnik": "ana.anic@gmail.com",
+    "Datum": "2024-07-04T00:16:11.8971066+02:00"
   }
 ]

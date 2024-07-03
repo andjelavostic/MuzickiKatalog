@@ -241,3 +241,5 @@ C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-
 C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.baml
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.g.cs
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.baml

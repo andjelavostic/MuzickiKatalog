@@ -63,11 +63,27 @@
     "Slika": "opis",
     "Opis": "slika",
     "OcenaUrednika": {
-      "Id": 0,
-      "Vrednost": 0,
-      "Korisnik": null
+      "Id": 10,
+      "Vrednost": 5,
+      "Korisnik": "ana.anic@gmail.com"
     },
-    "OceneKorisnika": [],
+    "OceneKorisnika": [
+      {
+        "Id": 11,
+        "Vrednost": 4,
+        "Korisnik": "brankak@gmail.com"
+      },
+      {
+        "Id": 12,
+        "Vrednost": 4,
+        "Korisnik": "brankak@gmail.com"
+      },
+      {
+        "Id": 13,
+        "Vrednost": 4,
+        "Korisnik": "brankak@gmail.com"
+      }
+    ],
     "IdKreatora": "petar.petrovic@gmail.com"
   },
   {
