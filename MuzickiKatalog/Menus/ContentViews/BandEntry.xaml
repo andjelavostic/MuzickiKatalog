@@ -21,8 +21,7 @@
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="45,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="254,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+        <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Center" Margin="0,454,0,0" VerticalAlignment="Top" Height="49" Width="112"/>
         <Label Content="Date of foundation" HorizontalAlignment="Left" Margin="40,290,0,0" VerticalAlignment="Top" Width="122"/>
         <DatePicker Name="dateOfFound" HorizontalAlignment="Left" Height="26" Margin="200,290,0,0" VerticalAlignment="Top" Width="188"/>
         <Label Content="Artists" HorizontalAlignment="Left" Margin="40,348,0,0" VerticalAlignment="Top" Width="122"/>

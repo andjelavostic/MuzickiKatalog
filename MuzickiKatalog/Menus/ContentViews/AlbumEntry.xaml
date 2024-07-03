@@ -23,8 +23,7 @@
             </FlowDocument>
         </RichTextBox>
         <ComboBox Name="artistCombo" SelectionChanged="artistCombo_SelectionChanged" HorizontalAlignment="Left" Margin="246,70,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="46,606,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="254,606,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+        <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Center" Margin="0,590,0,0" VerticalAlignment="Top" Height="53" Width="124"/>
         <Label Content="Record label:" HorizontalAlignment="Left" Margin="34,192,0,0" VerticalAlignment="Top" Width="102"/>
         <TextBox Name="izdavackaText" HorizontalAlignment="Left" Margin="246,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Album type:" HorizontalAlignment="Left" Margin="34,107,0,0" VerticalAlignment="Top" Width="113"/>

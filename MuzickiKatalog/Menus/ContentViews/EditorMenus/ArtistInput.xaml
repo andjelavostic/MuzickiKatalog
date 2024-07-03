@@ -21,8 +21,7 @@
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Button Name="addButton" Click="addButton_Click"  Content="Add" HorizontalAlignment="Left" Margin="45,528,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="256,523,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+        <Button Name="addButton" Click="addButton_Click"  Content="Add" HorizontalAlignment="Center" Margin="0,534,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
         <Label Content="Last name of the artist: " HorizontalAlignment="Left" Margin="34,53,0,0" VerticalAlignment="Top" Width="147"/>
         <TextBox Name="lastNameText" HorizontalAlignment="Left" Margin="246,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Review:" HorizontalAlignment="Left" Margin="40,387,0,0" VerticalAlignment="Top" Width="122"/>

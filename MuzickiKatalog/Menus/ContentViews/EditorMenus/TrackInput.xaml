@@ -26,8 +26,7 @@
         </RichTextBox>
 
         <ComboBox Name="izvodjacText" HorizontalAlignment="Left" Margin="246,107,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="85,732,0,0" VerticalAlignment="Top" Height="38" Width="112"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="254,732,0,0" VerticalAlignment="Top" Height="39" Width="112"/>
+        <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Center" Margin="0,728,0,0" VerticalAlignment="Top" Height="38" Width="112"/>
         <Label Content="Rewiew" HorizontalAlignment="Left" Height="28" Margin="34,535,0,0" VerticalAlignment="Top" Width="141"/>
         <TextBox Name="reviewText" HorizontalAlignment="Left" Height="66" Margin="234,535,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151"/>
         <Label Content="Grade" HorizontalAlignment="Left" Height="26" Margin="34,652,0,0" VerticalAlignment="Top" Width="70"/>

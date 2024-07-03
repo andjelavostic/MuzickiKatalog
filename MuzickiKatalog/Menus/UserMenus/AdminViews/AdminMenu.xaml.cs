@@ -57,5 +57,12 @@ namespace MuzickiKatalog
             GenreEntry genre = new GenreEntry();
             genre.Show();
         }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
     }
 }
