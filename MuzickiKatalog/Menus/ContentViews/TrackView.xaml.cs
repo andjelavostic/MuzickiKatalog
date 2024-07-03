@@ -26,7 +26,7 @@ namespace MuzickiKatalog.Menus.ContentViews
         private Numera numera;
         private Korisnik korisnik;
         private RecenzijaService recenzijaService;
-        private NumeraService albumService;
+        private NumeraService numeraService;
         private string userRole;
         private GlobalID globalId;
         public TrackView(Numera n, Korisnik k, string userRole)
@@ -36,7 +36,7 @@ namespace MuzickiKatalog.Menus.ContentViews
             this.korisnik = k;
             this.userRole = userRole;
             this.globalId = new GlobalID();
-            this.albumService = new NumeraService();
+            this.numeraService = new NumeraService();
             this.recenzijaService = new RecenzijaService();
             // testiranje
             this.userRole = "UREDNIK";
@@ -150,7 +150,54 @@ namespace MuzickiKatalog.Menus.ContentViews
         }
 
         private void ratingButton_Click(object sender, RoutedEventArgs e)
-        { }
+        {
+            if (korisnik == null)
+            {
+                MessageBox.Show("Registrujte se ukoliko zelite da ostavite ocenu.");
+            }
+            else if (userRole.Equals("UREDNIK") && numera.OcenaUrednika.Korisnik != null)
+            {
+                MessageBox.Show("Vec postoji ocena urednika");
+            }
+            else
+            {
+                int rating = (int)ratingComboBox.SelectedItem;
+                if (userRole.Equals("UREDNIK"))
+                {
+                    Ocena newRating = new Ocena();
+                    newRating.Id = globalId.NextId();
+                    newRating.Vrednost = rating;
+                    newRating.Korisnik = korisnik.Email;
+                    numeraService.AddEditorsRating(numera.Id, newRating);
+                    MessageBox.Show("Uspesno ste ocenili album!");
+                }
+                else
+                {
+                    bool hasUserRated = false;
+                    foreach (Ocena ocena in numera.OceneKorisnika)
+                    {
+                        if (ocena.Korisnik.Equals(korisnik.Email))
+                        {
+                            hasUserRated = true;
+                            break;
+                        }
+                    }
+                    if (hasUserRated)
+                    {
+                        MessageBox.Show("Vec ste ocenili ovaj album!");
+                    }
+                    else
+                    {
+                        Ocena newRating = new Ocena();
+                        newRating.Id = globalId.NextId();
+                        newRating.Vrednost = rating;
+                        newRating.Korisnik = korisnik.Email;
+                        numeraService.AddUsersRating(numera.Id, newRating);
+                        MessageBox.Show("Uspesno ste ocenili album!");
+                    }
+                }
+            }
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
