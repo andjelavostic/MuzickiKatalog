@@ -1,25 +1,25 @@
 ﻿
 
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\MainWindow.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\AlbumEntry.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\AlbumView.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\ArtistEntry.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\ArtistView.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\BandEntry.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\ContentView.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\EditorMenus\AlbumInput.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\EditorMenus\ArtistInput.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\EditorMenus\BandInput.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\EditorMenus\TrackInput.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\GenreEntry.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\TrackEntry.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\TrackView.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\AdminViews\AdminAssignTasks.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\AdminViews\AdminMenu.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\EditorViews\EditorAssignedTasks.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\EditorViews\EditorMenu.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\LogIn.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\Register.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\UserViews\UserMenu.xaml;;
-FD:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\BandView.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\MainWindow.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\AlbumEntry.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\AlbumView.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\ArtistEntry.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\ArtistView.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\BandEntry.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\BandView.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\ContentView.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\EditorMenus\AlbumInput.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\EditorMenus\ArtistInput.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\EditorMenus\BandInput.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\EditorMenus\TrackInput.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\GenreEntry.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\TrackEntry.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\ContentViews\TrackView.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\AdminViews\AdminAssignTasks.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\AdminViews\AdminMenu.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\EditorViews\EditorAssignedTasks.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\EditorViews\EditorMenu.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\LogIn.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\Register.xaml;;
+FC:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\Menus\UserMenus\UserViews\UserMenu.xaml;;
 

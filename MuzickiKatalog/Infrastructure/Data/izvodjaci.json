@@ -86,7 +86,13 @@
       "Vrednost": 5,
       "Korisnik": "jelena.jankovic@gmail.com"
     },
-    "OceneKorisnika": [],
+    "OceneKorisnika": [
+      {
+        "Id": 14,
+        "Vrednost": 5,
+        "Korisnik": "brankak@gmail.com"
+      }
+    ],
     "IdKreatora": "jelena.jankovic@gmail.com"
   },
   {
