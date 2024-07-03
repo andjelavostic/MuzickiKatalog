@@ -20,9 +20,11 @@ namespace MuzickiKatalog.Menus.ContentViews
     /// </summary>
     public partial class AlbumEntry : Window
     {
-        public AlbumEntry()
+        private string id;
+        public AlbumEntry(string id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void addButton_Click(object sender, RoutedEventArgs e)

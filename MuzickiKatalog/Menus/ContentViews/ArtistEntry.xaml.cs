@@ -19,9 +19,11 @@ namespace MuzickiKatalog.Menus.ContentViews
     /// </summary>
     public partial class ArtistEntry : Window
     {
-        public ArtistEntry()
+        private string id;
+        public ArtistEntry(string id)
         {
             InitializeComponent();
+            this.id = id;
         }
     }
 }
