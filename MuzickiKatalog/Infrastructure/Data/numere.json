@@ -46,5 +46,31 @@
     },
     "OceneKorisnika": [],
     "IdKreatora": "petar.petrovic@gmail.com"
+  },
+  {
+    "Naziv": "Lepa pesma",
+    "Trajanje": 3.5,
+    "DatumObjave": "2024-07-03T14:49:28.9711357+02:00",
+    "IzvodjacId": 20,
+    "Id": 24,
+    "Opis": "Super lepa i spora pesma.",
+    "Slika": "slika",
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      },
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      }
+    ],
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
   }
 ]

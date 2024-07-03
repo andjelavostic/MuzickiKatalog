@@ -23,7 +23,7 @@
         </RichTextBox>
         <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="45,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="254,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
-        <Label Content="Last name of the artist: " HorizontalAlignment="Left" Margin="34,53,0,0" VerticalAlignment="Top" Width="123"/>
+        <Label Content="Last name of the artist: " HorizontalAlignment="Left" Margin="34,53,0,0" VerticalAlignment="Top" Width="176" Height="22"/>
         <TextBox Name="lastNameText" HorizontalAlignment="Left" Margin="246,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

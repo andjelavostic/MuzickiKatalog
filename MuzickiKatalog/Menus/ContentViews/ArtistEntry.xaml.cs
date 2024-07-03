@@ -1,6 +1,7 @@
 ﻿using MuzickiKatalog.Infrastructure.Service;
 using MuzickiKatalog.Models;
 using MuzickiKatalog.Models.Items;
+using MuzickiKatalog.ModelViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,16 +23,16 @@ namespace MuzickiKatalog.Menus.ContentViews
     /// </summary>
     public partial class ArtistEntry : Window
     {
-        private GlobalID idCounter;
         private ZanrService zanroviService;
         private IzvodjacService izvodjacService;
         private string id;
+        private AddArtistModelView mv;
         public ArtistEntry(string id)
         {
             InitializeComponent();
-            idCounter = new GlobalID();
             zanroviService = new ZanrService();
             izvodjacService = new IzvodjacService();
+            mv=new AddArtistModelView(id);
             this.id = id;
             List<Zanr> z = zanroviService.GetAll();
             foreach (Zanr zz in z)
@@ -44,15 +45,20 @@ namespace MuzickiKatalog.Menus.ContentViews
         {
             if (description.Text != "" && nameText.Text != "" && lastNameText.Text != "" && genreChoice.SelectedItems.Count != 0 && imageText.Text!="")
             {
+                string desc = description.Text;
+                string name = nameText.Text;
+                string lastName = lastNameText.Text;
+                string img = imageText.Text;
                 List<Zanr> zanrovi = new List<Zanr>();
                 foreach (var item in genreChoice.SelectedItems)
                 {
                     zanrovi.Add(zanroviService.FindZanr(item.ToString()));
                 }
-                Izvodjac izvodjac = new Izvodjac(idCounter.NextId(), description.Text,imageText.Text, new Ocena(), new List<Ocena>(),
-                    nameText.Text, lastNameText.Text, zanrovi, id);
-                izvodjacService.AddIzvodjac(izvodjac);
-                MessageBox.Show("Uspesno dodat izvodjac!");
+                bool uspeh = mv.AddArtistAdmin(desc, name, lastName, zanrovi, img) ;
+                if (uspeh)
+                    MessageBox.Show("Uspesno dodat izvodjac!");
+                else
+                    MessageBox.Show("Neuspesno!");
             }
             else
             {

@@ -62,5 +62,25 @@
     },
     "OceneKorisnika": [],
     "IdKreatora": "petar.petrovic@gmail.com"
+  },
+  {
+    "Ime": "Zeljko",
+    "Prezime": "Samardzic",
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      }
+    ],
+    "Id": 26,
+    "Slika": "slika",
+    "Opis": "Poreklom iz Mostara.",
+    "OcenaUrednika": {
+      "Id": 25,
+      "Vrednost": 5,
+      "Korisnik": "jelena.jankovic@gmail.com"
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "jelena.jankovic@gmail.com"
   }
 ]

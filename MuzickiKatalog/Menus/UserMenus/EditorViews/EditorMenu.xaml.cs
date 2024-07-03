@@ -42,13 +42,13 @@ namespace MuzickiKatalog
 
         private void addBand_Click(object sender, RoutedEventArgs e)
         {
-            BandEntry band = new BandEntry(idEditor);
+            BandInput band = new BandInput(idEditor);
             band.Show();
         }
 
         private void addArtist_Click(object sender, RoutedEventArgs e)
         {
-            ArtistEntry artist = new ArtistEntry(idEditor);
+            ArtistInput artist = new ArtistInput(idEditor);
             artist.Show();
         }
     }
