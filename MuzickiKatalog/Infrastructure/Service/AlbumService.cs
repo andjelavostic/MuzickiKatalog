@@ -36,5 +36,30 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return albumi.FirstOrDefault(album => album.Id == id);
         }
+        public void AddEditorsRating(int albumId, Ocena rating)
+        {
+            foreach (Album album in albumi)
+            {
+                if (album.Id == albumId)
+                {
+                    album.OcenaUrednika = rating;
+                    break;
+                }
+            }
+            Serialize<Album>(filePath, albumi);
+        }
+
+        public void AddUsersRating(int albumId, Ocena rating)
+        {
+            foreach (Album album in albumi)
+            {
+                if (album.Id == albumId)
+                {
+                    album.OceneKorisnika.Add(rating);
+                    break;
+                }
+            }
+            Serialize<Album>(filePath, albumi);
+        }
     }
 }

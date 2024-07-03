@@ -18,9 +18,9 @@
       }
     ],
     "OcenaUrednika": {
-      "Id": 0,
-      "Vrednost": 0,
-      "Korisnik": null
+      "Id": 37,
+      "Vrednost": 3,
+      "Korisnik": "ana.anic@gmail.com"
     },
     "OceneKorisnika": [],
     "IdKreatora": "petar.petrovic@gmail.com"

@@ -127,13 +127,13 @@ namespace MuzickiKatalog
                     this.Close();
                 }
                 else if(sMV.SearchNumera(id, nS)){
-                    TrackView trackView = new TrackView(nS.GetByID(id));
+                    TrackView trackView = new TrackView(nS.GetByID(id),null,"");
                     trackView.Show();
                     this.Close();
                 }
                 else if (sMV.SearchAlbum(id, aS))
                 {
-                    AlbumView albumView = new AlbumView(aS.GetByID(id));
+                    AlbumView albumView = new AlbumView(aS.GetByID(id),null,"");
                     albumView.Show();
                     this.Close();
                 }

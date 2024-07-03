@@ -41,5 +41,31 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return numere.FirstOrDefault(numera => numera.Id == id);
         }
+
+        public void AddEditorsRating(int numeraId, Ocena rating)
+        {
+            foreach (Numera numera in numere)
+            {
+                if (numera.Id == numeraId)
+                {
+                    numera.OcenaUrednika = rating;
+                    break;
+                }
+            }
+            Serialize<Numera>(filePath, numere);
+        }
+
+        public void AddUsersRating(int numeraId, Ocena rating)
+        {
+            foreach (Numera numera in numere)
+            {
+                if (numera.Id == numeraId)
+                {
+                    numera.OceneKorisnika.Add(rating);
+                    break;
+                }
+            }
+            Serialize<Numera>(filePath, numere);
+        }
     }
 }
