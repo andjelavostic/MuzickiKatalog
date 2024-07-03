@@ -41,6 +41,27 @@ namespace MuzickiKatalog.Menus.ContentViews
             this.izvodjacService = new IzvodjacService();
             this.recenzijaService = new RecenzijaService();
 
+            // testiranje
+            this.userRole = "UREDNIK";
+            UrednikService urednikService = new UrednikService();
+            RegistrovanKorisnikService registr = new RegistrovanKorisnikService();
+            foreach (Urednik urednik in urednikService.GetAll())
+            {
+                if (urednik.Email.Equals("ana.anic@gmail.com"))
+                {
+                    korisnik = urednik;
+                    break;
+                }
+            }
+            /*foreach (RegistrovanKorisnik urednik in registr.GetAll())
+            {
+                if (urednik.Email.Equals("brankak@gmail.com"))
+                {
+                    korisnik = urednik;
+                    break;
+                }
+            }*/
+
             if (grupa != null)
             {
 
@@ -141,7 +162,39 @@ namespace MuzickiKatalog.Menus.ContentViews
             }
         }
 
-        private void reviewButton_Click(object sender, RoutedEventArgs e) { }
+        private string GetTextFromRichTextBox(RichTextBox richTextBox)
+        {
+            TextRange textRange = new TextRange(richTextBox.Document.ContentStart, richTextBox.Document.ContentEnd);
+            return textRange.Text;
+        }
+
+        private void reviewButton_Click(object sender, RoutedEventArgs e)
+        {
+            Recenzija editorsReview = recenzijaService.GetEditorsReviewForContent(grupa.Id);
+            if (korisnik == null)
+            {
+                MessageBox.Show("Registrujte se ukoliko zelite da ostavite recenziju.");
+            }
+            else if (userRole.Equals("UREDNIK") && editorsReview != null)
+            {
+                MessageBox.Show("Vec postoji ocena urednika");
+            }
+            else
+            {
+                Recenzija existingReview = recenzijaService.GetRecenzijaById(korisnik.Email, grupa.Id);
+                if (existingReview != null)
+                {
+                    MessageBox.Show("Vec ste ostavili recenziju za ovog izvodjaca, kontaktirajte administratora.");
+                }
+                else
+                {
+                    string review = GetTextFromRichTextBox(reviewTextBox);
+                    Recenzija newReview = new Recenzija(globalId.NextId(), review, grupa.Id, korisnik.Email);
+                    recenzijaService.AddRecenzija(newReview);
+                    MessageBox.Show("Uspesno ste ostavili recenziju");
+                }
+            }
+        }
 
         private void ratingButton_Click(object sender, RoutedEventArgs e) { }
 
