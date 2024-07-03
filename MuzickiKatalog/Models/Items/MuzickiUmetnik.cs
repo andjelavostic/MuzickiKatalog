@@ -58,7 +58,7 @@ namespace MuzickiKatalog.Models.Items
             get { return idKreatora; }
             set { idKreatora = value; }
         }
-        public MuzickiUmetnik(int id, string slika, string opis, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Zanr> zanrovi,string idKreatora)
+        public MuzickiUmetnik(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, List<Zanr> zanrovi,string idKreatora)
         {
             this.id = id;
             this.slika = slika;

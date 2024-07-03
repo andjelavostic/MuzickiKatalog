@@ -1,14 +1,7 @@
-﻿[
+[
   {
-    "Id": 7,
-    "Slika": "slika",
-    "Opis": "Milan je rođen u Beogradu 1975",
-    "OcenaUrednika": {
-      "Id": 55,
-      "Ocena": 4,
-      "Korisnik": "jelena.jankovic@gmail.com"
-    },
-    "OceneKorisnika": [],
+    "Ime": "Milan",
+    "Prezime": "Petrovic",
     "Zanrovi": [
       {
         "Id": 1,
@@ -19,8 +12,55 @@
         "Naziv": "Folk"
       }
     ],
-    "IdKreatora": "jelena.jankovic@gmail.com",
-    "Ime": "Milan",
-    "Prezime": "Petrovic"
+    "Id": 7,
+    "Slika": "slika",
+    "Opis": "Milan je rođen u Beogradu 1975",
+    "OcenaUrednika": {
+      "Id": 55,
+      "Vrednost": 0,
+      "Korisnik": "jelena.jankovic@gmail.com"
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "jelena.jankovic@gmail.com"
+  },
+  {
+    "Ime": "Zeljko",
+    "Prezime": "Joksimovic",
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      }
+    ],
+    "Id": 18,
+    "Slika": "slika",
+    "Opis": "Poreklom iz Beograda.",
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
+  },
+  {
+    "Ime": "Jelena",
+    "Prezime": "Tomasevic",
+    "Zanrovi": [
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      }
+    ],
+    "Id": 19,
+    "Slika": "slika",
+    "Opis": "Poreklom iz Negotina, rodjena 1983. godine.",
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
   }
 ]

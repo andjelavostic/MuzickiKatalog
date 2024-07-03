@@ -15,6 +15,11 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             this.izvodjaci = Deserialize<Izvodjac>(this.filePath);
         }
+        public void AddIzvodjac(Izvodjac izvodjac)
+        {
+            izvodjaci.Add(izvodjac);
+            Serialize<Izvodjac>(filePath, izvodjaci);
+        }
         public override List<T> Deserialize<T>(string _filename)
         {
             return base.Deserialize<T>(_filename);
