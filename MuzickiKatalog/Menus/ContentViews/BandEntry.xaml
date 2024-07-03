@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MuzickiKatalog.Menus.ContentViews"
         mc:Ignorable="d"
-        Title="BandEntry" Background="LightGreen" Height="550" Width="420">
+        Title="BandEntry" Background="LightGreen" Height="550" Width="451">
     <Grid>
         <Label Content="Name of the band: " HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top" Width="123"/>
         <Label Content="Select image:" HorizontalAlignment="Left" Margin="34,71,0,0" VerticalAlignment="Top" Width="113"/>
         <Label Content="Select genres:" HorizontalAlignment="Left" Margin="34,128,0,0" VerticalAlignment="Top" Width="102"/>
-        <TextBox Name="nameText" HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142" Height="22"/>
-        <TextBox Name="imageText" HorizontalAlignment="Left" Margin="246,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142" Height="22"/>
-        <ListBox Name="genreChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="245,124,32,343"/>
+        <TextBox Name="nameText" HorizontalAlignment="Left" Margin="200,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188" Height="22"/>
+        <TextBox Name="imageText" HorizontalAlignment="Left" Margin="200,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188" Height="22"/>
+        <ListBox Name="genreChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="200,124,63,343"/>
         <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="40,205,0,0" VerticalAlignment="Top" Width="122"/>
-        <RichTextBox Margin="250,206,32,267">
+        <RichTextBox Margin="200,206,63,267">
             <FlowDocument>
                 <Paragraph>
                     <Run Name="description" Text=""/>
@@ -24,8 +24,8 @@
         <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="45,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="254,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
         <Label Content="Date of foundation" HorizontalAlignment="Left" Margin="40,290,0,0" VerticalAlignment="Top" Width="122"/>
-        <DatePicker Name="dateOfFound" HorizontalAlignment="Left" Height="26" Margin="254,290,0,0" VerticalAlignment="Top" Width="134"/>
+        <DatePicker Name="dateOfFound" HorizontalAlignment="Left" Height="26" Margin="200,290,0,0" VerticalAlignment="Top" Width="188"/>
         <Label Content="Artists" HorizontalAlignment="Left" Margin="40,348,0,0" VerticalAlignment="Top" Width="122"/>
-        <ListBox Name="artistsChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="246,344,32,102"/>
+        <ListBox Name="artistsChoice" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="200,344,63,102"/>
     </Grid>
 </Window>
