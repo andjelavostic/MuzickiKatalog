@@ -32,5 +32,23 @@ namespace MuzickiKatalog
             TrackEntry track = new TrackEntry(adminId);
             track.Show();
         }
+
+        private void addAlbumButton_Click(object sender, RoutedEventArgs e)
+        {
+            AlbumEntry album = new AlbumEntry(adminId);
+            album.Show();
+        }
+
+        private void addArtistButton_Click(object sender, RoutedEventArgs e)
+        {
+            ArtistEntry artist = new ArtistEntry(adminId);
+            artist.Show();
+
+        }
+
+        private void addBandButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
