@@ -97,7 +97,7 @@ namespace MuzickiKatalog.ModelViews
         }
         public dynamic SearchObject(int id, AlbumService aS, GrupaService gS, IzvodjacService iS, NumeraService nS)
         {
-            if (SearchAlbum(id, aS))
+            /*if (SearchAlbum(id, aS))
             {
                 return aS.GetByID(id);
             }
@@ -106,6 +106,14 @@ namespace MuzickiKatalog.ModelViews
                 return gS.GetByID(id);
 
             }else if(SearchIzvodjac(id, iS))
+            {
+                return iS.GetByID(id);
+            }
+            else
+            {
+                return nS.GetByID(id);
+            }*/
+            if(SearchIzvodjac(id, iS))
             {
                 return iS.GetByID(id);
             }

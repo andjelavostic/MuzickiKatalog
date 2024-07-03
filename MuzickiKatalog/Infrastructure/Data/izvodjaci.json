@@ -2,6 +2,7 @@
   {
     "Id": 7,
     "Slika": "slika",
+    "Opis": "Milan je rođen u Beogradu 1975",
     "OcenaUrednika": {
       "Id": 55,
       "Ocena": 4,

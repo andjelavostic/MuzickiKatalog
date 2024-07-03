@@ -57,8 +57,8 @@ namespace MuzickiKatalog
             string input = SearchBox.Text;
             List<Izvodjac> izvodjaci = sMV.SearchIzvodjaci(input, iS);
             List<Numera> numere = sMV.SearchNumere(input, nS);
-            List<Album> albumi = sMV.SearchAlbumi(input, aS);
-            List<Grupa> grupe = sMV.SearchGrupe(input, gS);
+            //List<Album> albumi = sMV.SearchAlbumi(input, aS);
+            //List<Grupa> grupe = sMV.SearchGrupe(input, gS);
             foreach(Izvodjac i in izvodjaci)
             {
                 data.Add(new TableData(i));
@@ -67,14 +67,14 @@ namespace MuzickiKatalog
             {
                 data.Add(new TableData(n));
             }
-            foreach (Album a in albumi)
+            /*foreach (Album a in albumi)
             {
                 data.Add(new TableData(a));
             }
             foreach (Grupa g in grupe)
             {
                 data.Add(new TableData(g));
-            }
+            }*/
             tableDataGrid.ItemsSource = data;
             tableDataGrid.Visibility = Visibility.Visible;
 
@@ -83,8 +83,8 @@ namespace MuzickiKatalog
         public class TableData
         {
             public int Id { get; set; }
-            public string naziv {  get; set; }  
-            public List<Zanr> zanrovi {  get; set; }
+            public string naziv { get; set; }
+            public List<Zanr> zanrovi { get; set; }
 
             public TableData(Izvodjac i)
             {
@@ -114,6 +114,7 @@ namespace MuzickiKatalog
 
         private void tableDataGrid_MouseDoubleClick_1(object sender, MouseButtonEventArgs e)
         {
+            int i = 0;
             if (tableDataGrid.SelectedItem != null)
             {
                 TableData selectedRow = (TableData)tableDataGrid.SelectedItem;
@@ -121,7 +122,7 @@ namespace MuzickiKatalog
                 var objekat = sMV.SearchObject(id, aS, gS, iS, nS);
                 if (sMV.SearchIzvodjac(id, iS))
                 {
-                    ArtistView artistView = new ArtistView();
+                    ArtistView artistView = new ArtistView(iS.GetByID(id));
                     artistView.Show();
                     this.Close();
                 }
