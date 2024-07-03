@@ -82,5 +82,29 @@
     },
     "OceneKorisnika": [],
     "IdKreatora": "jelena.jankovic@gmail.com"
+  },
+  {
+    "Ime": "Zdravko",
+    "Prezime": "Colic",
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      },
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      }
+    ],
+    "Id": 32,
+    "Slika": "slika",
+    "Opis": "Super pevac, veoma poznat.",
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
   }
 ]

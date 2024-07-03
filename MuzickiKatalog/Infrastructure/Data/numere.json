@@ -72,5 +72,57 @@
     },
     "OceneKorisnika": [],
     "IdKreatora": "petar.petrovic@gmail.com"
+  },
+  {
+    "Naziv": "Lane moje",
+    "Trajanje": 3.45,
+    "DatumObjave": "2024-07-03T16:08:41.0141898+02:00",
+    "IzvodjacId": 18,
+    "Id": 29,
+    "Opis": "Savrsena pesma.",
+    "Slika": "slika",
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      },
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      }
+    ],
+    "OcenaUrednika": {
+      "Id": 28,
+      "Vrednost": 5,
+      "Korisnik": "jelena.jankovic@gmail.com"
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "jelena.jankovic@gmail.com"
+  },
+  {
+    "Naziv": "Grlica",
+    "Trajanje": 4.5,
+    "DatumObjave": "2024-07-03T16:11:20.0449316+02:00",
+    "IzvodjacId": 26,
+    "Id": 31,
+    "Opis": "Prelepa pesma, opustajuca.",
+    "Slika": "slika",
+    "Zanrovi": [
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      },
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      }
+    ],
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
   }
 ]

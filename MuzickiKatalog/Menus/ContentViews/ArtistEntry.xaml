@@ -12,7 +12,7 @@
         <Label Content="Select genres:" HorizontalAlignment="Left" Margin="34,162,0,0" VerticalAlignment="Top" Width="102"/>
         <TextBox Name="nameText" HorizontalAlignment="Left" Margin="246,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="imageText" HorizontalAlignment="Left" Margin="248,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ListBox Name="genreChoice" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="246,163,52,267"/>
+        <ListBox SelectionMode="Multiple" Name="genreChoice" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="246,163,52,267"/>
         <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="34,288,0,0" VerticalAlignment="Top" Width="123"/>
         <RichTextBox Margin="246,288,53,124">
             <FlowDocument>
@@ -23,7 +23,7 @@
         </RichTextBox>
         <Button Name="addButton" Click="addButton_Click" Content="Add" HorizontalAlignment="Left" Margin="45,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="254,458,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
-        <Label Content="Last name of the artist: " HorizontalAlignment="Left" Margin="34,53,0,0" VerticalAlignment="Top" Width="176" Height="22"/>
+        <Label Content="Last name of the artist: " HorizontalAlignment="Left" Margin="34,53,0,0" VerticalAlignment="Top" Width="176" Height="37"/>
         <TextBox Name="lastNameText" HorizontalAlignment="Left" Margin="246,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

@@ -25,7 +25,6 @@ namespace MuzickiKatalog.Infrastructure.Service
         }
         public void AddRecenzija(Recenzija recenzija)
         {
-            recenzije = new List<Recenzija>();
             recenzije.Add(recenzija);
             Serialize<Recenzija>(filePath, recenzije);
         }

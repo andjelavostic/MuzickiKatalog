@@ -1,6 +1,7 @@
 ﻿using MuzickiKatalog.Infrastructure.Service;
 using MuzickiKatalog.Models;
 using MuzickiKatalog.Models.Items;
+using MuzickiKatalog.ModelViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,7 @@ namespace MuzickiKatalog.Menus.ContentViews
         private IzvodjacService izvodjacService;
         private GrupaService grupaService;
         private NumeraService numeraService;
+        private AddTrackModelView mv;
         private string id;
         public TrackEntry(string id)
         {
@@ -36,6 +38,7 @@ namespace MuzickiKatalog.Menus.ContentViews
             izvodjacService = new IzvodjacService();
             grupaService = new GrupaService();
             numeraService = new NumeraService();
+            mv = new AddTrackModelView(id);
             this.id = id;
             List<Zanr> z=zanroviService.GetAll();
             foreach(Zanr zz in z)
@@ -56,7 +59,10 @@ namespace MuzickiKatalog.Menus.ContentViews
 
         private void addButton_Click(object sender, RoutedEventArgs e)
         {
-            if(opisText.Text!="" && nazivText.Text!="" && trajanjeText.Text!="" && zanrText.SelectedItems.Count!=0 && izvodjacText.SelectedItem!=null){
+            if(opisText.Text!="" && nazivText.Text!="" && slikaText.Text!="" && trajanjeText.Text!="" && zanrText.SelectedItems.Count!=0 && izvodjacText.SelectedItem!=null){
+                string opis = opisText.Text;
+                string naziv = nazivText.Text;
+                string slika = slikaText.Text;
                 string izvodjac= izvodjacText.SelectedItem.ToString();
                 int idIzvodjaca = int.Parse(izvodjac.Split(" ")[0]);
                 List<Zanr> zanrovi = new List<Zanr>();
@@ -70,9 +76,11 @@ namespace MuzickiKatalog.Menus.ContentViews
                     MessageBox.Show("Unesi trajanje kao decimalni broj!");
                     return;
                 }
-                Numera numera = new Numera(idCounter.NextId(), opisText.Text, slikaText.Text, new Ocena(), new List<Ocena>(), parsedValue, DateTime.Now, zanrovi, nazivText.Text, idIzvodjaca,id);
-                numeraService.AddNumera(numera);
-                MessageBox.Show("Uspesno dodata numera!");
+                bool uspeh=mv.AddTrackAdmin(naziv, opis,slika, parsedValue, idIzvodjaca, zanrovi);
+                if (uspeh)
+                    MessageBox.Show("Uspesno dodata numera!");
+                else
+                    MessageBox.Show("Neuspesno!");
             }
             else
             {
