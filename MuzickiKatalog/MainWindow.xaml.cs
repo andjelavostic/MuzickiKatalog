@@ -1,4 +1,5 @@
 ﻿using MuzickiKatalog.Infrastructure.Service;
+using MuzickiKatalog.Menus.ContentViews;
 using MuzickiKatalog.Models.Items;
 using MuzickiKatalog.ModelViews;
 using System.Text;
@@ -116,6 +117,16 @@ namespace MuzickiKatalog
             if (tableDataGrid.SelectedItem != null)
             {
                 TableData selectedRow = (TableData)tableDataGrid.SelectedItem;
+                int id = selectedRow.Id;
+                var objekat = sMV.SearchObject(id, aS, gS, iS, nS);
+                if(sMV.SearchIzvodjac(id, iS))
+                {
+                    ArtistView artistView = new ArtistView();
+                    artistView.Show();
+                    this.Close();
+                }
+
+
 
             }
         }
