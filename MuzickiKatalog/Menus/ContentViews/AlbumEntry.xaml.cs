@@ -1,6 +1,7 @@
 ﻿using MuzickiKatalog.Infrastructure.Service;
 using MuzickiKatalog.Models;
 using MuzickiKatalog.Models.Items;
+using MuzickiKatalog.ModelViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,22 +23,22 @@ namespace MuzickiKatalog.Menus.ContentViews
     /// </summary>
     public partial class AlbumEntry : Window
     {
-        private GlobalID idCounter;
         private ZanrService zanroviService;
         private IzvodjacService izvodjacService;
         private GrupaService grupaService;
         private NumeraService numeraService;
         private AlbumService albumService;
+        private AddAlbumModelView mv;
         private string id;
         public AlbumEntry(string id)
         {
             InitializeComponent();
-            idCounter = new GlobalID();
             zanroviService = new ZanrService();
             izvodjacService = new IzvodjacService();
             grupaService = new GrupaService();
             numeraService = new NumeraService();
             albumService = new AlbumService();
+            mv = new AddAlbumModelView(id);
             this.id = id;
             List<Zanr> z = zanroviService.GetAll();
             foreach (Zanr zz in z)
@@ -64,7 +65,12 @@ namespace MuzickiKatalog.Menus.ContentViews
             if (nazivAlbumaText.Text != "" && opisText.Text != "" && artistCombo.SelectedItem != null && tipCombo.SelectedItem != null
                 && imageLinkText.Text != "" && izdavackaText.Text != "" && chooseGenreList.SelectedItems.Count != 0)
             {
-                List<Zanr> zanrovi = new List<Zanr>();
+                string naziv = nazivAlbumaText.Text;
+                string opis = opisText.Text;
+                string img = imageLinkText.Text;
+                string izdavacka = izdavackaText.Text;
+                TipAlbuma tip = (TipAlbuma)Enum.Parse(typeof(TipAlbuma), tipCombo.SelectedItem.ToString());
+                List <Zanr> zanrovi = new List<Zanr>();
                 foreach (var item in chooseGenreList.SelectedItems)
                 {
                     zanrovi.Add(zanroviService.FindZanr(item.ToString()));
@@ -76,11 +82,11 @@ namespace MuzickiKatalog.Menus.ContentViews
                 }
                 string izvodjac = artistCombo.SelectedItem.ToString();
                 int idIzvodjaca = int.Parse(izvodjac.Split(" ")[0]);
-                Album album = new Album(idCounter.NextId(), opisText.Text, imageLinkText.Text, new Ocena(),
-                    new List<Ocena>(), numere,(TipAlbuma)Enum.Parse(typeof(TipAlbuma),tipCombo.SelectedItem.ToString()), izdavackaText.Text, DateTime.Now, zanrovi,
-                    nazivAlbumaText.Text, idIzvodjaca, id);
-                albumService.AddAlbum(album);
-                MessageBox.Show("Uspesno dodat album!");
+                bool uspeh = mv.AddAlbumAdmin(opis, img, numere, tip, izdavacka, zanrovi, naziv, idIzvodjaca);
+                if (uspeh)
+                    MessageBox.Show("Uspesno dodat album!");
+                else
+                    MessageBox.Show("Neuspeh!");
             }
             else
             {

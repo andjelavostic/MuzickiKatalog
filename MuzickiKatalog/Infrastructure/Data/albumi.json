@@ -34,5 +34,60 @@
     },
     "OceneKorisnika": [],
     "IdKreatora": "petar.petrovic@gmail.com"
+  },
+  {
+    "Naziv": "Novi album",
+    "DatumIzdavanja": "2024-07-03T17:52:47.8800442+02:00",
+    "Numere": [
+      {
+        "Naziv": "Lepa pesma",
+        "Trajanje": 3.5,
+        "DatumObjave": "2024-07-03T14:49:28.9711357+02:00",
+        "IzvodjacId": 20,
+        "Id": 24,
+        "Opis": "Super lepa i spora pesma.",
+        "Slika": "slika",
+        "Zanrovi": [
+          {
+            "Id": 1,
+            "Naziv": "Pop"
+          },
+          {
+            "Id": 2,
+            "Naziv": "Folk"
+          }
+        ],
+        "OcenaUrednika": {
+          "Id": 0,
+          "Vrednost": 0,
+          "Korisnik": null
+        },
+        "OceneKorisnika": [],
+        "IdKreatora": "petar.petrovic@gmail.com"
+      }
+    ],
+    "Tip": 2,
+    "IzdavackaKuca": "Grand",
+    "IzvodjacId": 20,
+    "Id": 37,
+    "Opis": "Fin za slusanje.",
+    "Slika": "slika",
+    "Zanrovi": [
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      },
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      }
+    ],
+    "OcenaUrednika": {
+      "Id": 36,
+      "Vrednost": 3,
+      "Korisnik": "jelena.jankovic@gmail.com"
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "jelena.jankovic@gmail.com"
   }
 ]
