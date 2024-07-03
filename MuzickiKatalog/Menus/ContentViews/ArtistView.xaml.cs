@@ -107,8 +107,7 @@ namespace MuzickiKatalog.Menus.ContentViews
                             break;
                         }
                     }
-                }
-                    
+                }    
             }
 
             // ucitavanje urednikove ocene

@@ -30,12 +30,12 @@ namespace MuzickiKatalog.Menus.ContentViews
         private AlbumService albumService;
         private string userRole;
         private GlobalID globalId;
-        public AlbumView(Album a, Korisnik k, string userRole)
+        public AlbumView(Album a, Korisnik k, string role)
         {
             InitializeComponent();
             this.album = a;
             this.korisnik = k;
-            this.userRole = userRole;
+            this.userRole = role;
             this.globalId = new GlobalID();
             this.albumService = new AlbumService();
             this.recenzijaService = new RecenzijaService();
@@ -100,6 +100,26 @@ namespace MuzickiKatalog.Menus.ContentViews
             else
             {
                 editorsReviewTextBlock.Text = editorsReview.Komentar;
+            }
+
+            // ucitavanje postojece ocene korisnika
+            if (korisnik != null)
+            {
+                if (userRole.Equals("UREDNIK") && album.OcenaUrednika.Korisnik != null)
+                {
+                    ratingComboBox.SelectedIndex = album.OcenaUrednika.Vrednost - 1;
+                }
+                else if (album.OceneKorisnika.Count > 0)
+                {
+                    foreach (Ocena ocena in album.OceneKorisnika)
+                    {
+                        if (ocena.Korisnik.Equals(korisnik.Email))
+                        {
+                            ratingComboBox.SelectedIndex = ocena.Vrednost - 1;
+                            break;
+                        }
+                    }
+                }
             }
 
             // ucitavanje urednikove ocene

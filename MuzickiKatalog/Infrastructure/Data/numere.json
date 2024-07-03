@@ -22,7 +22,13 @@
       "Vrednost": 3,
       "Korisnik": "ana.anic@gmail.com"
     },
-    "OceneKorisnika": [],
+    "OceneKorisnika": [
+      {
+        "Id": 5,
+        "Vrednost": 4,
+        "Korisnik": "brankak@gmail.com"
+      }
+    ],
     "IdKreatora": "petar.petrovic@gmail.com"
   },
   {

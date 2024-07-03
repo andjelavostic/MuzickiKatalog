@@ -30,16 +30,15 @@ namespace MuzickiKatalog.Menus.ContentViews
         private NumeraService numeraService;
         private string userRole;
         private GlobalID globalId;
-        public TrackView(Numera n, Korisnik k, string userRole)
+        public TrackView(Numera n, Korisnik k, string role)
         {
             InitializeComponent();
             this.numera = n;
             this.korisnik = k;
-            this.userRole = userRole;
+            this.userRole = role;
             this.globalId = new GlobalID();
             this.numeraService = new NumeraService();
             this.recenzijaService = new RecenzijaService();
-            // testiranje
 
             if (numera != null)
             {
@@ -87,6 +86,26 @@ namespace MuzickiKatalog.Menus.ContentViews
             else
             {
                 editorsReviewTextBlock.Text = editorsReview.Komentar;
+            }
+
+            // ucitavanje postojece ocene korisnika
+            if (korisnik != null)
+            {
+                if (userRole.Equals("UREDNIK") && numera.OcenaUrednika.Korisnik != null)
+                {
+                    ratingComboBox.SelectedIndex = numera.OcenaUrednika.Vrednost - 1;
+                }
+                else if (numera.OceneKorisnika.Count > 0)
+                {
+                    foreach (Ocena ocena in numera.OceneKorisnika)
+                    {
+                        if (ocena.Korisnik.Equals(korisnik.Email))
+                        {
+                            ratingComboBox.SelectedIndex = ocena.Vrednost - 1;
+                            break;
+                        }
+                    }
+                }
             }
 
             // ucitavanje urednikove ocene
