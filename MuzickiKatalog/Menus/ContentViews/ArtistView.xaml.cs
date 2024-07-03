@@ -41,26 +41,7 @@ namespace MuzickiKatalog.Menus.ContentViews
             this.globalId = new GlobalID();
             this.izvodjacService = new IzvodjacService();
             this.recenzijaService = new RecenzijaService();
-            // testiranje
-            /*this.userRole = "korisnik";
-            UrednikService urednikService = new UrednikService();
-            RegistrovanKorisnikService registr = new RegistrovanKorisnikService();
-            foreach (Urednik urednik in urednikService.GetAll())
-            {
-                if (urednik.Email.Equals("ana.anic@gmail.com"))
-                {
-                    korisnik = urednik;
-                    break;
-                }
-            }
-            foreach (RegistrovanKorisnik urednik in registr.GetAll())
-            {
-                if (urednik.Email.Equals("brankak@gmail.com"))
-                {
-                    korisnik = urednik;
-                    break;
-                }
-            }*/
+            
             if (izvodjac != null)
             {
              
@@ -107,6 +88,27 @@ namespace MuzickiKatalog.Menus.ContentViews
             else
             {
                 editorsReviewTextBlock.Text = editorsReview.Komentar;
+            }
+
+            // ucitavanje postojece ocene korisnika
+            if (korisnik != null)
+            {
+                if (userRole.Equals("UREDNIK") && izvodjac.OcenaUrednika.Korisnik != null)
+                {
+                    ratingComboBox.SelectedIndex = izvodjac.OcenaUrednika.Vrednost - 1;
+                }
+                else if (izvodjac.OceneKorisnika.Count > 0)
+                {
+                    foreach (Ocena ocena in izvodjac.OceneKorisnika)
+                    {
+                        if (ocena.Korisnik.Equals(korisnik.Email))
+                        {
+                            ratingComboBox.SelectedIndex = ocena.Vrednost - 1;
+                            break;
+                        }
+                    }
+                }
+                    
             }
 
             // ucitavanje urednikove ocene
