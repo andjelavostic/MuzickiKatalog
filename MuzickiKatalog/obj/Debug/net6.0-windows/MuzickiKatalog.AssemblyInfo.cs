@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuzickiKatalog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85ef28f0ac9a9e47aceda4950677a25db90a2538")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbf55d2f4278c2766ac3a6b3b8b1cf3af69233e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuzickiKatalog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuzickiKatalog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
