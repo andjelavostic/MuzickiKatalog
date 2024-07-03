@@ -18,5 +18,13 @@
   {
     "Id": 5,
     "Naziv": "Latino"
+  },
+  {
+    "Id": 22,
+    "Naziv": "Jazz"
+  },
+  {
+    "Id": 23,
+    "Naziv": "Rep"
   }
 ]

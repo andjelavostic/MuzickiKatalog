@@ -51,5 +51,11 @@ namespace MuzickiKatalog
             BandEntry band = new BandEntry(adminId);
             band.Show();
         }
+
+        private void addGenre_Click(object sender, RoutedEventArgs e)
+        {
+            GenreEntry genre = new GenreEntry();
+            genre.Show();
+        }
     }
 }

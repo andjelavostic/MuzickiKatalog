@@ -13,6 +13,7 @@
         <Button Name="addAlbumButton" Click="addAlbumButton_Click" Content="Album entry" HorizontalAlignment="Left" Margin="231,203,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
         <Button Name="addArtistButton" Click="addArtistButton_Click" Content="Artist entry" HorizontalAlignment="Left" Margin="400,203,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
         <Button Name="addBandButton" Click="addBandButton_Click" Content="Band entry" HorizontalAlignment="Left" Margin="572,203,0,0" VerticalAlignment="Top" Height="50" Width="132"/>
+        <Button Name="addGenre" Click="addGenre_Click" Content="Genre entry" HorizontalAlignment="Center" Margin="0,289,0,0" VerticalAlignment="Top" Height="50" Width="132"/>
 
     </Grid>
 </Window>

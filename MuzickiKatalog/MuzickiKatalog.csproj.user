@@ -22,6 +22,9 @@
     <Compile Update="Menus\ContentViews\BandEntry.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Menus\ContentViews\GenreEntry.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Menus\ContentViews\TrackEntry.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menus\ContentViews\BandEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\GenreEntry.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menus\ContentViews\TrackEntry.xaml">

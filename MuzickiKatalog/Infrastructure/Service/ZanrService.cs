@@ -19,6 +19,11 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return zanrovi;
         }
+        public void AddZanr(Zanr zanr)
+        {
+            zanrovi.Add(zanr);
+            Serialize<Zanr>(filePath, zanrovi);
+        }
         public Zanr FindZanr(string trazeniNaziv)
         {
             return zanrovi.Find(z => z.Naziv == trazeniNaziv);
