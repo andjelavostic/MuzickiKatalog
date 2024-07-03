@@ -57,8 +57,8 @@ namespace MuzickiKatalog
             string input = SearchBox.Text;
             List<Izvodjac> izvodjaci = sMV.SearchIzvodjaci(input, iS);
             List<Numera> numere = sMV.SearchNumere(input, nS);
-            //List<Album> albumi = sMV.SearchAlbumi(input, aS);
-            //List<Grupa> grupe = sMV.SearchGrupe(input, gS);
+            List<Album> albumi = sMV.SearchAlbumi(input, aS);
+            List<Grupa> grupe = sMV.SearchGrupe(input, gS);
             foreach(Izvodjac i in izvodjaci)
             {
                 data.Add(new TableData(i));
@@ -67,14 +67,14 @@ namespace MuzickiKatalog
             {
                 data.Add(new TableData(n));
             }
-            /*foreach (Album a in albumi)
+            foreach (Album a in albumi)
             {
                 data.Add(new TableData(a));
             }
             foreach (Grupa g in grupe)
             {
                 data.Add(new TableData(g));
-            }*/
+            }
             tableDataGrid.ItemsSource = data;
             tableDataGrid.Visibility = Visibility.Visible;
 
@@ -124,6 +124,11 @@ namespace MuzickiKatalog
                 {
                     ArtistView artistView = new ArtistView(iS.GetByID(id));
                     artistView.Show();
+                    this.Close();
+                }
+                else if(sMV.SearchNumera(id, nS)){
+                    TrackView trackView = new TrackView(nS.GetByID(id));
+                    trackView.Show();
                     this.Close();
                 }
 

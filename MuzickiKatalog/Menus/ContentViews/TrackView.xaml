@@ -8,7 +8,7 @@
         Title="TrackView" Background="LightGreen" Height="782" Width="747">
     <Grid>
         <Image Source="/Images/sadrzaj.png"  HorizontalAlignment="Left" Height="200" Margin="483,46,0,0" VerticalAlignment="Top" Width="200"/>
-        <TextBlock HorizontalAlignment="Left" Margin="61,108,0,0" TextWrapping="Wrap" Text="TextBlock (opis i karakteristike tj izvodjac numere zanr i slicno za dat sadrzaj)" VerticalAlignment="Top" Height="145" Width="324"/>
+        <TextBlock Name ="DesctiptionTextBlock" HorizontalAlignment="Left" Margin="61,108,0,0" TextWrapping="Wrap" Text="TextBlock (opis i karakteristike tj izvodjac numere zanr i slicno za dat sadrzaj)" VerticalAlignment="Top" Height="145" Width="324"/>
         <Label Content="Description:" HorizontalAlignment="Left" Margin="61,58,0,0" VerticalAlignment="Top" Width="124"/>
         <Label Content="User rating: " HorizontalAlignment="Left" Margin="394,327,0,0" VerticalAlignment="Top" Width="122"/>
         <Label Content="Editor rating: " HorizontalAlignment="Left" Margin="394,285,0,0" VerticalAlignment="Top" Width="122"/>
@@ -27,7 +27,7 @@
         <Label Content="Editor's review:" HorizontalAlignment="Left" Margin="394,389,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
         <Button Content="Add to favorites" HorizontalAlignment="Left" Margin="394,659,0,0" VerticalAlignment="Top" Height="57" Width="124"/>
-        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="570,659,0,0" VerticalAlignment="Top" Height="57" Width="124"/>
+        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="570,659,0,0" VerticalAlignment="Top" Height="57" Width="124" Click="Button_Click"/>
         <Button Content="View album" HorizontalAlignment="Left" Margin="61,659,0,0" VerticalAlignment="Top" Height="57" Width="124"/>
         <Button Content="View artist" HorizontalAlignment="Left" Margin="223,659,0,0" VerticalAlignment="Top" Height="57" Width="124"/>
     </Grid>

@@ -28,7 +28,7 @@ namespace MuzickiKatalog.Menus.ContentViews
             if (izvodjac != null)
             {
              
-                string description = $"Ime: {izvodjac.Ime}\nPrezime: {izvodjac.Prezime}\nOpis: {izvodjac.Slika}\nZanrovi: ";
+                string description = $"Ime: {izvodjac.Ime}\nPrezime: {izvodjac.Prezime}\nOpis: {izvodjac.Opis}\nZanrovi: ";
 
                 foreach (Zanr zanr in izvodjac.Zanrovi)
                 {
