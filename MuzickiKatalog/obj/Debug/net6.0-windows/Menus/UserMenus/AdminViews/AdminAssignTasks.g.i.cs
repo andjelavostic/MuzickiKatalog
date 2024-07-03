@@ -53,7 +53,8 @@ namespace MuzickiKatalog {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;component/menus/usermenus/adminviews/adminassigntasks.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MuzickiKatalog;V1.0.0.0;component/menus/usermenus/adminviews/adminassigntasks.xa" +
+                    "ml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Menus\UserMenus\AdminViews\AdminAssignTasks.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -12,6 +12,13 @@ namespace MuzickiKatalog.Models.Items
         private DateTime datumPocetka;
         private DateTime datumKraja;
         private int idOdabira;
+        private string opis;
+
+        public string Opis
+        {
+            get { return opis; }
+            set { opis = value; }
+        }
         public Period Period
         {
             get { return period; }
@@ -33,12 +40,13 @@ namespace MuzickiKatalog.Models.Items
             get { return idOdabira;}
             set { idOdabira = value; }
         }
-        public Anketa(Period period,int  idOdabira, DateTime datumPocetka, DateTime datumKraja)
+        public Anketa(Period period,int  idOdabira, DateTime datumPocetka, DateTime datumKraja, string opis)
         {
             this.period = period;
             this.idOdabira = idOdabira;
             this.datumPocetka = datumPocetka;
             this.datumKraja = datumKraja;
+            this.opis = opis;
         }
     }
     public enum Period

@@ -10,7 +10,7 @@ namespace MuzickiKatalog.Models.Items
     {
         private int id;
         private int idAnkete;
-        private int idGlasaca;
+        private string idGlasaca;
         public int Id
         {
             get { return id; }
@@ -21,12 +21,12 @@ namespace MuzickiKatalog.Models.Items
             get { return idAnkete;}
             set { idAnkete = value; }
         }
-        public int Glasaca
+        public string Glasaca
         {
             get { return idGlasaca;}
             set { idGlasaca = value; }
         }
-        public Glas(int id,int idAnkete,int idGlasaca)
+        public Glas(int id,int idAnkete,string idGlasaca)
         {
             this.id = id;
             this.idAnkete = idAnkete;
