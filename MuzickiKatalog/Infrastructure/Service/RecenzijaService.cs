@@ -1,4 +1,6 @@
-﻿using MuzickiKatalog.Models.Items;
+﻿using MuzickiKatalog.Models;
+using MuzickiKatalog.Models.Items;
+using MuzickiKatalog.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,7 @@ namespace MuzickiKatalog.Infrastructure.Service
 {
     public class RecenzijaService:FileService
     {
-        private List<Recenzija> recenzije;
+        private List<Recenzija> recenzije = new List<Recenzija>();
         private string filePath = ".//..\\..\\..\\Infrastructure\\Data\\recenzije.json";
         public RecenzijaService()
         {
@@ -23,5 +25,49 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             base.Serialize<T>(_filename, items);
         }
+
+        public void AddRecenzija(string komentar, int idSadrzaja, string idKorisnik)
+        {
+            GlobalID globalID = new GlobalID();
+            recenzije.Add(new Recenzija(globalID.NextId(), komentar, idSadrzaja, idKorisnik));
+            Serialize<Recenzija>(filePath, recenzije);
+        }
+
+        public List<Recenzija> GetAll()
+        {
+            return recenzije;
+        }
+
+        public Recenzija GetRecenzijaById(string userId, int contentId)
+        {
+            foreach (Recenzija recenzija in recenzije)
+            {
+                if (recenzija.IdKorisnik.Equals(userId) && recenzija.IdSadrzaja == contentId)
+                {
+                    return recenzija;
+                }
+            }
+            return null;
+        }
+
+        public Recenzija GetEditorsReviewForContent(int contentId)
+        {
+            UrednikService urednikService = new UrednikService();
+            foreach (Recenzija recenzija in recenzije)
+            {
+                if (recenzija.IdSadrzaja != contentId)
+                    continue;
+                else 
+                {
+                    foreach (Urednik urednik in urednikService.GetAll())
+                    {
+                        if (urednik.Email.Equals(recenzija.IdKorisnik))
+                            return recenzija;
+                    }
+                }
+            }
+            return null;
+        }
+        
     }
 }

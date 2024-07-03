@@ -13,22 +13,22 @@
         <Label Content="User rating: " HorizontalAlignment="Left" Margin="394,327,0,0" VerticalAlignment="Top" Width="122"/>
         <Label Content="Editor rating: " HorizontalAlignment="Left" Margin="394,285,0,0" VerticalAlignment="Top" Width="122"/>
         <Label Content="Leave your rating:" HorizontalAlignment="Left" Margin="61,272,0,0" VerticalAlignment="Top" Width="114"/>
-        <ComboBox HorizontalAlignment="Left" Margin="194,276,0,0" VerticalAlignment="Top" Width="47"/>
+        <ComboBox Name="ratingComboBox" HorizontalAlignment="Left" Margin="194,276,0,0" VerticalAlignment="Top" Width="47"/>
         <Button Content="Rate" HorizontalAlignment="Left" Height="34" Margin="61,319,0,0" VerticalAlignment="Top" Width="81"/>
         <Label Content="Leave your review: " HorizontalAlignment="Left" Margin="61,390,0,0" VerticalAlignment="Top"/>
-        <RichTextBox HorizontalAlignment="Left" Height="83" Margin="61,444,0,0" VerticalAlignment="Top" Width="248" RenderTransformOrigin="0.425,0.142">
+        <RichTextBox Name="reviewTextBox"  HorizontalAlignment="Left" Height="83" Margin="61,444,0,0" VerticalAlignment="Top" Width="248" RenderTransformOrigin="0.425,0.142">
             <FlowDocument>
                 <Paragraph>
                     <Run Text=""/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Button Content="Review" HorizontalAlignment="Left" Height="34" Margin="61,555,0,0" VerticalAlignment="Top" Width="81"/>
+        <Button Name="reviewButton" Click="reviewButton_Click" Content="Review" HorizontalAlignment="Left" Height="34" Margin="61,555,0,0" VerticalAlignment="Top" Width="81"/>
         <Label Content="Editor's review:" HorizontalAlignment="Left" Margin="394,389,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
+        <TextBlock Name="editorsReviewTextBlock" HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
         <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="535,946,0,0" VerticalAlignment="Top" Height="57" Width="142" Click="Button_Click"/>
         <Button Content="View track" HorizontalAlignment="Left" Margin="61,946,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="61,730,70,221"/>
+        <DataGrid Name="tracksDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="61,730,70,221"/>
         <Label Content="Tracks featured on album:" HorizontalAlignment="Left" Margin="61,657,0,0" VerticalAlignment="Top" Width="204"/>
         <Button Content="View artist" HorizontalAlignment="Left" Margin="297,946,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
     </Grid>
