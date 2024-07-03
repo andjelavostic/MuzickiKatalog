@@ -70,6 +70,75 @@ namespace MuzickiKatalog.Menus.ContentViews
 
                 DesctiptionTextBlock.Text = description;
             }
+
+            // ucitavanje mogucih ocena u comboBox
+            for (int j = 0; j < 5; j++)
+            {
+                ratingComboBox.Items.Add(j + 1);
+            }
+
+            // ucitavanje postojece recenzije za ulogovanog korisnika
+            if (korisnik != null)
+            {
+                Recenzija existingReview = recenzijaService.GetRecenzijaById(korisnik.Email, grupa.Id);
+                if (existingReview != null)
+                {
+                    FlowDocument document = new FlowDocument();
+                    Paragraph paragraph = new Paragraph(new Run(existingReview.Komentar));
+                    document.Blocks.Add(paragraph);
+                    reviewTextBox.Document = document;
+                }
+            }
+
+            // ucitavanje urednikove recenzije
+            Recenzija editorsReview = recenzijaService.GetEditorsReviewForContent(grupa.Id);
+            if (editorsReview == null)
+            {
+                editorsReviewTextBlock.Text = "N/A";
+            }
+            else
+            {
+                editorsReviewTextBlock.Text = editorsReview.Komentar;
+            }
+
+            // ucitavanje postojece ocene korisnika
+            if (korisnik != null)
+            {
+                if (userRole.Equals("UREDNIK") && grupa.OcenaUrednika.Korisnik != null)
+                {
+                    ratingComboBox.SelectedIndex = grupa.OcenaUrednika.Vrednost - 1;
+                }
+                else if (grupa.OceneKorisnika.Count > 0)
+                {
+                    foreach (Ocena ocena in grupa.OceneKorisnika)
+                    {
+                        if (ocena.Korisnik.Equals(korisnik.Email))
+                        {
+                            ratingComboBox.SelectedIndex = ocena.Vrednost - 1;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // ucitavanje urednikove ocene
+            if (grupa.OcenaUrednika.Korisnik == null)
+                editorsRatingLabel.Content += " N/A";
+            else
+                editorsRatingLabel.Content += grupa.OcenaUrednika.Vrednost.ToString() + "/5";
+
+            // ucitavanje ocena korisnika
+            if (grupa.OceneKorisnika.Count == 0)
+                userRatingLabel.Content += " N/A";
+            else
+            {
+                double sumOfRatings = 0;
+                foreach (Ocena ocena in grupa.OceneKorisnika)
+                {
+                    sumOfRatings += ocena.Vrednost;
+                }
+                userRatingLabel.Content += (sumOfRatings / grupa.OceneKorisnika.Count).ToString() + "/5";
+            }
         }
 
         private void reviewButton_Click(object sender, RoutedEventArgs e) { }
