@@ -54,6 +54,7 @@ namespace MuzickiKatalog
 
         private void Search_Click(object sender, RoutedEventArgs e)
         {
+            data.Clear();
             string input = SearchBox.Text;
             List<Izvodjac> izvodjaci = sMV.SearchIzvodjaci(input, iS);
             List<Numera> numere = sMV.SearchNumere(input, nS);
@@ -75,10 +76,9 @@ namespace MuzickiKatalog
             {
                 data.Add(new TableData(g));
             }
+            tableDataGrid.ItemsSource = null;
             tableDataGrid.ItemsSource = data;
             tableDataGrid.Visibility = Visibility.Visible;
-
-
         }
         public class TableData
         {
@@ -129,6 +129,12 @@ namespace MuzickiKatalog
                 else if(sMV.SearchNumera(id, nS)){
                     TrackView trackView = new TrackView(nS.GetByID(id));
                     trackView.Show();
+                    this.Close();
+                }
+                else if (sMV.SearchAlbum(id, aS))
+                {
+                    AlbumView albumView = new AlbumView(aS.GetByID(id));
+                    albumView.Show();
                     this.Close();
                 }
 

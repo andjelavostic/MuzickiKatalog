@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MuzickiKatalog.Models.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,43 @@ namespace MuzickiKatalog.Menus.ContentViews
     /// </summary>
     public partial class AlbumView : Window
     {
-        public AlbumView()
+        private Album album;
+        public AlbumView(Album a)
         {
             InitializeComponent();
+            this.album = a;
+            if (album != null)
+            {
+
+                string description = $"Naziv: {album.Naziv}\nOpis: {album.Opis}\nZanrovi: ";
+                foreach (Zanr zanr in album.Zanrovi)
+                {
+                    description += $"{zanr.Naziv}, ";
+                }
+
+                if (album.Zanrovi.Count > 0)
+                {
+                    description = description.Substring(0, description.Length - 2);
+                }
+                description += "\n Numere: ";
+                foreach(Numera n in album.Numere)
+                {
+                    description += $"{n.Naziv}, ";
+                }
+                if(album.Numere.Count > 0)
+                {
+                    description = description.Substring(0, description.Length - 2);
+                }
+
+                DesctiptionTextBlock.Text = description;
+            }
+            }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace MuzickiKatalog.ModelViews
             List<Numera> numere = new List<Numera>();
             foreach (Numera n in nS.GetAll())
             {
-                if (n.Naziv.ToLower() == input.ToLower())
+                if (n.Naziv.IndexOf(input, StringComparison.OrdinalIgnoreCase) >= 0)
                 {
                     numere.Add(n);
                 }
@@ -24,44 +24,43 @@ namespace MuzickiKatalog.ModelViews
             return numere;
 
         }
-        public List<Album> SearchAlbumi(String input, AlbumService aS)
+        public List<Album> SearchAlbumi(string input, AlbumService aS)
         {
             List<Album> albumi = new List<Album>();
             foreach (Album a in aS.GetAll())
             {
-                if (a.Naziv.ToLower() == input.ToLower())
+                if (a.Naziv.IndexOf(input, StringComparison.OrdinalIgnoreCase) >= 0)
                 {
                     albumi.Add(a);
                 }
             }
             return albumi;
-
         }
-        public List<Grupa> SearchGrupe(String input, GrupaService gS)
+
+        public List<Grupa> SearchGrupe(string input, GrupaService gS)
         {
             List<Grupa> grupe = new List<Grupa>();
             foreach (Grupa g in gS.GetAll())
             {
-                if (g.Naziv.ToLower() == input.ToLower())
+                if (g.Naziv.IndexOf(input, StringComparison.OrdinalIgnoreCase) >= 0)
                 {
                     grupe.Add(g);
                 }
             }
             return grupe;
-
         }
-        public List<Izvodjac> SearchIzvodjaci(String input, IzvodjacService iS)
+
+        public List<Izvodjac> SearchIzvodjaci(string input, IzvodjacService iS)
         {
             List<Izvodjac> izvodjaci = new List<Izvodjac>();
             foreach (Izvodjac i in iS.GetAll())
             {
-                if (i.Ime.ToLower() == input.ToLower() || i.Prezime.ToLower() == input.ToLower())
+                if (i.Ime.IndexOf(input, StringComparison.OrdinalIgnoreCase) >= 0 || i.Prezime.IndexOf(input, StringComparison.OrdinalIgnoreCase) >= 0)
                 {
                     izvodjaci.Add(i);
                 }
             }
             return izvodjaci;
-
         }
         public bool SearchIzvodjac(int id, IzvodjacService iS)
         {
@@ -113,14 +112,7 @@ namespace MuzickiKatalog.ModelViews
             {
                 return nS.GetByID(id);
             }
-            if(SearchIzvodjac(id, iS))
-            {
-                return iS.GetByID(id);
-            }
-            else
-            {
-                return nS.GetByID(id);
-            }
+            
         }
     }
 }
