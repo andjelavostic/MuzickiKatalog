@@ -26,5 +26,12 @@
     "IdSadrzaja": 37,
     "IdKorisnik": "jelena.jankovic@gmail.com",
     "Datum": "2024-07-03T17:52:47.9457711+02:00"
+  },
+  {
+    "Id": 89,
+    "Komentar": "neki tekst",
+    "IdSadrzaja": 16,
+    "IdKorisnik": "ana.anic@gmail.com",
+    "Datum": "2024-07-03T17:47:48.9796839+02:00"
   }
 ]
