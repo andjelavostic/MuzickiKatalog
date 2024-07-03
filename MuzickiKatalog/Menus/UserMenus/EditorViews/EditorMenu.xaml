@@ -9,8 +9,9 @@
     <Grid>
         <Button Content="View assigned tasks" HorizontalAlignment="Left" Margin="231,95,0,0" VerticalAlignment="Top" Height="50" Width="131" RenderTransformOrigin="0.359,0.406"/>
         <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="63,95,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
-        <Button Content="Track entry" HorizontalAlignment="Left" Margin="63,187,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
-        <Button Content="Album entry" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Height="50" Width="131"/>
-        <Button Content="Artist entry" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Center" Height="50" Width="131"/>
+        <Button Name="addTrack" Click="addTrack_Click" Content="Track entry" HorizontalAlignment="Left" Margin="63,187,0,0" VerticalAlignment="Top" Height="50" Width="131"/>
+        <Button Name="addAlbum" Click="addAlbum_Click" Content="Album entry" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Height="50" Width="131"/>
+        <Button Name="addArtist" Click="addArtist_Click" Content="Artist entry" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Center" Height="50" Width="131"/>
+        <Button Name="addBand" Click="addBand_Click" Content="Artist entry" HorizontalAlignment="Left" Margin="586,0,0,0" VerticalAlignment="Center" Height="50" Width="131"/>
     </Grid>
 </Window>

@@ -22,6 +22,18 @@
     <Compile Update="Menus\ContentViews\BandEntry.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Menus\ContentViews\EditorMenus\AlbumInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\EditorMenus\ArtistInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\EditorMenus\BandInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\EditorMenus\TrackInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Menus\ContentViews\GenreEntry.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -49,6 +61,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menus\ContentViews\BandEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\EditorMenus\AlbumInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\EditorMenus\ArtistInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\EditorMenus\BandInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\EditorMenus\TrackInput.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menus\ContentViews\GenreEntry.xaml">

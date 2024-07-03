@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MuzickiKatalog.Menus.ContentViews;
+using MuzickiKatalog.Menus.ContentViews.EditorMenus;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +26,30 @@ namespace MuzickiKatalog
         {
             InitializeComponent();
             this.idEditor = idEditor;
+        }
+
+        private void addTrack_Click(object sender, RoutedEventArgs e)
+        {
+            TrackInput track = new TrackInput(idEditor);
+            track.Show();
+        }
+
+        private void addAlbum_Click(object sender, RoutedEventArgs e)
+        {
+            AlbumInput album = new AlbumInput(idEditor);
+            album.Show();
+        }
+
+        private void addBand_Click(object sender, RoutedEventArgs e)
+        {
+            BandEntry band = new BandEntry(idEditor);
+            band.Show();
+        }
+
+        private void addArtist_Click(object sender, RoutedEventArgs e)
+        {
+            ArtistEntry artist = new ArtistEntry(idEditor);
+            artist.Show();
         }
     }
 }
