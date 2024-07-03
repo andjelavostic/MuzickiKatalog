@@ -131,6 +131,12 @@ namespace MuzickiKatalog
                     trackView.Show();
                     this.Close();
                 }
+                else if (sMV.SearchAlbum(id, aS))
+                {
+                    AlbumView albumView = new AlbumView(aS.GetByID(id));
+                    albumView.Show();
+                    this.Close();
+                }
 
 
 

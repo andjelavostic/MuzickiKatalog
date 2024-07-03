@@ -113,14 +113,7 @@ namespace MuzickiKatalog.ModelViews
             {
                 return nS.GetByID(id);
             }
-            if(SearchIzvodjac(id, iS))
-            {
-                return iS.GetByID(id);
-            }
-            else
-            {
-                return nS.GetByID(id);
-            }
+            
         }
     }
 }
