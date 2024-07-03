@@ -1,4 +1,5 @@
 ﻿using MuzickiKatalog.Infrastructure.Service;
+using MuzickiKatalog.Menus.UserMenus.UserViews;
 using MuzickiKatalog.Models.Users;
 using System;
 using System.Collections.Generic;
@@ -50,6 +51,8 @@ namespace MuzickiKatalog
                 }
                 else
                 {
+                    UserMenu userMenu = new UserMenu(korisnik.Email);
+                    userMenu.Show();
                     this.Close();
                 }
             }
