@@ -60,8 +60,8 @@
       }
     ],
     "Id": 20,
-    "Slika": "opis",
-    "Opis": "slika",
+    "Slika": "slika",
+    "Opis": "opis",
     "OcenaUrednika": {
       "Id": 10,
       "Vrednost": 5,
@@ -143,8 +143,8 @@
       }
     ],
     "Id": 34,
-    "Slika": "Aktivan od 2004.",
-    "Opis": "slika",
+    "Slika": "slika",
+    "Opis": "Aktivan od 2004.",
     "OcenaUrednika": {
       "Id": 33,
       "Vrednost": 5,
@@ -152,5 +152,102 @@
     },
     "OceneKorisnika": [],
     "IdKreatora": "jelena.jankovic@gmail.com"
+  },
+  {
+    "Naziv": "Super bend",
+    "DatumOsnivanja": "2024-06-11T00:00:00",
+    "Aktivna": true,
+    "Clanovi": [
+      {
+        "Ime": "Milan",
+        "Prezime": "Petrovic",
+        "Zanrovi": [
+          {
+            "Id": 1,
+            "Naziv": "Pop"
+          },
+          {
+            "Id": 2,
+            "Naziv": "Folk"
+          }
+        ],
+        "Id": 7,
+        "Slika": "slika",
+        "Opis": "Milan je rođen u Beogradu 1975",
+        "OcenaUrednika": {
+          "Id": 3,
+          "Vrednost": 2,
+          "Korisnik": "ana.anic@gmail.com"
+        },
+        "OceneKorisnika": [
+          {
+            "Id": 4,
+            "Vrednost": 5,
+            "Korisnik": "brankak@gmail.com"
+          }
+        ],
+        "IdKreatora": "jelena.jankovic@gmail.com"
+      },
+      {
+        "Ime": "Zeljko",
+        "Prezime": "Joksimovic",
+        "Zanrovi": [
+          {
+            "Id": 1,
+            "Naziv": "Pop"
+          }
+        ],
+        "Id": 18,
+        "Slika": "slika",
+        "Opis": "Poreklom iz Beograda.",
+        "OcenaUrednika": {
+          "Id": 0,
+          "Vrednost": 0,
+          "Korisnik": null
+        },
+        "OceneKorisnika": [],
+        "IdKreatora": "petar.petrovic@gmail.com"
+      },
+      {
+        "Ime": "Jelena",
+        "Prezime": "Tomasevic",
+        "Zanrovi": [
+          {
+            "Id": 2,
+            "Naziv": "Folk"
+          }
+        ],
+        "Id": 19,
+        "Slika": "slika",
+        "Opis": "Poreklom iz Negotina, rodjena 1983. godine.",
+        "OcenaUrednika": {
+          "Id": 0,
+          "Vrednost": 0,
+          "Korisnik": null
+        },
+        "OceneKorisnika": [],
+        "IdKreatora": "petar.petrovic@gmail.com"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Id": 2,
+        "Naziv": "Folk"
+      },
+      {
+        "Id": 1,
+        "Naziv": "Pop"
+      }
+    ],
+    "Id": 15,
+    "Slika": "slika",
+    "Opis": "odlican bend",
+    "OcenaUrednika": {
+      "Id": 0,
+      "Vrednost": 0,
+      "Korisnik": null
+    },
+    "OceneKorisnika": [],
+    "IdKreatora": "petar.petrovic@gmail.com"
   }
 ]

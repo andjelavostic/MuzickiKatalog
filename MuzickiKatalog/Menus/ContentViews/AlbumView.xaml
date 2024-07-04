@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MuzickiKatalog.Menus.ContentViews"
         mc:Ignorable="d"
-        Title="AlbumView" Background="LightGreen" Height="1100" Width="747">
-    <Grid>
+        Title="AlbumView" Background="LightGreen" Height="1180" Width="747">
+    <Grid Height="1180" Width="747">
         <Image Source="/Images/sadrzaj.png"  HorizontalAlignment="Left" Height="200" Margin="483,46,0,0" VerticalAlignment="Top" Width="200"/>
         <TextBlock Name ="DesctiptionTextBlock" HorizontalAlignment="Left" Margin="61,108,0,0" TextWrapping="Wrap" Text="TextBlock (opis i karakteristike tj izvodjac numere zanr i slicno za dat sadrzaj)" VerticalAlignment="Top" Height="145" Width="324"/>
         <Label Content="Description:" HorizontalAlignment="Left" Margin="61,58,0,0" VerticalAlignment="Top" Width="124"/>
@@ -27,9 +27,9 @@
         <Label Content="Editor's review:" HorizontalAlignment="Left" Margin="394,389,0,0" VerticalAlignment="Top"/>
         <TextBlock Name="editorsReviewTextBlock" HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
         <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="535,946,0,0" VerticalAlignment="Top" Height="57" Width="142" Click="Button_Click"/>
-        <Button Content="View track" HorizontalAlignment="Left" Margin="61,946,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
-        <DataGrid Name="tracksDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="61,730,70,221"/>
+        <Button Content="View track" HorizontalAlignment="Left" Margin="61,913,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
+        <DataGrid Name="tracksDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="61,730,70,334"/>
         <Label Content="Tracks featured on album:" HorizontalAlignment="Left" Margin="61,657,0,0" VerticalAlignment="Top" Width="204"/>
-        <Button Content="View artist" HorizontalAlignment="Left" Margin="297,946,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
+        <Button Content="View artist" HorizontalAlignment="Left" Margin="297,913,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
     </Grid>
 </Window>

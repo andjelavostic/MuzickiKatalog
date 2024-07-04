@@ -39,7 +39,7 @@ namespace MuzickiKatalog.Models.Items
         public Grupa() : base()
         {
         }
-        public Grupa(int id, string slika, string opis, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, DateTime datumOsnivanja, bool aktivna, List<Izvodjac> clanovi, string naziv, List<Zanr> zanrovi,string idKreatora)
+        public Grupa(int id, string opis, string slika, Ocena ocenaUrednika, List<Ocena> oceneKorisnika, DateTime datumOsnivanja, bool aktivna, List<Izvodjac> clanovi, string naziv, List<Zanr> zanrovi,string idKreatora)
             : base(id, slika, opis, ocenaUrednika, oceneKorisnika, zanrovi,idKreatora)
         {
             this.datumOsnivanja = datumOsnivanja;
