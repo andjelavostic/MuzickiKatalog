@@ -1,5 +1,6 @@
 ﻿using MuzickiKatalog.Menus.ContentViews;
 using MuzickiKatalog.Menus.ContentViews.EditorMenus;
+using MuzickiKatalog.Menus.UserMenus.UserViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,8 +55,8 @@ namespace MuzickiKatalog
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
+            UserMenu userMenu = new UserMenu(idEditor,"UREDNIK");
+            userMenu.Show();
             this.Close();
         }
     }

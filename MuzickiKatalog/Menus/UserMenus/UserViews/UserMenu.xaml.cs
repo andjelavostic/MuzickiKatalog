@@ -32,7 +32,8 @@ namespace MuzickiKatalog.Menus.UserMenus.UserViews
         private SearchModelView sMV;
         private string userId;
         private List<TableData> data = new List<TableData>();
-        public UserMenu(string userId)
+        private string userRole;
+        public UserMenu(string userId, string role)
         {
             InitializeComponent();
             this.rkS = new RegistrovanKorisnikService();
@@ -42,6 +43,7 @@ namespace MuzickiKatalog.Menus.UserMenus.UserViews
             this.iS = new IzvodjacService();
             this.sMV = new SearchModelView();
             this.userId= userId;
+            this.userRole = role;
             emailText.Content = userId;
         }
 
@@ -123,25 +125,25 @@ namespace MuzickiKatalog.Menus.UserMenus.UserViews
                 var objekat = sMV.SearchObject(id, aS, gS, iS, nS);
                 if (sMV.SearchIzvodjac(id, iS))
                 {
-                    ArtistView artistView = new ArtistView(iS.GetByID(id),k,"korisnik");
+                    ArtistView artistView = new ArtistView(iS.GetByID(id),k,userRole);
                     artistView.Show();
                     this.Close();
                 }
                 else if (sMV.SearchNumera(id, nS))
                 {
-                    TrackView trackView = new TrackView(nS.GetByID(id), k, "korisnik");
+                    TrackView trackView = new TrackView(nS.GetByID(id), k, userRole);
                     trackView.Show();
                     this.Close();
                 }
                 else if (sMV.SearchAlbum(id, aS))
                 {
-                    AlbumView albumView = new AlbumView(aS.GetByID(id), k, "korisnik");
+                    AlbumView albumView = new AlbumView(aS.GetByID(id), k, userRole);
                     albumView.Show();
                     this.Close();
                 }
                 else if (sMV.SearchGrupa(id, gS))
                 {
-                    BandView bandView = new BandView(gS.GetByID(id), k, "korisnik");
+                    BandView bandView = new BandView(gS.GetByID(id), k, userRole);
                     bandView.Show();
                     this.Close();
                 }

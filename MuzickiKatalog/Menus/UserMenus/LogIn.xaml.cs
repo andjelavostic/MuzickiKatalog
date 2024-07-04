@@ -51,7 +51,7 @@ namespace MuzickiKatalog
                 }
                 else
                 {
-                    UserMenu userMenu = new UserMenu(korisnik.Email);
+                    UserMenu userMenu = new UserMenu(korisnik.Email, "korisnik");
                     userMenu.Show();
                     this.Close();
                 }
