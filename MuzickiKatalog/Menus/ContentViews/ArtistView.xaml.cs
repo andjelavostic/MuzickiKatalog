@@ -30,6 +30,8 @@ namespace MuzickiKatalog.Menus.ContentViews
         private GlobalID globalId;
         private IzvodjacService izvodjacService;
         private RecenzijaService recenzijaService;
+        private AlbumService albumService;
+        private NumeraService numeraService;
         private string userRole;
         public ArtistView(Izvodjac i,Korisnik k,string role)
         {
@@ -41,6 +43,8 @@ namespace MuzickiKatalog.Menus.ContentViews
             this.globalId = new GlobalID();
             this.izvodjacService = new IzvodjacService();
             this.recenzijaService = new RecenzijaService();
+            this.albumService = new AlbumService();
+            this.numeraService = new NumeraService();
             
             if (izvodjac != null)
             {
@@ -58,6 +62,17 @@ namespace MuzickiKatalog.Menus.ContentViews
                 }
 
                 DesctiptionTextBlock.Text = description;
+            }
+
+            // ucitavanje izvodjacevih numera i albuma u dataGrid
+            foreach (Album album in albumService.GetAlbumsForArtistId(izvodjac.Id))
+            {
+                discographyDataGrid.Items.Add(new TableData(album));
+            }
+
+            foreach (Numera numera in numeraService.GetTracksForArtistId(izvodjac.Id))
+            {
+                discographyDataGrid.Items.Add(new TableData(numera));
             }
 
             // ucitavanje mogucih ocena u comboBox
@@ -127,6 +142,38 @@ namespace MuzickiKatalog.Menus.ContentViews
                     sumOfRatings += ocena.Vrednost;
                 }
                 userRatingLabel.Content += (sumOfRatings / izvodjac.OceneKorisnika.Count).ToString() + "/5";
+            }
+        }
+
+        public class TableData
+        {
+            public int Id { get; set; }
+            public string Naziv { get; set; }
+            public List<Zanr> Zanrovi { get; set; }
+
+            public TableData(Izvodjac i)
+            {
+                Id = i.Id;
+                Naziv = i.Ime + " " + i.Prezime;
+                Zanrovi = i.Zanrovi;
+            }
+            public TableData(Album a)
+            {
+                Id = a.Id;
+                Naziv = a.Naziv;
+                Zanrovi = a.Zanrovi;
+            }
+            public TableData(Numera n)
+            {
+                Id = n.Id;
+                Naziv = n.Naziv;
+                Zanrovi = n.Zanrovi;
+            }
+            public TableData(Grupa g)
+            {
+                Id = g.Id;
+                Naziv = g.Naziv;
+                Zanrovi = g.Zanrovi;
             }
         }
 

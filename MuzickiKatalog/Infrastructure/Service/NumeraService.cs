@@ -67,5 +67,16 @@ namespace MuzickiKatalog.Infrastructure.Service
             }
             Serialize<Numera>(filePath, numere);
         }
+
+        public List<Numera> GetTracksForArtistId(int izvodjacId)
+        {
+            List<Numera> izvodjaceveNumere = new List<Numera>();
+            foreach (Numera numera in numere)
+            {
+                if (numera.IzvodjacId == izvodjacId)
+                    izvodjaceveNumere.Add(numera);
+            }
+            return izvodjaceveNumere;
+        }
     }
 }

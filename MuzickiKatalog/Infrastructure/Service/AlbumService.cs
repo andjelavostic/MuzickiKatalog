@@ -61,5 +61,16 @@ namespace MuzickiKatalog.Infrastructure.Service
             }
             Serialize<Album>(filePath, albumi);
         }
+
+        public List<Album> GetAlbumsForArtistId(int izvodjacId)
+        {
+            List<Album> izvodjaceviAlbumi = new List<Album>();
+            foreach (Album album in albumi)
+            {
+                if(album.IzvodjacId == izvodjacId)
+                    izvodjaceviAlbumi.Add(album);
+            }
+            return izvodjaceviAlbumi;
+        }
     }
 }
