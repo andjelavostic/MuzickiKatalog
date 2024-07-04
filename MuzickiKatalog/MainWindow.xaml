@@ -20,6 +20,7 @@
         <!--<Label Content="Genre:" HorizontalAlignment="Left" Margin="44,72,0,0" VerticalAlignment="Top" Width="68"/>-->
         <Button Content="Search" HorizontalAlignment="Left" Height="26" Margin="44,119,0,0" VerticalAlignment="Top" Width="86" Click="Search_Click"/>
         <Image Source="/Images/reklama.png" HorizontalAlignment="Left" Height="54" Margin="96,412,0,0" VerticalAlignment="Top" Width="608" Grid.ColumnSpan="2"/>
+        <TextBox Name="GenreSearch" HorizontalAlignment="Left" Margin="127,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" Height="22"/>
 
 
     </Grid>

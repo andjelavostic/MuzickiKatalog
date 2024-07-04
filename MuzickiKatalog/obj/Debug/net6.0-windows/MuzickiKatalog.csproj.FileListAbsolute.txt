@@ -245,3 +245,17 @@ D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windo
 D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.baml
 C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.g.cs
 C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\AlbumInput.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\ArtistInput.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\BandInput.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\TrackInput.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\GenreEntry.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\AlbumInput.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\ArtistInput.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\BandInput.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\TrackInput.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\GenreEntry.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.baml

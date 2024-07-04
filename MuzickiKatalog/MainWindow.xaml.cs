@@ -56,29 +56,83 @@ namespace MuzickiKatalog
         {
             data.Clear();
             string input = SearchBox.Text;
-            List<Izvodjac> izvodjaci = sMV.SearchIzvodjaci(input, iS);
-            List<Numera> numere = sMV.SearchNumere(input, nS);
-            List<Album> albumi = sMV.SearchAlbumi(input, aS);
-            List<Grupa> grupe = sMV.SearchGrupe(input, gS);
-            foreach(Izvodjac i in izvodjaci)
+            string genre = GenreSearch.Text;
+            if(input != "" && genre == "")
             {
-                data.Add(new TableData(i));
-            }
-            foreach (Numera n in numere)
+                List<Izvodjac> izvodjaci = sMV.SearchIzvodjaci(input, iS);
+                List<Numera> numere = sMV.SearchNumere(input, nS);
+                List<Album> albumi = sMV.SearchAlbumi(input, aS);
+                List<Grupa> grupe = sMV.SearchGrupe(input, gS);
+                foreach (Izvodjac i in izvodjaci)
+                {
+                    data.Add(new TableData(i));
+                }
+                foreach (Numera n in numere)
+                {
+                    data.Add(new TableData(n));
+                }
+                foreach (Album a in albumi)
+                {
+                    data.Add(new TableData(a));
+                }
+                foreach (Grupa g in grupe)
+                {
+                    data.Add(new TableData(g));
+                }
+                tableDataGrid.ItemsSource = null;
+                tableDataGrid.ItemsSource = data;
+                tableDataGrid.Visibility = Visibility.Visible;
+            }else if(input == "" && genre != "")
             {
-                data.Add(new TableData(n));
+                List<Izvodjac> izvodjaci = sMV.SearchGenreIzvodjaci(genre, iS);
+                List<Numera> numere = sMV.SearchGenreNumere(genre, nS);
+                List<Album> albumi = sMV.SearchGenreAlbumi(genre, aS);
+                List<Grupa> grupe = sMV.SearchGenreGrupe(genre, gS);
+                foreach (Izvodjac i in izvodjaci)
+                {
+                    data.Add(new TableData(i));
+                }
+                foreach (Numera n in numere)
+                {
+                    data.Add(new TableData(n));
+                }
+                foreach (Album a in albumi)
+                {
+                    data.Add(new TableData(a));
+                }
+                foreach (Grupa g in grupe)
+                {
+                    data.Add(new TableData(g));
+                }
+                tableDataGrid.ItemsSource = null;
+                tableDataGrid.ItemsSource = data;
+                tableDataGrid.Visibility = Visibility.Visible;
+            }else if(input != "" && genre != ""){
+                List<Izvodjac> izvodjaci = sMV.SearchFullIzvodjaci(input, genre, iS);
+                List<Numera> numere = sMV.SearchFullNumere(input,genre, nS);
+                List<Album> albumi = sMV.SearchFullAlbumi(input,genre, aS);
+                List<Grupa> grupe = sMV.SearchFullGrupe(input,genre, gS);
+                foreach (Izvodjac i in izvodjaci)
+                {
+                    data.Add(new TableData(i));
+                }
+                foreach (Numera n in numere)
+                {
+                    data.Add(new TableData(n));
+                }
+                foreach (Album a in albumi)
+                {
+                    data.Add(new TableData(a));
+                }
+                foreach (Grupa g in grupe)
+                {
+                    data.Add(new TableData(g));
+                }
+                tableDataGrid.ItemsSource = null;
+                tableDataGrid.ItemsSource = data;
+                tableDataGrid.Visibility = Visibility.Visible;
             }
-            foreach (Album a in albumi)
-            {
-                data.Add(new TableData(a));
-            }
-            foreach (Grupa g in grupe)
-            {
-                data.Add(new TableData(g));
-            }
-            tableDataGrid.ItemsSource = null;
-            tableDataGrid.ItemsSource = data;
-            tableDataGrid.Visibility = Visibility.Visible;
+            
         }
         public class TableData
         {
