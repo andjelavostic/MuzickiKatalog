@@ -139,6 +139,12 @@ namespace MuzickiKatalog.Menus.UserMenus.UserViews
                     albumView.Show();
                     this.Close();
                 }
+                else if (sMV.SearchGrupa(id, gS))
+                {
+                    BandView bandView = new BandView(gS.GetByID(id), k, "korisnik");
+                    bandView.Show();
+                    this.Close();
+                }
             }
         }
     }
