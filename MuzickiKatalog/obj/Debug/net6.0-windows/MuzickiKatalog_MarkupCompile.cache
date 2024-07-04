@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\
 MuzickiKatalog
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\App.xaml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\App.xaml
 22-1076453428
 
 642059296307
-1951807654157
+1951691140420
 MainWindow.xaml;Menus\ContentViews\AlbumEntry.xaml;Menus\ContentViews\AlbumView.xaml;Menus\ContentViews\ArtistEntry.xaml;Menus\ContentViews\ArtistView.xaml;Menus\ContentViews\BandEntry.xaml;Menus\ContentViews\BandView.xaml;Menus\ContentViews\ContentView.xaml;Menus\ContentViews\EditorMenus\AlbumInput.xaml;Menus\ContentViews\EditorMenus\ArtistInput.xaml;Menus\ContentViews\EditorMenus\BandInput.xaml;Menus\ContentViews\EditorMenus\TrackInput.xaml;Menus\ContentViews\GenreEntry.xaml;Menus\ContentViews\TrackEntry.xaml;Menus\ContentViews\TrackView.xaml;Menus\UserMenus\AdminViews\AdminAssignTasks.xaml;Menus\UserMenus\AdminViews\AdminMenu.xaml;Menus\UserMenus\EditorViews\EditorAssignedTasks.xaml;Menus\UserMenus\EditorViews\EditorMenu.xaml;Menus\UserMenus\LogIn.xaml;Menus\UserMenus\Register.xaml;Menus\UserMenus\UserViews\UserMenu.xaml;
 
 False
