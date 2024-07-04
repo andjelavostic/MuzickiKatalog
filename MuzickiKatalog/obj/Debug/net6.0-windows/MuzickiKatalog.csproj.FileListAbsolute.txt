@@ -1,0 +1,261 @@
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.AssemblyReference.cache
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\LogIn.g.cs
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Register.g.cs
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.cache
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.lref
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.exe
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.deps.json
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.runtimeconfig.json
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.pdb
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\LogIn.baml
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Register.baml
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.g.resources
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfoInputs.cache
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfo.cs
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.CoreCompileInputs.cache
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.CopyComplete
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\refint\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.pdb
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.genruntimeconfig.cache
+C:\Users\Andjela\Desktop\sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\ref\MuzickiKatalog.dll
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.exe
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.deps.json
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.runtimeconfig.json
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.dll
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.pdb
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.cache
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.lref
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.g.resources
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfo.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.sourcelink.json
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiK.F8626DD0.Up2Date
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.dll
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\refint\MuzickiKatalog.dll
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.pdb
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.genruntimeconfig.cache
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\ref\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.exe
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.deps.json
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.runtimeconfig.json
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.pdb
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.AssemblyReference.cache
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\AdminAssignTasks.g.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\AdminMenu.g.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\ContentView.g.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\EditorAssignedTasks.g.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\EditorMenu.g.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\LogIn.g.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Register.g.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.cache
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.lref
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\AdminAssignTasks.baml
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\AdminMenu.baml
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\ContentView.baml
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\EditorAssignedTasks.baml
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\EditorMenu.baml
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\LogIn.baml
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Register.baml
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.g.resources
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfoInputs.cache
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfo.cs
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.CoreCompileInputs.cache
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.CopyComplete
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\refint\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.pdb
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.genruntimeconfig.cache
+C:\Users\Andjela\Desktop\simsprojekat\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\ref\MuzickiKatalog.dll
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.exe
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.deps.json
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.runtimeconfig.json
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.dll
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.pdb
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.AssemblyReference.cache
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\LogIn.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\Register.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\App.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.cache
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.lref
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\LogIn.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\Register.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.g.resources
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.GeneratedMSBuildEditorConfig.editorconfig
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfoInputs.cache
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfo.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.CoreCompileInputs.cache
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.sourcelink.json
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiK.F8626DD0.Up2Date
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.dll
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\refint\MuzickiKatalog.dll
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.pdb
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.genruntimeconfig.cache
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\ref\MuzickiKatalog.dll
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminAssignTasks.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminMenu.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorAssignedTasks.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorMenu.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminAssignTasks.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminMenu.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorAssignedTasks.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorMenu.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumEntry.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumEntry.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackView.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackView.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumView.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumView.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistEntry.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistEntry.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumEntry.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistEntry.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminAssignTasks.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminMenu.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorAssignedTasks.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorMenu.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\LogIn.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\Register.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumEntry.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistEntry.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminAssignTasks.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminMenu.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorAssignedTasks.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorMenu.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\LogIn.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\Register.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.exe
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.deps.json
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.runtimeconfig.json
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\MuzickiKatalog.pdb
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.AssemblyReference.cache
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumEntry.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumView.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistEntry.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackView.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminAssignTasks.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminMenu.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorAssignedTasks.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorMenu.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\LogIn.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\Register.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.cache
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog_MarkupCompile.lref
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumEntry.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\AlbumView.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistEntry.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ArtistView.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\ContentView.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackEntry.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\TrackView.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminAssignTasks.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\AdminViews\AdminMenu.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorAssignedTasks.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\EditorViews\EditorMenu.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\LogIn.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\Register.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.g.resources
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfoInputs.cache
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.AssemblyInfo.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.CoreCompileInputs.cache
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.csproj.CopyComplete
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\refint\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.pdb
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\MuzickiKatalog.genruntimeconfig.cache
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\ref\MuzickiKatalog.dll
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandEntry.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandEntry.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandEntry.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandEntry.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\GenreEntry.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\GenreEntry.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\AlbumInput.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\ArtistInput.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\BandInput.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\TrackInput.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\AlbumInput.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\ArtistInput.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\BandInput.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\TrackInput.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandEntry.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\AlbumInput.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\ArtistInput.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\BandInput.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\TrackInput.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\GenreEntry.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandEntry.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\AlbumInput.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\ArtistInput.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\BandInput.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\TrackInput.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\GenreEntry.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.baml
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.g.cs
+D:\skola\sims\projekat sims\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.baml
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.g.cs
+C:\Users\Andjela\Desktop\simspro\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\AlbumInput.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\ArtistInput.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\BandInput.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\TrackInput.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\GenreEntry.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.g.cs
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\BandView.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\AlbumInput.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\ArtistInput.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\BandInput.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\EditorMenus\TrackInput.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\ContentViews\GenreEntry.baml
+C:\Users\User\Desktop\MuzickiKatalog\MuzickiKatalog\obj\Debug\net6.0-windows\Menus\UserMenus\UserViews\UserMenu.baml

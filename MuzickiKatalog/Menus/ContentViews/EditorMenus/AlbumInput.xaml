@@ -1,0 +1,47 @@
+﻿<Window x:Class="MuzickiKatalog.Menus.ContentViews.EditorMenus.AlbumInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MuzickiKatalog.Menus.ContentViews.EditorMenus"
+        mc:Ignorable="d"
+        Title="AlbumInput" Background="LightGreen" Height="770" Width="462">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Name of the album: " HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top" Width="123"/>
+        <Label Content="Artist:" HorizontalAlignment="Left" Margin="34,68,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label Content="Select image:" HorizontalAlignment="Left" Margin="34,148,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label Content="Select genres:" HorizontalAlignment="Left" Margin="34,240,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="nazivAlbumaText" HorizontalAlignment="Left" Margin="231,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="177" Height="22"/>
+        <TextBox Name="imageLinkText" HorizontalAlignment="Left" Margin="229,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" Height="24" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.637"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <ListBox Name="chooseGenreList" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="231,236,54,431"/>
+        <Label Content="Enter the description:" HorizontalAlignment="Left" Margin="40,355,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.488,0.156"/>
+        <RichTextBox Margin="231,355,54,329">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Name="opisText" Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <ComboBox Name="artistCombo" SelectionChanged="artistCombo_SelectionChanged" HorizontalAlignment="Left" Margin="231,70,0,0" VerticalAlignment="Top" Width="177" Height="24"/>
+        <Button Name="addButton" Click="addButton_Click"  Content="Add" HorizontalAlignment="Center" Margin="0,683,0,0" VerticalAlignment="Top" Height="40" Width="112"/>
+        <Label Content="Record label:" HorizontalAlignment="Left" Margin="34,192,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox Name="izdavackaText" HorizontalAlignment="Left" Margin="231,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="177" Height="22"/>
+        <Label Content="Album type:" HorizontalAlignment="Left" Margin="34,107,0,0" VerticalAlignment="Top" Width="113"/>
+        <ComboBox Name="tipCombo" HorizontalAlignment="Left" Margin="231,109,0,0" VerticalAlignment="Top" Width="177" Height="24"/>
+        <Label Content="Choose tracks" HorizontalAlignment="Left" Margin="46,461,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.488,0.156"/>
+        <ListBox Name="trackChoiceList" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="231,457,54,224"/>
+        <Label Content="Review" HorizontalAlignment="Left" Height="30" Margin="46,569,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label Content="Grade" HorizontalAlignment="Left" Height="29" Margin="46,623,0,0" VerticalAlignment="Top" Width="111"/>
+        <TextBox Name="reviewtext" HorizontalAlignment="Left" Height="48" Margin="231,560,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="177"/>
+        <ComboBox Name="gradeCombo" HorizontalAlignment="Left" Height="29" Margin="231,625,0,0" VerticalAlignment="Top" Width="177"/>
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "Naziv": "Pop"
+  },
+  {
+    "Id": 2,
+    "Naziv": "Folk"
+  },
+  {
+    "Id": 3,
+    "Naziv": "R&B"
+  },
+  {
+    "Id": 4,
+    "Naziv": "Country"
+  },
+  {
+    "Id": 5,
+    "Naziv": "Latino"
+  },
+  {
+    "Id": 22,
+    "Naziv": "Jazz"
+  },
+  {
+    "Id": 23,
+    "Naziv": "Rep"
+  }
+]

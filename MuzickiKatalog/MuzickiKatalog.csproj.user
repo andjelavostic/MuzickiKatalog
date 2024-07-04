@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Menus\ContentViews\AlbumEntry.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\AlbumView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\ArtistEntry.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\ArtistView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\BandEntry.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\BandView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\EditorMenus\AlbumInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\EditorMenus\ArtistInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\EditorMenus\BandInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\EditorMenus\TrackInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\GenreEntry.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\TrackEntry.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\ContentViews\TrackView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Menus\UserMenus\UserViews\UserMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\AlbumEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\AlbumView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\ArtistEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\ArtistView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\BandEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\BandView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\EditorMenus\AlbumInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\EditorMenus\ArtistInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\EditorMenus\BandInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\EditorMenus\TrackInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\GenreEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\TrackEntry.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\ContentViews\TrackView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Menus\UserMenus\UserViews\UserMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
