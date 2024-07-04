@@ -27,6 +27,10 @@ namespace MuzickiKatalog.Infrastructure.Service
         {
             return urednici;
         }
+        public Urednik GetById(string email)
+        {
+            return GetAll().Find(k => k.Email == email);
+        }
         public void dodavanjeAlbuma()
         { 
         

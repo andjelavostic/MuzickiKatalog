@@ -30,6 +30,7 @@ namespace MuzickiKatalog.Menus.UserMenus.UserViews
         private GrupaService gS;
         private IzvodjacService iS;
         private SearchModelView sMV;
+        private UrednikService uS;
         private string userId;
         private List<TableData> data = new List<TableData>();
         private string userRole;
@@ -42,6 +43,7 @@ namespace MuzickiKatalog.Menus.UserMenus.UserViews
             this.gS = new GrupaService();
             this.iS = new IzvodjacService();
             this.sMV = new SearchModelView();
+            this.uS = new UrednikService();
             this.userId= userId;
             this.userRole = role;
             emailText.Content = userId;
@@ -117,7 +119,15 @@ namespace MuzickiKatalog.Menus.UserMenus.UserViews
         private void tableDataGrid_MouseDoubleClick_1(object sender, MouseButtonEventArgs e)
         {
             int i = 0;
-            Korisnik k = rkS.GetById(userId);
+            Korisnik k = null;
+            if (userRole.Equals("korisnik"))
+            {
+                k = rkS.GetById(userId);
+            }
+            else if (userRole.Equals("UREDNIK"))
+            {
+                k = uS.GetById(userId);
+            }
             if (tableDataGrid.SelectedItem != null)
             {
                 TableData selectedRow = (TableData)tableDataGrid.SelectedItem;

@@ -262,7 +262,13 @@ namespace MuzickiKatalog.Menus.ContentViews
         {
             if (userRole == "korisnik")
             {
-                UserMenu user = new UserMenu(korisnik.Email,userRole);
+                UserMenu user = new UserMenu(korisnik.Email, userRole);
+                user.Show();
+                this.Close();
+            }
+            else if (userRole.Equals("UREDNIK"))
+            {
+                UserMenu user = new UserMenu(korisnik.Email, userRole);
                 user.Show();
                 this.Close();
             }

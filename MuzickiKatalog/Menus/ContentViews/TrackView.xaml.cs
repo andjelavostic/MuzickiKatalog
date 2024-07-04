@@ -218,6 +218,12 @@ namespace MuzickiKatalog.Menus.ContentViews
                 user.Show();
                 this.Close();
             }
+            else if (userRole.Equals("UREDNIK"))
+            {
+                UserMenu user = new UserMenu(korisnik.Email, userRole);
+                user.Show();
+                this.Close();
+            }
             else
             {
                 MainWindow main = new MainWindow();
