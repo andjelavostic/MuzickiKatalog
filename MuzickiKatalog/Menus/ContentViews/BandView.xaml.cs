@@ -140,6 +140,7 @@ namespace MuzickiKatalog.Menus.ContentViews
                 }
                 userRatingLabel.Content += (sumOfRatings / grupa.OceneKorisnika.Count).ToString() + "/5";
             }
+
         }
 
         private string GetTextFromRichTextBox(RichTextBox richTextBox)

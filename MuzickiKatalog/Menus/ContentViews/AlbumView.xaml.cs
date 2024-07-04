@@ -145,32 +145,32 @@ namespace MuzickiKatalog.Menus.ContentViews
         public class TableData
         {
             public int Id { get; set; }
-            public string naziv { get; set; }
-            public List<Zanr> zanrovi { get; set; }
+            public string Naziv { get; set; }
+            public List<Zanr> Zanrovi { get; set; }
 
             public TableData(Izvodjac i)
             {
                 Id = i.Id;
-                naziv = i.Ime + " " + i.Prezime;
-                zanrovi = i.Zanrovi;
+                Naziv = i.Ime + " " + i.Prezime;
+                Zanrovi = i.Zanrovi;
             }
             public TableData(Album a)
             {
                 Id = a.Id;
-                naziv = a.Naziv;
-                zanrovi = a.Zanrovi;
+                Naziv = a.Naziv;
+                Zanrovi = a.Zanrovi;
             }
             public TableData(Numera n)
             {
                 Id = n.Id;
-                naziv = n.Naziv;
-                zanrovi = n.Zanrovi;
+                Naziv = n.Naziv;
+                Zanrovi = n.Zanrovi;
             }
             public TableData(Grupa g)
             {
                 Id = g.Id;
-                naziv = g.Naziv;
-                zanrovi = g.Zanrovi;
+                Naziv = g.Naziv;
+                Zanrovi = g.Zanrovi;
             }
         }
 

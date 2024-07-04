@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MuzickiKatalog.Menus.ContentViews"
         mc:Ignorable="d"
-        Title="AlbumView" Background="LightGreen" Height="1180" Width="747">
-    <Grid Height="1180" Width="747">
+        Title="AlbumView" Background="LightGreen" Height="943" Width="912">
+    <Grid Margin="0,0,0,-6">
         <Image Source="/Images/sadrzaj.png"  HorizontalAlignment="Left" Height="200" Margin="483,46,0,0" VerticalAlignment="Top" Width="200"/>
         <TextBlock Name ="DesctiptionTextBlock" HorizontalAlignment="Left" Margin="61,108,0,0" TextWrapping="Wrap" Text="TextBlock (opis i karakteristike tj izvodjac numere zanr i slicno za dat sadrzaj)" VerticalAlignment="Top" Height="145" Width="324"/>
         <Label Content="Description:" HorizontalAlignment="Left" Margin="61,58,0,0" VerticalAlignment="Top" Width="124"/>
@@ -26,10 +26,18 @@
         <Button Name="reviewButton" Click="reviewButton_Click" Content="Review" HorizontalAlignment="Left" Height="34" Margin="61,555,0,0" VerticalAlignment="Top" Width="81"/>
         <Label Content="Editor's review:" HorizontalAlignment="Left" Margin="394,389,0,0" VerticalAlignment="Top"/>
         <TextBlock Name="editorsReviewTextBlock" HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
-        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="535,946,0,0" VerticalAlignment="Top" Height="57" Width="142" Click="Button_Click"/>
-        <Button Content="View track" HorizontalAlignment="Left" Margin="61,913,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
-        <DataGrid Name="tracksDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="61,730,70,334"/>
+        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="733,103,0,0" VerticalAlignment="Top" Height="57" Width="142" Click="Button_Click" RenderTransformOrigin="0.554,-0.39"/>
+        <Button Content="View track" HorizontalAlignment="Left" Margin="606,688,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
+        <DataGrid Name="tracksDataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" Margin="61,688,473,111">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Naziv" Binding="{Binding Naziv}" />
+                <DataGridTextColumn Header="Zanrovi" Binding="{Binding Zanrovi}" 
+                                    IsReadOnly="True">
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
         <Label Content="Tracks featured on album:" HorizontalAlignment="Left" Margin="61,657,0,0" VerticalAlignment="Top" Width="204"/>
-        <Button Content="View artist" HorizontalAlignment="Left" Margin="297,913,0,0" VerticalAlignment="Top" Height="57" Width="142"/>
+        <Button Content="View artist" HorizontalAlignment="Left" Margin="606,770,0,0" VerticalAlignment="Top" Height="52" Width="142"/>
     </Grid>
 </Window>
