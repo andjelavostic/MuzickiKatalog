@@ -27,7 +27,7 @@
         <Label Content="Editor's review:" HorizontalAlignment="Left" Margin="394,389,0,0" VerticalAlignment="Top"/>
         <TextBlock Name="editorsReviewTextBlock" HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
         <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="760,108,0,0" VerticalAlignment="Top" Height="56" Width="142" Click="Button_Click"/>
-        <DataGrid Name="discographyDataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" Margin="61,688,122,111">
+        <DataGrid Name="discographyDataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" Margin="61,688,568,61">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
                 <DataGridTextColumn Header="Naziv" Binding="{Binding Naziv}" />
