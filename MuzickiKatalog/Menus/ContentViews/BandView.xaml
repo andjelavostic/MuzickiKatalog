@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MuzickiKatalog.Menus.ContentViews"
         mc:Ignorable="d"
-        Title="BandView" Background="LightGreen" Height="1100" Width="747">
-    <Grid>
+        Title="BandView" Background="LightGreen" Height="981" Width="953">
+    <Grid Margin="0,0,0,-6">
         <Image Source="/Images/sadrzaj.png"  HorizontalAlignment="Left" Height="200" Margin="483,46,0,0" VerticalAlignment="Top" Width="200"/>
         <TextBlock Name ="DesctiptionTextBlock" HorizontalAlignment="Left" Margin="61,108,0,0" TextWrapping="Wrap" Text="TextBlock (opis i karakteristike tj izvodjac numere zanr i slicno za dat sadrzaj)" VerticalAlignment="Top" Height="145" Width="324"/>
         <Label Content="Description:" HorizontalAlignment="Left" Margin="61,58,0,0" VerticalAlignment="Top" Width="124"/>
@@ -26,9 +26,9 @@
         <Button Name="reviewButton" Click="reviewButton_Click" Content="Review" HorizontalAlignment="Left" Height="34" Margin="61,555,0,0" VerticalAlignment="Top" Width="81"/>
         <Label Content="Editor's review:" HorizontalAlignment="Left" Margin="394,389,0,0" VerticalAlignment="Top"/>
         <TextBlock Name="editorsReviewTextBlock" HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
-        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="535,890,0,0" VerticalAlignment="Top" Height="56" Width="142" Click="Button_Click"/>
-        <Button Content="View track" HorizontalAlignment="Left" Margin="61,890,0,0" VerticalAlignment="Top" Height="56" Width="142"/>
-        <DataGrid Name="discographyDataGrid"  Margin="61,717,70,225"/>
+        <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="760,108,0,0" VerticalAlignment="Top" Height="56" Width="142" Click="Button_Click"/>
+        <Button Content="View track" HorizontalAlignment="Left" Margin="689,732,0,0" VerticalAlignment="Top" Height="56" Width="142"/>
+        <DataGrid Name="discographyDataGrid"  Margin="61,717,423,81"/>
         <Label Content="Discography:" HorizontalAlignment="Left" Margin="61,657,0,0" VerticalAlignment="Top" Width="204"/>
     </Grid>
 </Window>
