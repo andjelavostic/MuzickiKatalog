@@ -28,7 +28,15 @@
         <TextBlock Name="editorsReviewTextBlock" HorizontalAlignment="Left" Margin="394,444,0,0" TextWrapping="Wrap" Text="(Recenzija urednika)" VerticalAlignment="Top" Height="145" Width="283"/>
         <Button Content="Back to homepage" HorizontalAlignment="Left" Margin="760,108,0,0" VerticalAlignment="Top" Height="56" Width="142" Click="Button_Click"/>
         <Button Content="View track" HorizontalAlignment="Left" Margin="689,732,0,0" VerticalAlignment="Top" Height="56" Width="142"/>
-        <DataGrid Name="discographyDataGrid"  Margin="61,717,423,81"/>
+        <DataGrid Name="discographyDataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}" Margin="61,688,473,111">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Naziv" Binding="{Binding Naziv}" />
+                <DataGridTextColumn Header="Zanrovi" Binding="{Binding Zanrovi}" 
+                    IsReadOnly="True">
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
         <Label Content="Discography:" HorizontalAlignment="Left" Margin="61,657,0,0" VerticalAlignment="Top" Width="204"/>
     </Grid>
 </Window>
